@@ -1,0 +1,89 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+
+.form-group{
+    .form-label{
+        color: #1D1D39;
+        font-size: 16px;
+        font-weight:400;
+        line-height: 20px;
+        font-family: $primary-font;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+    .form-control{
+        background: #F7F5FF;
+        border-radius: 14px;
+        color: #7F57F1;
+        font-size: 16px;
+        font-weight:400;
+        line-height: 17px;
+        font-family: $primary-font;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        padding: 20px;
+        &::placeholder{
+            color: #7F57F1;
+        }
+    }    
+}
+
+
+
+.btn-cus{
+    background: #DFD5FC;
+    padding: 20px 35px;
+    border: none;
+    box-shadow: none !important;
+    outline: none !important;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 29px;
+    font-family: $primary-font ;
+    color: #2C00AA;
+    border-radius: 14px;
+    img{
+        margin-right: 10px;
+        height: 16px;
+    }
+    &:hover{
+        opacity: 0.8;
+        color: #2C00AA;
+    }
+
+    @media(max-width:1679px){
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+
+    @media(max-width:1480px){
+        font-size: 14px;
+    }
+    @media(max-width:1280px){
+        font-size: 13px;
+    }
+    &.btn-save{
+        padding: 20px 60px;
+        background:  transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%);
+        color: #fff;
+        @media(max-width:1679px){
+            padding: 10px 40px;
+        }
+    }
+    &.btn-cancel{
+        padding: 20px 60px;
+        @media(max-width:1679px){
+            padding: 10px 40px;
+        }
+    }
+}
+.btn-red{
+    background: transparent linear-gradient(180deg, #FF6868 0%, #FC0067 100%);
+    color: #fff;
+    &:hover{
+        color: #fff;
+        opacity: 0.8;
+    }
+}

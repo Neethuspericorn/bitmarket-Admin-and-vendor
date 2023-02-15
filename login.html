@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+    
+<body>
+    <div class="login-cover d-flex">
+        <div class="container login-container">
+            <div class="login-wrapper">
+                <div class="left-block">
+                    <div class="welcome-title">
+                        <h2>Welcome to Dashboard</h2>
+                        <p>Please Login Your Account</p>
+                    </div>
+                </div>
+                <div class="right-block">
+                    <div class="form-block-cover form-block-cover-login">
+                        <div class="form-logo">
+                            <a href="#"><img src="img/logo.svg" alt=""></a>
+                        </div>
+                        <div class="form-container">
+                            <div class="cutom-form-control">
+                                <label for="Username" class="form-label">Username</label>
+                                <div class="input-group cutom-input-group">
+                                    <span class="input-group-text" id="basic-addon1"><img src="img/log-mail.svg" alt=""></span>
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                    <!-- add style inline-flex for showing validation msg -->
+                                    <span class="val-msg"><img src="img/warn-dngr.svg" alt=""> Field required</span>
+                                </div>
+                            </div>
+
+                            <div class="cutom-form-control">
+                                <label for="Password" class="form-label">Password</label>
+                                <div class="input-group cutom-input-group">
+                                    <span class="input-group-text"><img src="img/log-lock.svg" alt=""></span>
+                                    <input type="password" class="form-control" placeholder="Password" aria-label="Password">
+                                    <span class="input-group-text">
+                                        <img src="img/eye-locked.svg" alt="">
+                                        <!-- <img src="img/eye-unlock.svg" alt=""> -->
+                                    </span>
+                                    <span class="val-msg"><img src="img/warn-dngr.svg" alt=""> Field required</span>
+                                </div>
+                            </div>
+                            <div class="fgt-pswd-lnk">
+                                <a data-bs-toggle="modal" href="#forgotPassword" role="button">Forgot password?</a>
+                            </div>
+                            <div class="btn-wrapper btn-wrapper-fluid d-flex">
+                                <button type="button" class="btn-def btn-submit">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  
+  <!-- Modal -->
+    <div class="modal fade modal-login" id="forgotPassword" 
+    data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="forgotPasswordLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="form-block-cover form-block-cover-pswd">
+                        <div class="form-title">
+                            <img src="img/frgt-mail.svg" alt="">Forgot Password ?
+                        </div>
+                        <div class="form-img-block">
+                            <img src="img/fgt-block.svg" alt="">
+                        </div>
+                        <div class="form-container">
+                            <div class="cutom-form-control">
+                                <label for="Email ID" class="form-label">Email ID</label>
+                                <div class="input-group cutom-input-group">
+                                    <span class="input-group-text" id="basic-addon1"><img src="img/log-mail.svg" alt=""></span>
+                                    <input type="email" class="form-control" placeholder="Enter email ID" aria-label="Email ID" aria-describedby="basic-addon1">
+                                    <!-- add style inline-flex for showing validation msg -->
+                                    <span class="val-msg"><img src="img/warn-dngr.svg" alt=""> Please enter a valid email address</span>
+                                </div>
+                            </div>
+
+                            <div class="btn-wrapper d-flex">
+                                <button type="button" class="btn-def btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn-def btn-submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Js/vendor/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+$white-back-color: #fff;
+$dark-back-color: #000000;
+
+
+.modal {
+    .modal-dialog {
+        .modal-content {
+            border: 1px solid #DFD5FC;
+            border-radius: 46px;
+            background-color: $white-back-color;
+
+            .modal-header {
+                position: relative;
+                padding: 30px 50px;
+                border-bottom: 1px solid #DFD5FC;
+
+                .modal-title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 27px;
+                    font-family: $primary-font;
+                    margin-bottom: 0px;
+                }
+
+                .btn-close {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    padding: 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    right: 18px;
+                    background: #EED5FC url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/10px auto no-repeat;
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+
+            .modal-body {
+                padding: 0px;
+
+                .form-label {
+                    color: #1D1D39;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    font-family: $primary-font;
+                    text-transform: capitalize;
+                    margin-bottom: 0px;
+                }
+
+                .frm-value {
+                    color: #00245E;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 26px;
+                    font-family: $primary-font;
+                    text-transform: capitalize;
+                    margin-bottom: 0px;
+                }
+            }
+
+            .modal-footer {
+                padding: 30px 50px;
+                margin: 0px;
+                border: none;
+
+                .btn-area {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin: 0px;
+
+                    .btn {
+                        margin-right: 15px;
+
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.cust-man {
+        .modal-dialog {
+            .modal-content {
+                .modal-body {
+                    .cust-mng-view {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 90px;
+
+                        .profile-img-view {
+                            .profile-img {
+                                width: 210px;
+                                height: 210px;
+                                overflow: hidden;
+                                border-radius: 40px;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        .profile-data-main {
+                            .profile-data {
+                                display: flex;
+                                flex-wrap: wrap;
+                                margin: 0px !important;
+
+                                .frm-itm {
+                                    margin-bottom: 50px;
+                                }
+                            }
+                        }
+                    }
+
+                    .cust-mng-edit {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 90px;
+
+                        .profile-img-up {
+                            .profile-img {
+                                width: 210px;
+                                height: 210px;
+                                overflow: hidden;
+                                border-radius: 40px;
+                                position: relative;
+
+                                img {
+                                    width: 100%;
+                                }
+
+                                .upload-btn {
+                                    width: 47px;
+                                    height: 47px;
+                                    background: #FFFFFF;
+                                    position: absolute;
+                                    bottom: 15px;
+                                    right: 10px;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    align-content: center;
+                                    justify-content: center;
+
+                                    img {
+                                        width: 24px;
+                                    }
+
+                                    input[type="file"] {
+                                        opacity: 0;
+                                        position: absolute;
+                                        top: 0px;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .profile-data-main {
+
+                        .profile-data {
+                            display: flex;
+                            margin: 0px !important;
+
+                            .frm-itm {
+                                margin-bottom: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    &.vdr-man {
+        .modal-dialog {
+            .modal-content {
+                .modal-body {
+                    .vdr-mng-view {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 90px;
+
+                        .profile-img-view {
+                            .profile-img {
+                                width: 210px;
+                                height: 210px;
+                                overflow: hidden;
+                                border-radius: 40px;
+                                margin-bottom: 30px;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            .profile-info {
+                                width: 210px;
+                                background-color: #f8f1ff99;
+                                border-radius: 20px;
+
+                            }
+                        }
+
+                        .profile-data-main {
+                            .profile-data {
+                                display: flex;
+                                flex-wrap: wrap;
+                                margin: 0px !important;
+                                padding-bottom: 30px;
+
+                                &.border-bot {
+                                    border-bottom: 1px solid #F7EEFF;
+                                    margin-bottom: 50px !important;
+                                }
+
+                                .frm-itm {
+                                    margin-bottom: 50px;
+                                    position: relative;
+
+                                    &::before {
+                                        content: "";
+                                        width: 5px;
+                                        height: calc(100% - 10px);
+                                        background-color: #DFD5FC;
+                                        position: absolute;
+                                        left: 1px;
+                                        top: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .cust-mng-edit {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 90px;
+
+                        .profile-img-up {
+                            .profile-img {
+                                width: 210px;
+                                height: 210px;
+                                overflow: hidden;
+                                border-radius: 40px;
+                                position: relative;
+                                margin-bottom: 30px;
+
+                                img {
+                                    width: 100%;
+                                }
+
+                                .upload-btn {
+                                    width: 47px;
+                                    height: 47px;
+                                    background: #FFFFFF;
+                                    position: absolute;
+                                    bottom: 15px;
+                                    right: 10px;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    align-content: center;
+                                    justify-content: center;
+
+                                    img {
+                                        width: 24px;
+                                    }
+
+                                    input[type="file"] {
+                                        opacity: 0;
+                                        position: absolute;
+                                        top: 0px;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .profile-data-main {
+                        .profile-data {
+                            display: flex;
+                            margin: 0px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+// Responsive
+@media (max-width: 1679px) {
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                .modal-header {
+                    padding: 20px 50px;
+
+                    .btn-close {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+                .modal-footer {
+                    padding: 20px 50px 50px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(min-width: 1300px) {
+    .modal-dialog {
+        max-width: 1280px;
+    }
+}

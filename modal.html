@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cust-mng-view">Customer Management View </button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cust-mng-edit">Customer Management Edit </button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vdr-mng-view">Vendor Management View </button>
+
+  
+  <!-- Modal -->
+  <div class="modal fade cust-man" id="cust-mng-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cust-mng-viewLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="cust-mng-viewLabel">Customer Management View</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+           <div class="cust-mng-view">
+              <div class="col-md-4 profile-img-view">
+                <div class="profile-img">
+                    <img src="img/profileimg.png"/>
+                </div>
+              </div>
+
+              <div class="col-md-8 profile-data-main">
+                <div class="row profile-data">
+                  <div class="col-md-4 frm-itm">
+                    <label class="form-label"> First name</label>
+                    <h3 class="frm-value">James</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm">
+                    <label class="form-label"> Last name</label>
+                    <h3 class="frm-value">Robert</h3>
+
+                  </div>
+                  <div class="col-md-4 frm-itm">
+                    <label class="form-label"> Email ID</label>
+                    <h3 class="frm-value">jamesrobert19886@gmail.com</h3>
+
+                  </div>
+                  <div class="col-md-8 frm-itm">
+                    <label class="form-label"> Address</label>
+                    <h3 class="frm-value">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</h3>
+
+                  </div>
+                  <div class="col-md-4 frm-itm">
+                    <label class="form-label"> Phone number</label>
+                    <h3 class="frm-value">+91 8899153538</h3>
+                  </div>
+                </div>
+              </div>
+           </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-area">
+                <button type="button" class="btn"><img src="img/delete-icon.svg"/> Delete</button>
+                <button type="button" class="btn"><img src="img/edit-pen-icon.svg"/> Edit</button>
+                <button type="button" class="btn btn-red"><img src="img/block.svg"/> Bloack</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade cust-man" id="cust-mng-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cust-mng-editLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="cust-mng-editLabel">Customer Management Edit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+           <div class="cust-mng-edit">
+            <div class="col-md-4 profile-img-up">
+              <div class="profile-img">
+                  <img src="img/profileimg.png"/>
+                  <div class="upload-btn">
+                    <input type="file">
+                    <img src="img/gallery-import.svg"/>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-8 profile-data-main">
+              <div class=" row profile-data">
+                  <div class="col-md-6 form-group frm-itm">
+                    <label class="form-label"> First name</label>
+                    <input type="text" class="form-control" placeholder="First Name">
+                  </div>
+                  <div class="col-md-6 form-group frm-itm">
+                    <label class="form-label"> First name</label>
+                    <input type="text" class="form-control" placeholder="First Name">
+                  </div>
+                  <div class="col-md-6 form-group frm-itm">
+                    <label class="form-label"> Email ID</label>
+                    <input type="email" class="form-control" placeholder="  jamesrobert@gmail.com">
+                  </div>
+                  <div class="col-md-6 form-group frm-itm">
+                    <label class="form-label"> Phone number</label>
+                    <input type="text" class="form-control" placeholder="Phone number">
+                  </div>
+                  <div class="col-md-12 form-group frm-itm">
+                    <label class="form-label"> Address</label>
+                    <input type="text" class="form-control" placeholder="Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016">
+                  </div>
+              </div>
+            </div>
+
+           </div>
+
+
+        </div>
+        <div class="modal-footer">
+            <div class="btn-area">
+                <button type="button" class="btn btn-cancel">Cancel</button>
+                <button type="button" class="btn btn-save">Save</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Js/vendor/bootstrap.min.js"></script>
+</body>
+
+</html>
