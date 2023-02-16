@@ -4,8 +4,20 @@
 .table-section
 {
     margin-top:30px;
+    max-height: calc(100vh - 312px);
+    min-height:calc(100vh - 312px);
+    overflow-y:auto;
+    @media(max-width:1679px)
+    {
+        max-height: calc(100vh - 279px);
+        min-height:calc(100vh - 279px);
+    }
     table
     {
+        @media(max-width:1199px)
+        {
+                width: 1000px;
+        }
         tr:last-child td {
             border-bottom: none !important;
         }

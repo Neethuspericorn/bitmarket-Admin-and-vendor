@@ -20,6 +20,17 @@
 .right-section-outer {
   padding: 25px 43px;
   background: #F8F9FD;
-  min-height: 100vh; }
+  height: 100%;
+}
+@media (max-width: 1679px) {
+  .right-section-outer {
+    padding: 25px 30px;
+  }
+}
+@media (max-width: 579px) {
+  .right-section-outer {
+    padding: 20px 24px;
+  }
+}
 
 /*# sourceMappingURL=customer-management.css.map */

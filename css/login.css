@@ -19,7 +19,9 @@
     @include justify-content (center);*/
 @media (min-width: 1679px) {
   .login-container {
-    max-width: 1400px; } }
+    max-width: 1400px;
+  }
+}
 .login-cover {
   padding: 15px 0;
   min-height: 100vh;
@@ -28,29 +30,38 @@
   background-image: url("../img/login-g.svg");
   background-position: top left;
   background-repeat: no-repeat;
-  background-color: #00245E; }
-  .login-cover .login-wrapper {
-    display: flex; }
-    .login-cover .login-wrapper .left-block {
-      display: flex; }
-      .login-cover .login-wrapper .left-block .welcome-title {
-        margin-top: auto;
-        font-family: "Poppins", sans-serif; }
-        .login-cover .login-wrapper .left-block .welcome-title .welcome-img {
-          margin-bottom: 50px; }
-        .login-cover .login-wrapper .left-block .welcome-title h2 {
-          font-weight: 500;
-          font-size: 36px;
-          color: #7F57F1;
-          margin-bottom: 5px; }
-        .login-cover .login-wrapper .left-block .welcome-title p {
-          margin-bottom: 0;
-          color: #fff;
-          font-size: 16px; }
-    .login-cover .login-wrapper .right-block {
-      flex: 1 1 auto; }
-      .login-cover .login-wrapper .right-block .form-block-cover {
-        margin-left: auto; }
+  background-color: #00245E;
+}
+.login-cover .login-wrapper {
+  display: flex;
+}
+.login-cover .login-wrapper .left-block {
+  display: flex;
+}
+.login-cover .login-wrapper .left-block .welcome-title {
+  margin-top: auto;
+  font-family: "Poppins", sans-serif;
+}
+.login-cover .login-wrapper .left-block .welcome-title .welcome-img {
+  margin-bottom: 50px;
+}
+.login-cover .login-wrapper .left-block .welcome-title h2 {
+  font-weight: 500;
+  font-size: 36px;
+  color: #7F57F1;
+  margin-bottom: 5px;
+}
+.login-cover .login-wrapper .left-block .welcome-title p {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 16px;
+}
+.login-cover .login-wrapper .right-block {
+  flex: 1 1 auto;
+}
+.login-cover .login-wrapper .right-block .form-block-cover {
+  margin-left: auto;
+}
 
 .form-block-cover {
   width: 100%;
@@ -58,344 +69,396 @@
   min-height: 720px;
   max-width: 568px;
   background-color: #fff;
-  padding: 60px 70px 40px; }
-  .form-block-cover.form-block-h-pswd {
-    min-height: 615px; }
-  .form-block-cover.form-block-cover-login {
-    padding-top: 105px; }
-  .form-block-cover .form-logo {
-    margin-bottom: 60px; }
-    .form-block-cover .form-logo a {
-      display: inline-block; }
-  .form-block-cover .form-title {
-    display: flex;
-    align-items: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 24px;
-    color: #00245E;
-    font-weight: 600;
-    margin-bottom: 60px; }
-    .form-block-cover .form-title img {
-      margin-right: 15px; }
-  .form-block-cover .form-img-block {
-    margin-bottom: 40px;
-    text-align: center; }
-  .form-block-cover .form-container .cutom-form-control {
-    font-family: "Poppins", sans-serif;
-    margin-bottom: 30px; }
-    .form-block-cover .form-container .cutom-form-control .form-label {
-      color: #1D1D39;
-      font-size: 16px;
-      font-weight: normal; }
-    .form-block-cover .form-container .cutom-form-control .cutom-input-group {
-      background-color: #F7F5FF;
-      border-radius: 14px;
-      padding: 0 10px;
-      height: 66px;
-      position: relative; }
-      .form-block-cover .form-container .cutom-form-control .cutom-input-group .val-msg {
-        position: absolute;
-        left: 0;
-        top: 100%;
-        display: none;
-        align-items: center;
-        padding-top: 8px;
-        font-size: 12px;
-        font-weight: 500;
-        color: #FF4141; }
-        .form-block-cover .form-container .cutom-form-control .cutom-input-group .val-msg img {
-          margin-right: 10px; }
-      .form-block-cover .form-container .cutom-form-control .cutom-input-group .input-group-text, .form-block-cover .form-container .cutom-form-control .cutom-input-group .form-control {
-        background-color: transparent;
-        border: none; }
-      .form-block-cover .form-container .cutom-form-control .cutom-input-group ::-webkit-input-placeholder {
-        color: #B1A5E1; }
-      .form-block-cover .form-container .cutom-form-control .cutom-input-group :-moz-placeholder {
-        color: #B1A5E1; }
-      .form-block-cover .form-container .cutom-form-control .cutom-input-group ::-moz-placeholder {
-        color: #B1A5E1; }
-      .form-block-cover .form-container .cutom-form-control .cutom-input-group :-ms-input-placeholder {
-        color: #B1A5E1; }
-      .form-block-cover .form-container .cutom-form-control .cutom-input-group .form-control {
-        box-shadow: none;
-        color: #7F57F1;
-        padding-left: 5px; }
-  .form-block-cover .form-container .fgt-pswd-lnk a {
-    color: #7F57F1;
-    font-weight: 500;
-    transition: .3s; }
-    .form-block-cover .form-container .fgt-pswd-lnk a:hover {
-      opacity: .8; }
-  .form-block-cover .form-container .btn-wrapper {
-    justify-content: space-between;
-    padding-top: 60px; }
-    .form-block-cover .form-container .btn-wrapper.btn-wrapper-fluid {
-      width: 100%; }
-      .form-block-cover .form-container .btn-wrapper.btn-wrapper-fluid .btn-def {
-        width: 100%;
-        margin: 0; }
-    .form-block-cover .form-container .btn-wrapper .btn-def {
-      width: calc(50% - 6px);
-      transition: .3s;
-      border-radius: 14px;
-      height: 66px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border: none;
-      font-size: 20px;
-      font-weight: 600;
-      text-decoration: none; }
-      .form-block-cover .form-container .btn-wrapper .btn-def:hover {
-        opacity: .9; }
-    .form-block-cover .form-container .btn-wrapper .btn-cancel {
-      background-color: #DFD5FC;
-      color: #2C00AA; }
-    .form-block-cover .form-container .btn-wrapper .btn-submit {
-      background: transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%) 0% 0% no-repeat padding-box;
-      color: #fff; }
+  padding: 60px 70px 40px;
+}
+.form-block-cover.form-block-h-pswd {
+  min-height: 615px;
+}
+.form-block-cover.form-block-cover-login {
+  padding-top: 105px;
+}
+.form-block-cover .form-logo {
+  margin-bottom: 60px;
+}
+.form-block-cover .form-logo a {
+  display: inline-block;
+}
+.form-block-cover .form-title {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  color: #00245E;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+.form-block-cover .form-title img {
+  margin-right: 15px;
+}
+.form-block-cover .form-img-block {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.form-block-cover .form-container .cutom-form-control {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 30px;
+}
+.form-block-cover .form-container .cutom-form-control .form-label {
+  color: #1D1D39;
+  font-size: 16px;
+  font-weight: normal;
+}
+.form-block-cover .form-container .cutom-form-control .cutom-input-group {
+  background-color: #F7F5FF;
+  border-radius: 14px;
+  padding: 0 10px;
+  height: 66px;
+  position: relative;
+}
+.form-block-cover .form-container .cutom-form-control .cutom-input-group .val-msg {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  align-items: center;
+  padding-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #FF4141;
+}
+.form-block-cover .form-container .cutom-form-control .cutom-input-group .val-msg img {
+  margin-right: 10px;
+}
+.form-block-cover .form-container .cutom-form-control .cutom-input-group .input-group-text, .form-block-cover .form-container .cutom-form-control .cutom-input-group .form-control {
+  background-color: transparent;
+  border: none;
+}
+.form-block-cover .form-container .cutom-form-control .cutom-input-group ::-webkit-input-placeholder {
+  color: #B1A5E1;
+}
+.form-block-cover .form-container .cutom-form-control .cutom-input-group :-moz-placeholder {
+  color: #B1A5E1;
+}
+.form-block-cover .form-container .cutom-form-control .cutom-input-group ::-moz-placeholder {
+  color: #B1A5E1;
+}
+.form-block-cover .form-container .cutom-form-control .cutom-input-group :-ms-input-placeholder {
+  color: #B1A5E1;
+}
+.form-block-cover .form-container .cutom-form-control .cutom-input-group .form-control {
+  box-shadow: none;
+  color: #7F57F1;
+  padding-left: 5px;
+}
+.form-block-cover .form-container .fgt-pswd-lnk a {
+  color: #7F57F1;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.form-block-cover .form-container .fgt-pswd-lnk a:hover {
+  opacity: 0.8;
+}
+.form-block-cover .form-container .btn-wrapper {
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.form-block-cover .form-container .btn-wrapper.btn-wrapper-fluid {
+  width: 100%;
+}
+.form-block-cover .form-container .btn-wrapper.btn-wrapper-fluid .btn-def {
+  width: 100%;
+  margin: 0;
+}
+.form-block-cover .form-container .btn-wrapper .btn-def {
+  width: calc(50% - 6px);
+  transition: 0.3s;
+  border-radius: 14px;
+  height: 66px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.form-block-cover .form-container .btn-wrapper .btn-def:hover {
+  opacity: 0.9;
+}
+.form-block-cover .form-container .btn-wrapper .btn-cancel {
+  background-color: #DFD5FC;
+  color: #2C00AA;
+}
+.form-block-cover .form-container .btn-wrapper .btn-submit {
+  background: transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%) 0% 0% no-repeat padding-box;
+  color: #fff;
+}
 
 .modal-login .modal-content {
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+}
 .modal-login .modal-body {
   display: flex;
   padding: 0;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .modal-backdrop {
-  background-color: #0D0031D1; }
+  background-color: rgba(13, 0, 49, 0.8196078431);
+}
 
 @media (max-width: 1679px) {
   .login-cover .login-wrapper .left-block .welcome-title .welcome-img img {
-    max-width: 320px; }
-
+    max-width: 320px;
+  }
   .form-block-cover.form-block-h-pswd {
-    min-height: 570px; }
-
+    min-height: 570px;
+  }
   .form-block-cover .form-title {
     font-size: 22px;
-    margin-bottom: 40px; }
-    .form-block-cover .form-title img {
-      max-height: 38px; }
-
+    margin-bottom: 40px;
+  }
+  .form-block-cover .form-title img {
+    max-height: 38px;
+  }
   .form-block-cover .form-container .cutom-form-control .cutom-input-group {
-    height: 60px; }
-
+    height: 60px;
+  }
   .form-block-cover .form-container .btn-wrapper .btn-def {
     font-size: 18px;
-    height: 60px; }
-
+    height: 60px;
+  }
   .form-block-cover .form-container .fgt-pswd-lnk a, .form-block-cover .form-container .cutom-form-control .cutom-input-group .form-control,
-  .form-block-cover .form-container .cutom-form-control .form-label, .login-cover .login-wrapper .left-block .welcome-title p {
-    font-size: 15px; }
-
+.form-block-cover .form-container .cutom-form-control .form-label, .login-cover .login-wrapper .left-block .welcome-title p {
+    font-size: 15px;
+  }
   .form-block-cover.form-block-cover-login {
-    padding-top: 85px; }
-
+    padding-top: 85px;
+  }
   .form-block-cover .form-logo {
-    margin-bottom: 50px; }
-
+    margin-bottom: 50px;
+  }
   .form-block-cover {
     max-width: 510px;
-    min-height: 620px; }
-
+    min-height: 620px;
+  }
   .login-cover .login-wrapper .left-block .welcome-title h2 {
-    font-size: 34px; }
-
+    font-size: 34px;
+  }
   .form-block-cover .form-container .btn-wrapper {
-    padding-top: 55px; }
-
+    padding-top: 55px;
+  }
   .form-block-cover.form-block-cover-pswd .form-container .btn-wrapper {
-    padding-top: 40px; }
-
+    padding-top: 40px;
+  }
   .form-block-cover .form-img-block {
-    margin-bottom: 30px; }
-    .form-block-cover .form-img-block img {
-      max-height: 185px; } }
+    margin-bottom: 30px;
+  }
+  .form-block-cover .form-img-block img {
+    max-height: 185px;
+  }
+}
 @media (max-width: 1441px) {
   .form-block-cover.form-block-cover-pswd .form-container .btn-wrapper {
-    padding-top: 40px; }
-
+    padding-top: 40px;
+  }
   .login-cover .login-wrapper .left-block .welcome-title .welcome-img img {
-    max-width: 270px; }
-
+    max-width: 270px;
+  }
   .form-block-cover.form-block-h-pswd {
-    min-height: 510px; }
-
+    min-height: 510px;
+  }
   .form-block-cover.form-block-h-pswd .form-container .btn-wrapper {
-    padding-top: 40px; }
-
+    padding-top: 40px;
+  }
   .form-block-cover .form-title {
     font-size: 20px;
-    margin-bottom: 40px; }
-    .form-block-cover .form-title img {
-      max-height: 36px; }
-
+    margin-bottom: 40px;
+  }
+  .form-block-cover .form-title img {
+    max-height: 36px;
+  }
   .form-block-cover .form-img-block {
-    margin-bottom: 30px; }
-    .form-block-cover .form-img-block img {
-      max-height: 165px; }
-
+    margin-bottom: 30px;
+  }
+  .form-block-cover .form-img-block img {
+    max-height: 165px;
+  }
   .form-block-cover {
     padding: 50px 60px 40px;
     max-width: 470px;
-    min-height: 570px; }
-
+    min-height: 570px;
+  }
   .form-block-cover .form-container .btn-wrapper {
-    padding-top: 45px; }
-
+    padding-top: 45px;
+  }
   .form-block-cover.form-block-cover-login {
-    padding-top: 70px; }
-
+    padding-top: 70px;
+  }
   .form-block-cover .form-container .btn-wrapper .btn-def {
     font-size: 17px;
-    height: 52px; }
-
+    height: 52px;
+  }
   .form-block-cover .form-container .cutom-form-control .cutom-input-group {
-    height: 52px; }
-
+    height: 52px;
+  }
   .form-block-cover .form-container .fgt-pswd-lnk a, .form-block-cover .form-container .cutom-form-control .cutom-input-group .form-control,
-  .form-block-cover .form-container .cutom-form-control .form-label, .login-cover .login-wrapper .left-block .welcome-title p {
-    font-size: 14px; }
-
+.form-block-cover .form-container .cutom-form-control .form-label, .login-cover .login-wrapper .left-block .welcome-title p {
+    font-size: 14px;
+  }
   .login-cover .login-wrapper .left-block .welcome-title h2 {
-    font-size: 30px; } }
+    font-size: 30px;
+  }
+}
 @media (max-width: 1199px) {
   .login-cover .login-wrapper .left-block .welcome-title .welcome-img img {
-    max-width: 250px; }
-
+    max-width: 250px;
+  }
   .form-block-cover.form-block-h-pswd {
-    min-height: 480px; }
-
+    min-height: 480px;
+  }
   .form-block-cover.form-block-h-pswd .form-container .btn-wrapper {
-    padding-top: 20px; }
-
+    padding-top: 20px;
+  }
   .form-block-cover .form-title {
     font-size: 19px;
-    margin-bottom: 30px; }
-    .form-block-cover .form-title img {
-      max-height: 35px; }
-
+    margin-bottom: 30px;
+  }
+  .form-block-cover .form-title img {
+    max-height: 35px;
+  }
   .form-block-cover .form-img-block {
-    margin-bottom: 20px; }
-    .form-block-cover .form-img-block img {
-      max-height: 160px; }
-
+    margin-bottom: 20px;
+  }
+  .form-block-cover .form-img-block img {
+    max-height: 160px;
+  }
   .form-block-cover {
     padding: 50px 50px 35px;
     max-width: 420px;
-    min-height: 545px; }
-
+    min-height: 545px;
+  }
   .form-block-cover .form-logo {
-    margin-bottom: 35px; }
-
+    margin-bottom: 35px;
+  }
   .form-block-cover.form-block-cover-login {
-    padding-top: 60px; }
-
+    padding-top: 60px;
+  }
   .form-block-cover .form-container .cutom-form-control .cutom-input-group .val-msg {
-    padding-top: 5px; }
-
+    padding-top: 5px;
+  }
   .form-block-cover .form-container .cutom-form-control .cutom-input-group .input-group-text img {
-    max-height: 21px; }
-
+    max-height: 21px;
+  }
   .form-block-cover .form-container .btn-wrapper {
-    padding-top: 45px; }
-
+    padding-top: 45px;
+  }
   .login-cover .login-wrapper .left-block .welcome-title h2 {
-    font-size: 26px; } }
+    font-size: 26px;
+  }
+}
 @media (max-width: 991px) {
   .login-cover .login-wrapper .right-block {
-    width: 100%; }
-
+    width: 100%;
+  }
   .login-cover .login-wrapper .right-block .form-block-cover {
-    margin: auto; }
-
+    margin: auto;
+  }
   .login-cover .login-wrapper {
     flex-direction: column;
-    align-items: center; }
-
+    align-items: center;
+  }
   .login-cover .login-wrapper .left-block {
-    display: none; } }
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   .form-block-cover .form-img-block img {
-    max-height: 142px; }
-
+    max-height: 142px;
+  }
   .form-block-cover.form-block-h-pswd {
-    min-height: 470px; }
-
+    min-height: 470px;
+  }
   .form-block-cover {
     max-width: 380px;
     min-height: 510px;
     padding: 40px;
-    border-radius: 50px; }
-
+    border-radius: 50px;
+  }
   .form-block-cover .form-logo img {
-    max-height: 36px; }
-
+    max-height: 36px;
+  }
   .form-block-cover.form-block-cover-login {
-    padding-top: 50px; }
-
+    padding-top: 50px;
+  }
   .form-block-cover .form-container .btn-wrapper {
-    padding-top: 30px; }
-
+    padding-top: 30px;
+  }
   .form-block-cover .form-logo {
-    margin-bottom: 40px; } }
+    margin-bottom: 40px;
+  }
+}
 @media (max-width: 579px) {
   .form-block-cover .form-container .cutom-form-control {
-    margin-bottom: 25px; }
-
+    margin-bottom: 25px;
+  }
   .form-block-cover.form-block-h-pswd {
-    min-height: 430px; }
-
+    min-height: 430px;
+  }
   .form-block-cover .form-title {
     font-size: 17px;
-    margin-bottom: 25px; }
-    .form-block-cover .form-title img {
-      max-height: 33px; }
-
+    margin-bottom: 25px;
+  }
+  .form-block-cover .form-title img {
+    max-height: 33px;
+  }
   .form-block-cover .form-img-block img {
     margin-bottom: 10px;
-    max-height: 115px; }
-
+    max-height: 115px;
+  }
   .form-block-cover {
     max-width: 350px;
     min-height: 470px;
     padding: 35px;
-    border-radius: 45px; }
-
+    border-radius: 45px;
+  }
   .form-block-cover.form-block-cover-login {
-    padding-top: 40px; }
-
+    padding-top: 40px;
+  }
   .form-block-cover .form-logo {
-    margin-bottom: 30px; }
-
+    margin-bottom: 30px;
+  }
   .form-block-cover .form-container .cutom-form-control .cutom-input-group {
-    height: 50px; }
-
+    height: 50px;
+  }
   .form-block-cover .form-container .btn-wrapper .btn-def {
     font-size: 15px;
-    height: 48px; }
-
+    height: 48px;
+  }
   .form-block-cover.form-block-cover-pswd .form-container .btn-wrapper {
-    padding-top: 15px; } }
+    padding-top: 15px;
+  }
+}
 @media (max-width: 479px) {
   .form-block-cover.form-block-h-pswd {
-    min-height: 405px; }
-
+    min-height: 405px;
+  }
   .form-block-cover .form-container .cutom-form-control .cutom-input-group {
-    height: 46px; }
-
+    height: 46px;
+  }
   .form-block-cover .form-container .btn-wrapper .btn-def {
-    height: 46px; }
-
+    height: 46px;
+  }
   .form-block-cover {
     max-width: 310px;
     min-height: 450px;
     padding: 35px 25px;
-    border-radius: 45px; }
-
+    border-radius: 45px;
+  }
   .form-block-cover .form-container .btn-wrapper .btn-def, .form-block-cover .form-container .btn-wrapper .btn-def {
-    height: 46px; } }
+    height: 46px;
+  }
+}
 
 /*# sourceMappingURL=login.css.map */
