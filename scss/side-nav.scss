@@ -182,9 +182,11 @@
     .side-nav-wrapper {
         min-width: 320px;
     }
+
     .side-nav-wrapper .side-nav {
         height: calc(100% - 150px);
     }
+
     .side-nav-wrapper .brand-name-wrapper {
         padding: 29px 17px 39px;
     }
@@ -260,10 +262,17 @@
     .side-nav-wrapper .brand-name-wrapper {
         padding: 25px 17px;
     }
+
+    .side-nav-wrapper .side-nav .nav-list .nav-item .nav-link[aria-expanded="true"] span::after {
+        width: 238px;
+        left: 11px;
+    }
+
     .side-nav-wrapper .side-nav {
         height: calc(100% - 140px);
     }
 }
+
 @media ($sm-1281) {
     .side-nav-wrapper {
         min-width: 260px;
