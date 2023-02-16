@@ -4,5 +4,13 @@
 .right-section-outer {
     padding: 25px 43px;
     background: #F8F9FD;
-    min-height:100vh;
+    height: 100%;
+    @media(max-width:1679px)
+    {
+        padding: 25px 30px;
+    }
+    @media(max-width:579px)
+    {
+        padding: 20px 24px;
+    }
 }
