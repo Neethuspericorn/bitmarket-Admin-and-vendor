@@ -177,7 +177,13 @@
     .outer-content-block {
         padding: 30px;
     }
-
+    .content-block .dash-vendor-block .custom-cards-block{
+        display: flex;
+        gap: 0 20px;
+    }
+    .outer-content-block .dash-vendor-block .custom-cards-block .custom-cards{
+        margin: 0;
+    }
     .content-block .dash-vendor-block {
         flex-direction: column;
         gap: 0;
@@ -185,6 +191,10 @@
     }
 
     .outer-content-block .dash-vendor-block .custom-cards-block .custom-cards {
-        width: 100%;
+        width: 50%;
+    }
+    .outer-content-block .dash-vendor-block .custom-chart-block{
+        margin-top: 20px;
+        min-height: 200px;
     }
 }

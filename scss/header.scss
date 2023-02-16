@@ -230,6 +230,24 @@
 }
 
 
+@media ($sm-1023) {
+    .page-wrapper header .right-block .input-group {
+        width: 200px;
+        height: 44px;
+    }
+    .page-wrapper header {
+        padding: 20px 18px;
+    }
+}
+@media ($sm-991) {
+    .page-wrapper header .right-block .Profile .btn h6{
+        display: none;
+    }
+    .page-wrapper header .right-block .Profile .btn img{
+        margin: 0;
+    }
+}
+
 @media ($sm-767) {
     .page-wrapper header{
         display: block;
