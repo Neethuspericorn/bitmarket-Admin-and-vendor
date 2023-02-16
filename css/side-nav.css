@@ -139,6 +139,10 @@
           text-align: left;
           font: 500 14px/21px "Poppins", sans-serif;
           color: #9D7BFF; }
+        .side-nav-wrapper .side-nav .nav-list .nav-item.logout-list {
+          margin-top: 50px; }
+          .side-nav-wrapper .side-nav .nav-list .nav-item.logout-list svg {
+            stroke: none !important; }
 
 @media (max-width: 1679px) {
   .side-nav-wrapper {
@@ -202,6 +206,10 @@
 @media (max-width: 1367px) {
   .side-nav-wrapper .brand-name-wrapper {
     padding: 25px 17px; }
+
+  .side-nav-wrapper .side-nav .nav-list .nav-item .nav-link[aria-expanded="true"] span::after {
+    width: 238px;
+    left: 11px; }
 
   .side-nav-wrapper .side-nav {
     height: calc(100% - 140px); } }

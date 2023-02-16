@@ -5,16 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dashboard</title>
+    <title>Vendor Management</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/side-nav.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/customer-management.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body>
@@ -22,14 +29,13 @@
         <div class="side-nav-wrapper">
             <div class="brand-name-wrapper">
                 <a href="dashboard.html">
-                    <img src="img/brand-name.svg" class="brand-name web-logo" alt="Blockchain">
-                    <img src="img/mob-logo.svg" class="brand-name mob-logo" alt="Blockchain">
+                    <img src="img/brand-name.svg" class="brand-name" alt="Blockchain">
                 </a>
             </div>
             <div class="side-nav custom-scroll">
                 <ul class="nav-list">
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                     <g id="vuesax_linear_element-4" data-name="vuesax/linear/element-4"
@@ -88,7 +94,7 @@
                             <span>Customer Management</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="vendor-management.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -442,44 +448,222 @@
 
             </header>
             <main class="content-block custom-scroll">
-                <div class="outer-content-block">
-                    <div class="dash-vendor-block">
-                        <div class="custom-cards-block">
-                            <div class="custom-cards">
-                                <div class="cards-header">
-                                    <div class="img-block">
-                                        <img src="img/vendor.svg" alt="">
-                                    </div>
-                                    <h4>156 <span>Total Vendor</span></h4>
-                                </div>
-                                <div class="cards-footer">
-                                    <img src="img/vuesax-linear-send.svg" alt="">
-                                    <span class="txt-success">20</span>
-                                    <span>Last one month</span>
-                                </div>
-                            </div>
-                            <div class="custom-cards mb-0">
-                                <div class="cards-header">
-                                    <div class="img-block">
-                                        <img src="img/customers.svg" alt="">
-                                    </div>
-                                    <h4>1120 <span>Total Customers</span></h4>
-                                </div>
-                                <div class="cards-footer">
-                                    <img src="img/vuesax-linear-send.svg" alt="">
-                                    <span class="txt-success">20 </span>
-                                    <span>Last one month</span>
-                                </div>
-                            </div>
+                <div class="right-section-outer">
+                    <div class="top-title-section">
+                        <div class="title-text">
+                            <h3>Vendor Management</h3>
                         </div>
-                        <div class="custom-chart-block">
-
+                        <div class="right-filter">
+                            <div class="input-group search-filter">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <span class="input-group-text">
+                                    <img src="img/search-icon.svg" alt="search-icon">
+                                </span>
+                            </div>
+                            <div class="dropdown tbl-filter">
+                                <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <img src="img/filter-filled.svg" alt="tbl-filter">
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Request Date</a></li>
+                                  <li><a class="dropdown-item" href="#">Status</a></li>
+                                </ul>
+                              </div>
                         </div>
                     </div>
-                    <div class="custom-chart-blocks">
+                    <div class="table-section">
+                        <table class="table">
+                            <tr>
+                                <th class="checkbox-section">
+                                    <label class="container-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </th>
+                                <th>Vendor Name</th>
+                                <th>Email</th>
+                                <th>Joined Date</th>
+                                <th>Status</th>
+                                <th class="action text-start">Action</th>
+                                <th>Approved/ Reject</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="container-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>James Robert</td>
+                                <td>jamesrobert@gmail.com</td>
+                                <td>28 January 2022</td>
+                                <td>
+                                    <div class="status-txt">
+                                        <img src="img/approved-icon.svg" alt="approved-icon">
+                                        <span>Approved</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" class="view-icon" data-bs-toggle="modal"
+                                            data-bs-target="#cust-mng-view">
+                                        <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
+                                            data-bs-target="#cust-mng-edit">
+                                        <img src="img/delete-icon.svg" class="delete-icon">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="approved-block">
+                                        <img src="img/approved-icon.svg" alt="tick-icon">
+                                        <img src="img/reject-icons.svg" alt="reject-icon">
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <div class="footer-table col-md-12">
+                        <ul class="pagination pagination-lg">
+                            <li class="prev-arrow">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="next-arrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </main>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade cust-man" id="cust-mng-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="cust-mng-viewLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cust-mng-viewLabel">Customer Management View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="cust-mng-view">
+                        <div class="col-md-4 profile-img-view">
+                            <div class="profile-img">
+                                <img src="img/profileimg.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-8 profile-data-main">
+                            <div class="row profile-data">
+                                <div class="col-md-4 frm-itm">
+                                    <label class="form-label"> First name</label>
+                                    <h3 class="frm-value">James</h3>
+                                </div>
+                                <div class="col-md-4 frm-itm">
+                                    <label class="form-label"> Last name</label>
+                                    <h3 class="frm-value">Robert</h3>
+
+                                </div>
+                                <div class="col-md-4 frm-itm">
+                                    <label class="form-label"> Email ID</label>
+                                    <h3 class="frm-value">jamesrobert19886@gmail.com</h3>
+
+                                </div>
+                                <div class="col-md-8 frm-itm">
+                                    <label class="form-label"> Address</label>
+                                    <h3 class="frm-value">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
+                                        Bangalore-560016</h3>
+
+                                </div>
+                                <div class="col-md-4 frm-itm">
+                                    <label class="form-label"> Phone number</label>
+                                    <h3 class="frm-value">+91 8899153538</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-area">
+                        <button type="button" class="btn btn-cus"><img src="img/delete-icon.svg" /> Delete</button>
+                        <button type="button" class="btn btn-cus"><img src="img/edit-pen-icon.svg" /> Edit</button>
+                        <button type="button" class="btn btn-cus btn-red"><img src="img/block.svg" /> Bloack</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade cust-man" id="cust-mng-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="cust-mng-editLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cust-mng-editLabel">Customer Management Edit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="cust-mng-edit">
+                        <div class="col-md-4 profile-img-up">
+                            <div class="profile-img">
+                                <img src="img/profileimg.png" />
+                                <div class="upload-btn">
+                                    <input type="file">
+                                    <img src="img/gallery-import.svg" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8 profile-data-main">
+                            <div class=" row profile-data">
+                                <div class="col-md-6 form-group frm-itm">
+                                    <label class="form-label"> First name</label>
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="col-md-6 form-group frm-itm">
+                                    <label class="form-label"> First name</label>
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="col-md-6 form-group frm-itm">
+                                    <label class="form-label"> Email ID</label>
+                                    <input type="email" class="form-control" placeholder="  jamesrobert@gmail.com">
+                                </div>
+                                <div class="col-md-6 form-group frm-itm">
+                                    <label class="form-label"> Phone number</label>
+                                    <input type="text" class="form-control" placeholder="Phone number">
+                                </div>
+                                <div class="col-md-12 form-group frm-itm">
+                                    <label class="form-label"> Address</label>
+                                    <input type="text" class="form-control"
+                                        placeholder="Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-area">
+                        <button type="button" class="btn btn-cus btn-cancel">Cancel</button>
+                        <button type="button" class="btn btn-cus btn-save">Save</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="Js/vendor/bootstrap.min.js"></script>

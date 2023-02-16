@@ -173,6 +173,12 @@
                         color: #9D7BFF;
                     }
                 }
+                &.logout-list{
+                    margin-top: 50px;
+                    svg{
+                        stroke: none !important;
+                    }
+                }
             }
         }
     }
