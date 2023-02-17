@@ -21,128 +21,119 @@
   margin-top: 30px;
   max-height: calc(100vh - 312px);
   min-height: calc(100vh - 312px);
-  overflow-y: auto;
-}
-@media (max-width: 1679px) {
-  .table-section {
-    max-height: calc(100vh - 279px);
-    min-height: calc(100vh - 279px);
-  }
-}
-@media (max-width: 1199px) {
-  .table-section table {
-    width: 1000px;
-  }
-}
-.table-section table tr:last-child td {
-  border-bottom: none !important;
-}
-.table-section table th {
-  background: #EAECF3;
-  padding: 25px 20px;
-  font: 600 15px/21px "Poppins", sans-serif;
-}
-@media (max-width: 1679px) {
+  overflow-y: auto; }
+  @media (max-width: 1679px) {
+    .table-section {
+      max-height: calc(100vh - 279px);
+      min-height: calc(100vh - 279px); } }
+  @media (max-width: 1199px) {
+    .table-section table {
+      width: 1000px; } }
+  .table-section table tr:last-child td {
+    border-bottom: none !important; }
   .table-section table th {
-    font-size: 14px;
-    padding: 20px 20px;
-  }
-}
-@media (max-width: 1440px) {
-  .table-section table th {
-    font-size: 13px;
-  }
-}
-.table-section table td {
-  background: #fff;
-  padding: 23px 20px;
-  border-bottom: 1px solid #D4D8E9;
-  color: #000000;
-  font: 400 15px/21px "Poppins", sans-serif;
-}
-@media (max-width: 1679px) {
+    background: #EAECF3;
+    padding: 25px 20px;
+    font: 600 15px/21px "Poppins", sans-serif; }
+    @media (max-width: 1679px) {
+      .table-section table th {
+        font-size: 14px;
+        padding: 20px 20px; } }
+    @media (max-width: 1440px) {
+      .table-section table th {
+        font-size: 13px; } }
+    .table-section table th.tbl-description {
+      width: 400px; }
   .table-section table td {
-    font-size: 14px;
-    padding: 18px 20px;
-  }
-}
-@media (max-width: 1440px) {
-  .table-section table td {
-    font-size: 13px;
-  }
-}
-.table-section table .checkbox-section {
-  width: 80px;
-}
-.table-section table .action {
-  width: 210px;
-}
-.table-section .container-checkbox .checkmark {
-  left: 8px;
-}
-.table-section .action-icons img {
-  margin-left: 14px;
-  cursor: pointer;
-}
-@media (max-width: 1679px) {
-  .table-section .action-icons img.delete-icon {
-    width: 14px;
-  }
-  .table-section .action-icons img.block-icon {
-    width: 17px;
-  }
-  .table-section .action-icons img.edit-icon {
-    width: 15px;
-  }
-  .table-section .action-icons img.view-icon {
-    width: 22px;
-  }
-}
+    background: #fff;
+    padding: 23px 20px;
+    border-bottom: 1px solid #D4D8E9;
+    color: #000000;
+    font: 400 15px/21px "Poppins", sans-serif; }
+    @media (max-width: 1679px) {
+      .table-section table td {
+        font-size: 14px;
+        padding: 18px 20px; } }
+    @media (max-width: 1440px) {
+      .table-section table td {
+        font-size: 13px; } }
+    .table-section table td.status-block .status-txt {
+      display: flex;
+      width: 128px;
+      height: 36px;
+      border-radius: 18px;
+      align-items: center;
+      padding: 4px; }
+      .table-section table td.status-block .status-txt img {
+        width: 21px;
+        height: 21px;
+        margin-right: 8px; }
+      .table-section table td.status-block .status-txt.approved-txt {
+        background: #30CC701A; }
+      .table-section table td.status-block .status-txt.pending-txt {
+        background: rgba(255, 237, 220, 0.5); }
+      .table-section table td.status-block .status-txt.rejected-txt {
+        background: rgba(253, 229, 224, 0.5); }
+    .table-section table td .approved-block img {
+      width: 24px;
+      height: 24px; }
+      .table-section table td .approved-block img.approved-icons {
+        margin-right: 8px; }
+  .table-section table .checkbox-section {
+    width: 80px; }
+  .table-section table .action {
+    width: 210px; }
+  .table-section .container-checkbox .checkmark {
+    left: 8px; }
+  .table-section .action-icons img {
+    margin-left: 14px;
+    cursor: pointer; }
+  @media (max-width: 1679px) {
+    .table-section .action-icons img.delete-icon {
+      width: 14px; }
+    .table-section .action-icons img.block-icon {
+      width: 17px; }
+    .table-section .action-icons img.edit-icon {
+      width: 15px; }
+    .table-section .action-icons img.view-icon {
+      width: 22px; } }
 
 .footer-table {
   display: flex;
   justify-content: flex-end;
-  margin-top: 25px;
-}
-.footer-table .pagination li.active .page-link {
-  background: #7F57F1;
-  border-radius: 50px;
-  color: #fff;
-}
-.footer-table .pagination li .page-link {
-  background: transparent;
-  border: none;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  padding: 0 !important;
-  line-height: 40px;
-  color: #8B91AA;
-  font: 600 15px/21px "Poppins", sans-serif;
-  line-height: 40px;
-  margin-left: 12px;
-  border-radius: 50px;
-}
-.footer-table .pagination li .page-link:hover {
-  background: #7F57F1;
-  border-radius: 50px;
-  color: #fff;
-}
-@media (max-width: 1679px) {
+  margin-top: 25px; }
+  .footer-table .pagination li.active .page-link {
+    background: #7F57F1;
+    border-radius: 50px;
+    color: #fff; }
   .footer-table .pagination li .page-link {
-    font-size: 13px;
-  }
-}
-.footer-table .prev-arrow {
-  margin-right: 15px;
-}
-.footer-table .prev-arrow, .footer-table .next-arrow {
-  display: flex;
-  align-items: center;
-  color: #8B91AA;
-}
-.footer-table .next-arrow {
-  margin-left: 15px;
-}
+    background: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 0 !important;
+    line-height: 40px;
+    color: #8B91AA;
+    font: 600 15px/21px "Poppins", sans-serif;
+    line-height: 40px;
+    margin-left: 12px;
+    border-radius: 50px; }
+    .footer-table .pagination li .page-link:hover {
+      background: #7F57F1;
+      border-radius: 50px;
+      color: #fff; }
+    @media (max-width: 1679px) {
+      .footer-table .pagination li .page-link {
+        font-size: 13px; } }
+  .footer-table .prev-arrow {
+    margin-right: 15px; }
+  .footer-table .prev-arrow,
+  .footer-table .next-arrow {
+    display: flex;
+    align-items: center;
+    color: #8B91AA; }
+  .footer-table .next-arrow {
+    margin-left: 15px; }
 
 /*# sourceMappingURL=table.css.map */

@@ -218,6 +218,17 @@
 
 }
 
+@media ($sm-1281) {
+    .page-wrapper header .left-block span {
+        font-size: 14px;
+    }
+    .page-wrapper header {
+        padding: 15px 15px;
+    }
+    .page-wrapper header .right-block .input-group, .page-wrapper header .right-block .input-group .form-control {
+        height: 40px;
+    }
+}
 @media ($sm-1199) {
     .page-wrapper header .left-block span {
         margin-left: 0px;
@@ -240,7 +251,7 @@
     }
 }
 @media ($sm-991) {
-    .page-wrapper header .right-block .Profile .btn h6{
+    .page-wrapper header .right-block .Profile .btn h6, .page-wrapper header .left-block span{
         display: none;
     }
     .page-wrapper header .right-block .Profile .btn img{
@@ -249,9 +260,6 @@
 }
 
 @media ($sm-767) {
-    .page-wrapper header{
-        display: block;
-    }
     .page-wrapper header .right-block{
         justify-content: space-between;
     }

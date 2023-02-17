@@ -29,7 +29,8 @@
         <div class="side-nav-wrapper">
             <div class="brand-name-wrapper">
                 <a href="dashboard.html">
-                    <img src="img/brand-name.svg" class="brand-name" alt="Blockchain">
+                    <img src="img/brand-name.svg" class="brand-name web-logo" alt="Blockchain">
+                    <img src="img/mob-logo.svg" class="brand-name mob-logo" alt="Blockchain">
                 </a>
             </div>
             <div class="side-nav custom-scroll">
@@ -68,7 +69,7 @@
                             <span>Dashboard</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a href="customer-management.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -159,7 +160,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="sub-category-management.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                     <g id="vuesax_linear_note-2" data-name="vuesax/linear/note-2"
@@ -390,11 +391,18 @@
                     <li class="nav-item logout-list">
                         <a href="#" class="nav-link">
                             <div class="nav-icon">
-                                <svg id="shutdown-icon" xmlns="http://www.w3.org/2000/svg" width="28.61" height="28.61" viewBox="0 0 28.61 28.61">
-                                    <path id="Path_12" data-name="Path 12" d="M14.3,0A14.3,14.3,0,1,1,0,14.3,14.306,14.306,0,0,1,14.3,0Z" fill="#7f57f1" fill-rule="evenodd"/>
-                                    <path id="Path_13" data-name="Path 13" d="M37.763,38.1a1.494,1.494,0,0,1,2.258-1.956,8.441,8.441,0,1,1-12.836.081,1.492,1.492,0,1,1,2.284,1.921,5.454,5.454,0,1,0,8.293-.047Z" transform="translate(-19.333 -27.329)" fill="#fff" fill-rule="evenodd"/>
-                                    <path id="Path_14" data-name="Path 14" d="M58,29.457a1.5,1.5,0,0,1-3,0V24.989a1.5,1.5,0,1,1,3,0v4.468Z" transform="translate(-42.194 -18.021)" fill="#fff" fill-rule="evenodd"/>
-                                  </svg>
+                                <svg id="shutdown-icon" xmlns="http://www.w3.org/2000/svg" width="28.61" height="28.61"
+                                    viewBox="0 0 28.61 28.61">
+                                    <path id="Path_12" data-name="Path 12"
+                                        d="M14.3,0A14.3,14.3,0,1,1,0,14.3,14.306,14.306,0,0,1,14.3,0Z" fill="#7f57f1"
+                                        fill-rule="evenodd" />
+                                    <path id="Path_13" data-name="Path 13"
+                                        d="M37.763,38.1a1.494,1.494,0,0,1,2.258-1.956,8.441,8.441,0,1,1-12.836.081,1.492,1.492,0,1,1,2.284,1.921,5.454,5.454,0,1,0,8.293-.047Z"
+                                        transform="translate(-19.333 -27.329)" fill="#fff" fill-rule="evenodd" />
+                                    <path id="Path_14" data-name="Path 14"
+                                        d="M58,29.457a1.5,1.5,0,0,1-3,0V24.989a1.5,1.5,0,1,1,3,0v4.468Z"
+                                        transform="translate(-42.194 -18.021)" fill="#fff" fill-rule="evenodd" />
+                                </svg>
                             </div>
                             <span>Logout</span>
                         </a>
@@ -405,7 +413,7 @@
         <div class="page-wrapper">
             <header>
                 <div class="left-block">
-                    <button class="btn">
+                    <button class="btn" id="hamburger-menu-btn">
                         <img src="img/hamburger-menu-icon.svg" alt="hamburger-menu">
                     </button>
                     <span class="main-title">Welcome to dashboard</span>
@@ -424,11 +432,11 @@
                                 <img src="img/notification-alert-icon.svg" alt="">
                                 <span class="badge">10</span>
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="notificationdropdown">
+                            <!-- <ul class="dropdown-menu" aria-labelledby="notificationdropdown">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
                     <div class="dropdown Profile">
@@ -438,11 +446,11 @@
                             <h6>William Benjamin <span>Accountant</span></h6>
 
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="userBtn">
+                        <!-- <ul class="dropdown-menu" aria-labelledby="userBtn">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
 
@@ -460,18 +468,21 @@
                                     <img src="img/search-icon.svg" alt="search-icon">
                                 </span>
                             </div>
-                            <div class="dropdown tbl-filter">
-                                <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <img src="img/filter-filled.svg" alt="tbl-filter">
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Request Date</a></li>
-                                  <li><a class="dropdown-item" href="#">Status</a></li>
-                                </ul>
-                              </div>
+                            <div class="tbl-filter">
+                                <div class="dropdown">
+                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
+                                        <img src="img/filter-filled.svg" alt="filter">
+                                    </button>
+                                    <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate3d(0px, 50px, 0px);">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul> -->
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="table-section">
+                    <div class="table-section custom-scroll">
                         <table class="table">
                             <tr>
                                 <th class="checkbox-section">
@@ -484,8 +495,8 @@
                                 <th>Email</th>
                                 <th>Joined Date</th>
                                 <th>Status</th>
-                                <th class="action text-start">Action</th>
-                                <th>Approved/ Reject</th>
+                                <th class="action">Action</th>
+                                <th class="approved">Approved/ Reject</th>
                             </tr>
                             <tr>
                                 <td>
@@ -497,29 +508,89 @@
                                 <td>James Robert</td>
                                 <td>jamesrobert@gmail.com</td>
                                 <td>28 January 2022</td>
-                                <td>
-                                    <div class="status-txt">
-                                        <img src="img/approved-icon.svg" alt="approved-icon">
-                                        <span>Approved</span>
-                                    </div>
+                                <td class="status-block">
+                                    <span class="status-txt approved-txt">
+                                        <img src="img/approved-icon.svg" alt="Approved">
+                                        Approved
+                                    </span>
                                 </td>
                                 <td>
                                     <div class="action-icons">
                                         <img src="img/view-icon.svg" class="view-icon" data-bs-toggle="modal"
-                                            data-bs-target="#cust-mng-view">
+                                            data-bs-target="#vedr-mng-view">
                                         <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
-                                            data-bs-target="#cust-mng-edit">
+                                            data-bs-target="#vedr-mng-edit">
+                                        <img src="img/block-icon.svg" class="block-icon">
                                         <img src="img/delete-icon.svg" class="delete-icon">
                                     </div>
                                 </td>
                                 <td>
                                     <div class="approved-block">
-                                        <img src="img/approved-icon.svg" alt="tick-icon">
-                                        <img src="img/reject-icons.svg" alt="reject-icon">
+                                        <img src="img/approved-icon.svg" class="approved-icons" alt="approved-icon">
+                                        <img src="img/reject-icons.svg" class="reject-icons" alt="reject-icons">
                                     </div>
                                 </td>
                             </tr>
-
+                            <tr>
+                                <td>
+                                    <label class="container-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>James Robert</td>
+                                <td>jamesrobert@gmail.com</td>
+                                <td>28 January 2022</td>
+                                <td class="status-block">
+                                    <span class="status-txt pending-txt">
+                                        <img src="img/pending-clock-icon.svg" alt="Approved">
+                                        Approved
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" class="view-icon" data-bs-toggle="modal"
+                                            data-bs-target="#vedr-mng-view">
+                                        <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
+                                            data-bs-target="#vedr-mng-edit">
+                                        <img src="img/block-icon.svg" class="block-icon">
+                                        <img src="img/delete-icon.svg" class="delete-icon">
+                                    </div>
+                                </td>
+                                <td>
+                                
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="container-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>James Robert</td>
+                                <td>jamesrobert@gmail.com</td>
+                                <td>28 January 2022</td>
+                                <td class="status-block">
+                                    <span class="status-txt rejected-txt">
+                                        <img src="img/reject-icons.svg" alt="Approved">
+                                        Approved
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" class="view-icon" data-bs-toggle="modal"
+                                            data-bs-target="#vedr-mng-view">
+                                        <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
+                                            data-bs-target="#vedr-mng-edit">
+                                        <img src="img/block-icon.svg" class="block-icon">
+                                        <img src="img/delete-icon.svg" class="delete-icon">
+                                    </div>
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
                         </table>
                     </div>
                     <div class="footer-table col-md-12">
@@ -545,128 +616,192 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade cust-man" id="cust-mng-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="cust-mng-viewLabel" aria-hidden="true">
+    <div class="modal fade vedr-man" id="vedr-mng-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vedr-mng-viewLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <h5 class="modal-title" id="cust-mng-viewLabel">Customer Management View</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-content">
+    
+            <div class="modal-header">
+              <h5 class="modal-title" id="vedr-mng-viewLabel">Vendor Management View</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+    
+            <div class="modal-body">
+               <div class="outer-main">
+                <div class="col-md-4 profile-img-view">
+                  <div class="profile-img">
+                      <img src="img/profileimg.png"/>
+                      <div class="upload-btn">
+                        <input type="file">
+                        <img src="img/gallery-import.svg"/>
+                      </div>
+                  </div>
+                  <div class="profile-info">
+                      <span class="profile-lab">Request Date</span>
+                      <h3 class="date">28 January 2022</h3>
+    
+                      <div class="profile-lab">Status</div>
+                      <span class="status orng">
+                        <span class="icon"><img src="img/pending-clock-icon.svg"/> </span>
+                        <span class="txt">Pending</span>
+                      </span>
+                  </div>
                 </div>
-
-                <div class="modal-body">
-                    <div class="cust-mng-view">
-                        <div class="col-md-4 profile-img-view">
-                            <div class="profile-img">
-                                <img src="img/profileimg.png" />
-                            </div>
-                        </div>
-
-                        <div class="col-md-8 profile-data-main">
-                            <div class="row profile-data">
-                                <div class="col-md-4 frm-itm">
-                                    <label class="form-label"> First name</label>
-                                    <h3 class="frm-value">James</h3>
-                                </div>
-                                <div class="col-md-4 frm-itm">
-                                    <label class="form-label"> Last name</label>
-                                    <h3 class="frm-value">Robert</h3>
-
-                                </div>
-                                <div class="col-md-4 frm-itm">
-                                    <label class="form-label"> Email ID</label>
-                                    <h3 class="frm-value">jamesrobert19886@gmail.com</h3>
-
-                                </div>
-                                <div class="col-md-8 frm-itm">
-                                    <label class="form-label"> Address</label>
-                                    <h3 class="frm-value">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
-                                        Bangalore-560016</h3>
-
-                                </div>
-                                <div class="col-md-4 frm-itm">
-                                    <label class="form-label"> Phone number</label>
-                                    <h3 class="frm-value">+91 8899153538</h3>
-                                </div>
-                            </div>
-                        </div>
+    
+                <div class="col-md-8 profile-data-main">
+                  <div class=" row profile-data border-bot">
+                      <div class="col-md-4 form-group frm-itm">
+                        <label class="form-label"> Vendor Name</label>
+                        <h3 class="frm-value">James Robert</h3>
+                      </div>
+                      <div class="col-md-4 form-group frm-itm">
+                        <label class="form-label"> Email</label>
+                        <h3 class="frm-value">jamesrobert0899@gmail.com</h3>                    
+                      </div>
+                      <div class="col-md-4 form-group frm-itm">
+                        <label class="form-label"> Commission %</label>
+                        <h3 class="frm-value">50 %</h3>                    
+                      </div>
+                      <div class="col-md-8 form-group frm-itm">
+                        <label class="form-label"> Address</label>
+                        <h3 class="frm-value">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</h3>                    
+                      </div>
+                      <div class="col-md-4 form-group frm-itm ">
+                        <label class="form-label"> Phone number</label>
+                        <h3 class="frm-value">+91 8899153538</h3>
+                      </div>
+                  </div>
+    
+                  <div class=" row profile-data">
+                    <div class="col-md-12 head">
+                      <h3>Shop Details</h3>
+                    </div>
+                    <div class="col-md-4 form-group frm-itm">
+                      <label class="form-label">Shop Name</label>
+                      <h3 class="frm-value">Cozmo.Store</h3>
+                    </div>
+                    <div class="col-md-4 form-group frm-itm">
+                      <label class="form-label"> Shop Email</label>
+                      <h3 class="frm-value">cozmo.store@gmail.com</h3>                    
+                    </div>
+                    
+                    <div class="col-md-12 form-group frm-itm ">
+                      <label class="form-label">Address</label>
+                      <h3 class="frm-value">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</h3>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <div class="btn-area">
-                        <button type="button" class="btn btn-cus"><img src="img/delete-icon.svg" /> Delete</button>
-                        <button type="button" class="btn btn-cus"><img src="img/edit-pen-icon.svg" /> Edit</button>
-                        <button type="button" class="btn btn-cus btn-red"><img src="img/block.svg" /> Bloack</button>
-                    </div>
+    
+    
+                </div>
+    
+               </div>
+    
+    
+            </div>
+            <div class="modal-footer">
+                <div class="btn-area">
+                  <button type="button" class="btn btn-cus"><img src="img/delete-icon.svg"/> Delete</button>
+                  <button type="button" class="btn btn-cus"><img src="img/edit-pen-icon.svg"/> Edit</button>
+                  <button type="button" class="btn btn-cus btn-red"><img src="img/block.svg"/> Reject</button>
+                  <button type="button" class="btn btn-cus btn-green"><img src="img/approve.svg"/> Approve</button>
                 </div>
             </div>
+          </div>
         </div>
-    </div>
-
-
-    <div class="modal fade cust-man" id="cust-mng-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="cust-mng-editLabel" aria-hidden="true">
+      </div>
+    
+      <div class="modal fade vedr-edit" id="vedr-mng-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vedr-mng-editLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <h5 class="modal-title" id="cust-mng-editLabel">Customer Management Edit</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-content">
+    
+            <div class="modal-header">
+              <h5 class="modal-title" id="vedr-mng-editLabel">Vendor Management Edit </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+    
+            <div class="modal-body">
+               <div class="outer-main">
+                <div class="col-md-4 profile-img-up">
+                  <div class="profile-img">
+                      <img src="img/profileimg.png"/>
+                      <div class="upload-btn">
+                        <input type="file">
+                        <img src="img/gallery-import.svg"/>
+                      </div>
+                  </div>
                 </div>
-
-                <div class="modal-body">
-                    <div class="cust-mng-edit">
-                        <div class="col-md-4 profile-img-up">
-                            <div class="profile-img">
-                                <img src="img/profileimg.png" />
-                                <div class="upload-btn">
-                                    <input type="file">
-                                    <img src="img/gallery-import.svg" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-8 profile-data-main">
-                            <div class=" row profile-data">
-                                <div class="col-md-6 form-group frm-itm">
-                                    <label class="form-label"> First name</label>
-                                    <input type="text" class="form-control" placeholder="First Name">
-                                </div>
-                                <div class="col-md-6 form-group frm-itm">
-                                    <label class="form-label"> First name</label>
-                                    <input type="text" class="form-control" placeholder="First Name">
-                                </div>
-                                <div class="col-md-6 form-group frm-itm">
-                                    <label class="form-label"> Email ID</label>
-                                    <input type="email" class="form-control" placeholder="  jamesrobert@gmail.com">
-                                </div>
-                                <div class="col-md-6 form-group frm-itm">
-                                    <label class="form-label"> Phone number</label>
-                                    <input type="text" class="form-control" placeholder="Phone number">
-                                </div>
-                                <div class="col-md-12 form-group frm-itm">
-                                    <label class="form-label"> Address</label>
-                                    <input type="text" class="form-control"
-                                        placeholder="Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016">
-                                </div>
-                            </div>
-                        </div>
-
+    
+                <div class="col-md-8 profile-data-main">
+                  <div class=" row profile-data">
+                    <div class="col-md-4 form-group frm-itm">
+                      <label class="form-label">Vendor Name</label>
+                      <input type="text" class="form-control" placeholder="First Name">
                     </div>
-
-
+    
+                    <div class="col-md-4 form-group frm-itm">
+                      <label class="form-label"> Commission %</label>
+                      <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+    
+                    <div class="col-md-4 form-group frm-itm tel">
+                      <label class="form-label"> Phone number</label>
+                      <div class="phone-number">
+                        <input type="tel" class="form-control code-sec" placeholder="+91">
+                        <input type="tel" class="form-control" placeholder="Phone number">
+                      </div>
+                    </div>
+    
+                    <div class="col-md-4 form-group frm-itm">
+                      <label class="form-label"> Email ID</label>
+                      <input type="email" class="form-control" placeholder="  jamesrobert@gmail.com">
+                      <div class="double-input">
+                        <label class="form-label"> Request Date</label>
+                        <input id="datepicker" placeholder="13 January 2023" autocomplete="off" class="form-control date-input">
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-8 form-group frm-itm">
+                      <label class="form-label"> Address</label>
+                      <textarea class="form-control" placeholder="Address" ></textarea>
+                    </div>
+    
+                    <div class="col-md-12 head">
+                      <h3>Shop Details</h3>
+                    </div>
+    
+                    <div class="col-md-4 form-group frm-itm">
+                      <label class="form-label">Shop name</label>
+                      <input type="text" class="form-control" placeholder="First Name">
+                      <div class="double-input">
+                        <label class="form-label"> Shop Email ID</label>
+                        <input type="text" class="form-control" placeholder="First Name">
+                      </div>                 
+                    </div>
+    
+                    <div class="col-md-8 form-group frm-itm">
+                      <label class="form-label"> Address</label>
+                      <textarea class="form-control" placeholder="Address" ></textarea>
+                    </div>
+    
+                    
+    
+                  </div>
                 </div>
-                <div class="modal-footer">
-                    <div class="btn-area">
-                        <button type="button" class="btn btn-cus btn-cancel">Cancel</button>
-                        <button type="button" class="btn btn-cus btn-save">Save</button>
-                    </div>
+              </div>
+    
+            </div>
+            <div class="modal-footer">
+                <div class="btn-area">
+                    <button type="button" class="btn btn-cus btn-cancel">Cancel</button>
+                    <button type="button" class="btn btn-cus btn-save">Save</button>
                 </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+
     <script src="Js/vendor/bootstrap.min.js"></script>
+    <script src="Js/vendor/jquery.min.js"></script>
+    <script src="Js/vendor/script.js"></script>
 </body>
 
 </html>

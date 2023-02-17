@@ -4,10 +4,18 @@
 
 
 .outer-content-block {
-    padding-top: 68px;
-    padding-left: 76px;
-    padding-bottom: 63px;
-    padding-right: 61px;
+    padding: 25px 43px;
+    background: #F8F9FD;
+    height: 100%;
+
+    @media(max-width:1679px) {
+        padding: 25px 30px;
+    }
+
+    @media(max-width:579px) {
+        padding: 20px 24px;
+    }
+
 
     .dash-vendor-block {
         display: flex;
@@ -191,12 +199,14 @@
         min-height: 200px;
     }
 }
+
 @media ($sm-520) {
     .content-block .dash-vendor-block .custom-cards-block {
         flex-direction: column;
         gap: 20px 0;
     }
-    .outer-content-block .dash-vendor-block .custom-cards-block .custom-cards{
+
+    .outer-content-block .dash-vendor-block .custom-cards-block .custom-cards {
         width: 100%;
     }
 }

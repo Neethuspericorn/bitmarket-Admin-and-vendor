@@ -148,10 +148,13 @@
                         }
 
                         a {
-                            font: 500 14px/42px $primary-font;
+                            font: 500 14px $primary-font;
                             text-align: left;
                             color: #7A8DBE;
+                            display: block;
+                            margin-top: 5px;
                             margin-bottom: 15px;
+                            
                         }
                     }
                 }
@@ -173,9 +176,11 @@
                         color: #9D7BFF;
                     }
                 }
-                &.logout-list{
+
+                &.logout-list {
                     margin-top: 50px;
-                    svg{
+
+                    svg {
                         stroke: none !important;
                     }
                 }
@@ -183,6 +188,8 @@
         }
     }
 }
+
+
 
 @media ($sm-1679) {
     .side-nav-wrapper {
@@ -283,7 +290,13 @@
     .side-nav-wrapper {
         min-width: 260px;
     }
-
+    .side-nav-wrapper .side-nav .nav-list .nav-item .nav-link[aria-expanded="true"] span::after {
+        width: 198px;
+    }
+    .side-nav-wrapper .side-nav .nav-list .nav-item .drop-block {
+        background: #001751;
+        padding: 10px;
+    }
     .side-nav-wrapper .side-nav .nav-list .nav-item .nav-link span {
         font-size: 12px;
     }
@@ -293,7 +306,9 @@
     .side-nav-wrapper .side-nav .nav-list .nav-item .nav-link span {
         display: none;
     }
-
+    .side-nav-wrapper .side-nav .nav-list .nav-item .drop-block li a {
+        font: 500 12px "Poppins", sans-serif;
+    }
     .side-nav-wrapper .brand-name-wrapper .web-logo {
         display: none;
     }

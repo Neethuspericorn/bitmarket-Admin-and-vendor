@@ -21,211 +21,189 @@
   display: flex;
   align-items: center;
   background-color: #fff;
-  padding: 25px 29px;
-}
-.page-wrapper header .left-block span {
-  text-align: left;
-  font: 600 18px/27px "Poppins", sans-serif;
-  color: #000000;
-  margin-left: 25px;
-}
-.page-wrapper header .right-block {
-  margin: auto;
-  margin-right: 0;
-  display: flex;
-}
-.page-wrapper header .right-block .input-group {
-  background: rgba(239, 242, 251, 0.63);
-  border-radius: 34px;
-  width: 435px;
-  height: 48px;
-}
-.page-wrapper header .right-block .input-group .form-control {
-  background: transparent !important;
-  border: none !important;
-  padding: 19px 20px;
-  height: 48px;
-  text-align: left;
-  border-radius: 34px;
-  font: 500 14px/21px "Poppins", sans-serif;
-  color: #7F57F1;
-}
-.page-wrapper header .right-block .input-group .input-group-text {
-  background: transparent !important;
-  border: none !important;
-  padding-right: 14px;
-}
-.page-wrapper header .right-block .notification-block {
-  margin: 0 51px 0 39px;
-}
-.page-wrapper header .right-block .notification-block .btn img {
-  width: 30px;
-  height: 30px;
-}
-.page-wrapper header .right-block .notification-block .badge {
-  width: 30px;
-  height: 30px;
-  background: #7F57F1;
-  border-radius: 100px;
-  padding: 9px 0;
-  position: absolute;
-  right: 0;
-  margin: auto;
-  top: -5px;
-  font: normal normal 600 12px/18px "Poppins", sans-serif;
-}
-.page-wrapper header .right-block .Profile .btn {
-  display: flex;
-  padding: 0;
-  position: relative;
-  padding-right: 35px;
-}
-.page-wrapper header .right-block .Profile .btn::after {
-  content: "";
-  border: none;
-  background-image: url("../img/left-arrow.svg");
-  width: 13px;
-  height: 7px;
-  display: block;
-  position: absolute;
-  top: 15px;
-  right: 0;
-}
-.page-wrapper header .right-block .Profile .btn img {
-  margin-right: 17px;
-}
-.page-wrapper header .right-block .Profile .btn h6 {
-  text-align: left;
-  font: 600 16px/25px "Poppins", sans-serif;
-  letter-spacing: 0px;
-  color: #000000;
-  text-transform: capitalize;
-}
-.page-wrapper header .right-block .Profile .btn h6 span {
-  display: block;
-  text-align: left;
-  font: normal 14px/21px "Poppins", sans-serif;
-  letter-spacing: 0px;
-  color: #A3AEBC;
-}
+  padding: 25px 29px; }
+  .page-wrapper header .left-block span {
+    text-align: left;
+    font: 600 18px/27px "Poppins", sans-serif;
+    color: #000000;
+    margin-left: 25px; }
+  .page-wrapper header .right-block {
+    margin: auto;
+    margin-right: 0;
+    display: flex; }
+    .page-wrapper header .right-block .input-group {
+      background: rgba(239, 242, 251, 0.63);
+      border-radius: 34px;
+      width: 435px;
+      height: 48px; }
+      .page-wrapper header .right-block .input-group .form-control {
+        background: transparent !important;
+        border: none !important;
+        padding: 19px 20px;
+        height: 48px;
+        text-align: left;
+        border-radius: 34px;
+        font: 500 14px/21px "Poppins", sans-serif;
+        color: #7F57F1; }
+      .page-wrapper header .right-block .input-group .input-group-text {
+        background: transparent !important;
+        border: none !important;
+        padding-right: 14px; }
+    .page-wrapper header .right-block .notification-block {
+      margin: 0 51px 0 39px; }
+      .page-wrapper header .right-block .notification-block .btn img {
+        width: 30px;
+        height: 30px; }
+      .page-wrapper header .right-block .notification-block .badge {
+        width: 30px;
+        height: 30px;
+        background: #7F57F1;
+        border-radius: 100px;
+        padding: 9px 0;
+        position: absolute;
+        right: 0;
+        margin: auto;
+        top: -5px;
+        font: normal normal 600 12px/18px "Poppins", sans-serif; }
+    .page-wrapper header .right-block .Profile .btn {
+      display: flex;
+      padding: 0;
+      position: relative;
+      padding-right: 35px; }
+      .page-wrapper header .right-block .Profile .btn::after {
+        content: '';
+        border: none;
+        background-image: url("../img/left-arrow.svg");
+        width: 13px;
+        height: 7px;
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 0; }
+      .page-wrapper header .right-block .Profile .btn img {
+        margin-right: 17px; }
+      .page-wrapper header .right-block .Profile .btn h6 {
+        text-align: left;
+        font: 600 16px/25px "Poppins", sans-serif;
+        letter-spacing: 0px;
+        color: #000000;
+        text-transform: capitalize; }
+        .page-wrapper header .right-block .Profile .btn h6 span {
+          display: block;
+          text-align: left;
+          font: normal 14px/21px "Poppins", sans-serif;
+          letter-spacing: 0px;
+          color: #A3AEBC; }
 
 @media (max-width: 1679px) {
   .page-wrapper header .right-block .input-group {
     width: 315px;
-    height: 44px;
-  }
+    height: 44px; }
+
   .page-wrapper header .right-block .input-group .form-control {
-    height: 44px;
-  }
+    height: 44px; }
+
   .page-wrapper header .right-block .notification-block {
-    margin: 0 30px 0 30px;
-  }
+    margin: 0 30px 0 30px; }
+
   .page-wrapper header .left-block span {
-    margin-left: 20px;
-  }
+    margin-left: 20px; }
+
   .page-wrapper header {
-    padding: 20px 29px;
-  }
+    padding: 20px 29px; }
+
   .page-wrapper header .right-block .notification-block .badge {
     padding: 5px 0;
     width: 26px;
-    height: 26px;
-  }
+    height: 26px; }
+
   .page-wrapper header .right-block .Profile .btn h6 {
     font: 600 14px "Poppins", sans-serif;
-    margin: 0;
-  }
+    margin: 0; }
+
   .page-wrapper header .right-block .Profile .btn h6 span {
-    font: normal 13px "Poppins", sans-serif;
-  }
-}
+    font: normal 13px "Poppins", sans-serif; } }
 @media (max-width: 1441px) {
   .page-wrapper header .left-block span {
     margin-left: 10px;
-    font-size: 16px;
-  }
+    font-size: 16px; }
+
   .left-block button.btn img {
-    width: 30px;
-  }
+    width: 30px; }
+
   .page-wrapper header .right-block .input-group {
     width: 275px;
-    height: 44px;
-  }
+    height: 44px; }
+
   .page-wrapper header .right-block .input-group .form-control {
-    font-size: 12px;
-  }
+    font-size: 12px; }
+
   .page-wrapper header .right-block .input-group .input-group-text {
     padding: 0;
-    padding-right: 14px;
-  }
+    padding-right: 14px; }
+
   .page-wrapper header .right-block .input-group .input-group-text img {
     position: relative;
-    top: -3px;
-  }
+    top: -3px; }
+
   .page-wrapper header .right-block .notification-block .btn img {
     width: 20px;
-    height: 20px;
-  }
+    height: 20px; }
+
   .page-wrapper header .right-block .notification-block .badge {
     padding: 3px 0;
     width: 22px;
-    height: 22px;
-  }
+    height: 22px; }
+
   .page-wrapper header .right-block .notification-block {
-    margin: 0 10px 0 10px;
-  }
-}
+    margin: 0 10px 0 10px; } }
 @media (max-width: 1367px) {
   .page-wrapper header .right-block .Profile .btn h6 {
-    font: 600 12px "Poppins", sans-serif;
-  }
+    font: 600 12px "Poppins", sans-serif; }
+
   .page-wrapper header .right-block .Profile .btn h6 span {
-    font: normal 11px "Poppins", sans-serif;
-  }
+    font: normal 11px "Poppins", sans-serif; }
+
   .page-wrapper header .right-block .Profile .btn::after {
-    top: 10px;
-  }
+    top: 10px; }
+
   .page-wrapper header {
-    padding: 20px 25px;
-  }
+    padding: 20px 25px; }
+
   .page-wrapper header .left-block span {
-    margin-left: 0px;
-  }
-}
+    margin-left: 0px; } }
+@media (max-width: 1281px) {
+  .page-wrapper header .left-block span {
+    font-size: 14px; }
+
+  .page-wrapper header {
+    padding: 15px 15px; }
+
+  .page-wrapper header .right-block .input-group, .page-wrapper header .right-block .input-group .form-control {
+    height: 40px; } }
 @media (max-width: 1199px) {
   .page-wrapper header .left-block span {
     margin-left: 0px;
-    font-size: 14px;
-  }
+    font-size: 14px; }
+
   .page-wrapper header .right-block .Profile .btn::after {
     background-size: 9px;
-    background-repeat: no-repeat;
-  }
-}
+    background-repeat: no-repeat; } }
 @media (max-width: 1023px) {
   .page-wrapper header .right-block .input-group {
     width: 200px;
-    height: 44px;
-  }
+    height: 44px; }
+
   .page-wrapper header {
-    padding: 20px 18px;
-  }
-}
+    padding: 20px 18px; } }
 @media (max-width: 991px) {
-  .page-wrapper header .right-block .Profile .btn h6 {
-    display: none;
-  }
+  .page-wrapper header .right-block .Profile .btn h6, .page-wrapper header .left-block span {
+    display: none; }
+
   .page-wrapper header .right-block .Profile .btn img {
-    margin: 0;
-  }
-}
+    margin: 0; } }
 @media (max-width: 767px) {
-  .page-wrapper header {
-    display: block;
-  }
   .page-wrapper header .right-block {
-    justify-content: space-between;
-  }
-}
+    justify-content: space-between; } }
 
 /*# sourceMappingURL=header.css.map */
