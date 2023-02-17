@@ -422,10 +422,10 @@
     padding: 25px 50px 25px 40px;
   }
   .modal .modal-dialog .modal-content .modal-body .outer-main {
-    padding: 70px;
+    padding: 50px;
   }
   .modal .modal-dialog .modal-content .modal-body .outer-main .profile-data-main .profile-data .frm-itm {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .modal .modal-dialog .modal-content .modal-footer {
     padding: 0px 70px 50px;
@@ -458,9 +458,6 @@
   .modal .modal-dialog .modal-content .modal-header {
     padding: 20px 50px 20px 30px;
   }
-  .modal .modal-dialog .modal-content .modal-body .outer-main {
-    padding: 60px;
-  }
   .modal .modal-dialog .modal-content .modal-body .outer-main .profile-data-main .profile-data .frm-itm {
     margin-bottom: 30px;
   }
@@ -490,9 +487,6 @@
   }
   .modal .modal-dialog .modal-content .modal-header {
     padding: 20px 50px 20px 20px;
-  }
-  .modal .modal-dialog .modal-content .modal-body .outer-main {
-    padding: 50px;
   }
   .modal .modal-dialog .modal-content .modal-body .outer-main .profile-data-main .profile-data .frm-itm {
     margin-bottom: 20px;
