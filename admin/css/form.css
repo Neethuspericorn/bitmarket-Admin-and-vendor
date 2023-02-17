@@ -24,7 +24,8 @@
   line-height: 20px;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 .form-group .form-control {
   background: #F7F5FF;
   border-radius: 14px;
@@ -36,19 +37,30 @@
   border: none;
   outline: none;
   box-shadow: none;
-  padding: 20px; }
-  .form-group .form-control::placeholder {
-    color: #7F57F1; }
+  padding: 20px;
+}
+.form-group .form-control::placeholder {
+  color: #7F57F1;
+}
+.form-group .form-control.select {
+  background-image: url(../img/arrow-selt.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 25px;
+  background-size: 12px;
+}
 .form-group .double-input {
-  margin-top: 15px; }
+  margin-top: 15px;
+}
 .form-group .date-input {
   background-image: url(../img/calander.svg);
   background-repeat: no-repeat;
-  background-position: 95% 50%; }
+  background-position: 95% 50%;
+}
 .form-group textarea {
   height: 165px;
   resize: none;
-  overflow: auto; }
+  overflow: auto;
+}
 
 .tel .phone-number {
   display: flex;
@@ -62,18 +74,20 @@
   font-family: "Poppins", sans-serif;
   border: none;
   outline: none;
-  box-shadow: none; }
-  .tel .phone-number .code-sec {
-    width: 80px;
-    border-right: 1px solid #7F57F1 !important;
-    border-radius: 0px !important;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    height: 30px; }
+  box-shadow: none;
+}
+.tel .phone-number .code-sec {
+  width: 80px;
+  border-right: 1px solid #7F57F1 !important;
+  border-radius: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 30px;
+}
 
 .btn-cus {
   background: #DFD5FC;
-  padding: 20px 35px;
+  padding: 20px 60px;
   border: none;
   box-shadow: none !important;
   outline: none !important;
@@ -82,48 +96,78 @@
   line-height: 29px;
   font-family: "Poppins", sans-serif;
   color: #2C00AA;
-  border-radius: 14px; }
-  .btn-cus img {
-    margin-right: 10px;
-    height: 16px; }
-  .btn-cus:hover {
-    opacity: 0.8;
-    color: #2C00AA; }
-  @media (max-width: 1679px) {
-    .btn-cus {
-      padding: 10px 25px;
-      font-size: 15px; } }
-  @media (max-width: 1480px) {
-    .btn-cus {
-      font-size: 14px; } }
-  @media (max-width: 1280px) {
-    .btn-cus {
-      font-size: 13px; } }
+  border-radius: 14px;
+}
+.btn-cus img {
+  margin-right: 10px;
+  height: 16px;
+}
+.btn-cus:hover {
+  opacity: 0.8;
+  color: #2C00AA;
+}
+@media (max-width: 1679px) {
+  .btn-cus {
+    padding: 10px 50px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 1480px) {
+  .btn-cus {
+    font-size: 14px;
+    padding: 10px 40px;
+  }
+}
+@media (max-width: 1280px) {
+  .btn-cus {
+    font-size: 13px;
+    padding: 10px 30px;
+  }
+}
+.btn-cus.btn-save {
+  background: transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%);
+  color: #fff;
+}
+@media (max-width: 1679px) {
   .btn-cus.btn-save {
-    padding: 20px 60px;
-    background: transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%);
-    color: #fff; }
-    @media (max-width: 1679px) {
-      .btn-cus.btn-save {
-        padding: 10px 40px; } }
+    padding: 10px 50px;
+  }
+}
+@media (max-width: 1679px) {
   .btn-cus.btn-cancel {
-    padding: 20px 60px; }
-    @media (max-width: 1679px) {
-      .btn-cus.btn-cancel {
-        padding: 10px 40px; } }
+    padding: 10px 40px;
+  }
+}
+.btn-cus.btn-del {
+  background-color: #FFD4D4;
+  color: #FF3737;
+}
 
 .btn-red {
   background: transparent linear-gradient(180deg, #FF6868 0%, #FC0067 100%);
-  color: #fff; }
-  .btn-red:hover {
-    color: #fff;
-    opacity: 0.8; }
+  color: #fff;
+}
+.btn-red:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.btn-delete {
+  background: transparent linear-gradient(180deg, #FF3737 0%, #AB0000 100%);
+  color: #fff;
+}
+.btn-delete:hover {
+  color: #fff;
+  opacity: 0.8;
+}
 
 .btn-green {
   background: transparent linear-gradient(180deg, #30CC70 0%, #08AC4B 100%);
-  color: #fff; }
-  .btn-green:hover {
-    color: #fff;
-    opacity: 0.8; }
+  color: #fff;
+}
+.btn-green:hover {
+  color: #fff;
+  opacity: 0.8;
+}
 
 /*# sourceMappingURL=form.css.map */

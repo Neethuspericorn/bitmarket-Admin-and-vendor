@@ -521,7 +521,8 @@
                                         <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
                                             data-bs-target="#vedr-mng-edit">
                                         <img src="img/block-icon.svg" class="block-icon">
-                                        <img src="img/delete-icon.svg" class="delete-icon">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                        data-bs-target="#delete-modal">
                                     </div>
                                 </td>
                                 <td>
@@ -554,7 +555,8 @@
                                         <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
                                             data-bs-target="#vedr-mng-edit">
                                         <img src="img/block-icon.svg" class="block-icon">
-                                        <img src="img/delete-icon.svg" class="delete-icon">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                        data-bs-target="#delete-modal">
                                     </div>
                                 </td>
                                 <td>
@@ -584,7 +586,8 @@
                                         <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
                                             data-bs-target="#vedr-mng-edit">
                                         <img src="img/block-icon.svg" class="block-icon">
-                                        <img src="img/delete-icon.svg" class="delete-icon">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                        data-bs-target="#delete-modal">
                                     </div>
                                 </td>
                                 <td>
@@ -616,7 +619,7 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade vedr-man" id="vedr-mng-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vedr-mng-viewLabel" aria-hidden="true">
+    <div class="modal fade vedr-man mid" id="vedr-mng-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vedr-mng-viewLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
     
@@ -709,7 +712,7 @@
         </div>
       </div>
     
-      <div class="modal fade vedr-edit" id="vedr-mng-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vedr-mng-editLabel" aria-hidden="true">
+      <div class="modal fade vedr-edit mid" id="vedr-mng-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vedr-mng-editLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
     
@@ -798,6 +801,29 @@
           </div>
         </div>
       </div>
+
+
+      <div class="modal fade  delete-modal" id="delete-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="delete-modalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+    
+            <div class="modal-body">
+              <div class="outer-main">
+                
+                  <div class="icons">
+                    <img src="img/delete-icon-white.svg"/>
+                  </div> 
+                  <h3 class="heading">Are you sure you want to delete ?</h3>
+                  <P class="content">This will delete your product from category. Are you sure ?</P>
+                  <div class="btn-area">
+                    <button class="btn btn-cus">Cancel</button>
+                    <button class="btn btn-cus btn-delete">Delete</button>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     <script src="Js/vendor/bootstrap.min.js"></script>
     <script src="Js/vendor/jquery.min.js"></script>

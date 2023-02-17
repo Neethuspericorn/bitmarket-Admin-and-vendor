@@ -1,7 +1,6 @@
 @import "partials/variables";
 @import "partials/mixins";
 
-
 .form-group{
     .form-label{
         color: #1D1D39;
@@ -26,6 +25,12 @@
         padding: 20px;
         &::placeholder{
             color: #7F57F1;
+        }
+        &.select{
+            background-image: url(../img/arrow-selt.svg);
+            background-repeat: no-repeat;
+            background-position: 95% 25px;
+            background-size: 12px;
         }
     }   
     .double-input{
@@ -73,7 +78,7 @@
 
 .btn-cus{
     background: #DFD5FC;
-    padding: 20px 35px;
+    padding: 20px 60px;
     border: none;
     box-shadow: none !important;
     outline: none !important;
@@ -93,34 +98,48 @@
     }
 
     @media(max-width:1679px){
-        padding: 10px 25px;
+        padding: 10px 50px;
         font-size: 15px;
     }
 
     @media(max-width:1480px){
         font-size: 14px;
+        padding: 10px 40px;
     }
     @media(max-width:1280px){
         font-size: 13px;
+        padding: 10px 30px;
     }
+   
     &.btn-save{
-        padding: 20px 60px;
         background:  transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%);
         color: #fff;
         @media(max-width:1679px){
-            padding: 10px 40px;
+            padding: 10px 50px;
         }
     }
     &.btn-cancel{
-        padding: 20px 60px;
         @media(max-width:1679px){
             padding: 10px 40px;
         }
     }
+    &.btn-del{
+        background-color: #FFD4D4;
+        color: #FF3737;
+    }
 }
+
 .btn-red{
     background: transparent linear-gradient(180deg, #FF6868 0%, #FC0067 100%);
     color: #fff;
+    &:hover{
+        color: #fff;
+        opacity: 0.8;
+    }
+}
+.btn-delete{
+    background: transparent linear-gradient(180deg, #FF3737 0%, #AB0000 100%) ;
+    color: #fff ;
     &:hover{
         color: #fff;
         opacity: 0.8;
