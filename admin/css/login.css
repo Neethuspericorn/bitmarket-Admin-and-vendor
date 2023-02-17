@@ -67,6 +67,8 @@
     margin-bottom: 60px; }
     .form-block-cover .form-logo a {
       display: inline-block; }
+      .form-block-cover .form-logo a img {
+        max-width: 230px; }
   .form-block-cover .form-title {
     display: flex;
     align-items: center;

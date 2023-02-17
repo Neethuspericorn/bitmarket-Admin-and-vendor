@@ -130,11 +130,11 @@ body {
 
 .content-block {
     background: #f8f9fd;
-    height: calc(100vh - 110px);
+    min-height: calc(100vh - 110px);
     overflow: auto;
 
     @media(max-width:1679px) {
-        height: calc(100vh - 96px);
+       min-height: calc(100vh - 96px);
     }
 }
 

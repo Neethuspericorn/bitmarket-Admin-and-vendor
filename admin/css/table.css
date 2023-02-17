@@ -17,6 +17,9 @@
 /* @include transition (.2s ease-out all); */
 /*    @include flexbox();
     @include justify-content (center);*/
+.table > :not(:first-child) {
+  border: none !important; }
+
 .table-section {
   margin-top: 30px;
   max-height: calc(100vh - 312px);
