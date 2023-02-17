@@ -94,10 +94,73 @@
         }
 
         .custom-chart-block {
-            max-width: 1144px;
             background: #FFFFFF;
             border-radius: 14px;
             flex: 1 1 100%;
+            padding: 30px;
+
+            .custom-chart-title {
+                display: flex;
+                margin-bottom: 30px;
+
+                .title {
+                    text-align: left;
+                    font: 600 18px $primary-font;
+                    color: #000000;
+                }
+
+                .action {
+                    margin: auto;
+                    margin-right: 0;
+
+                    .btn {
+                        text-align: center;
+                        font: 500 14px $primary-font;
+                        max-width: 132px;
+                        height: 37px;
+                        background: #D4D8E90D;
+                        border: 1px solid #D4D8E94D;
+                        color: #829BB9;
+                        border-radius: 19px;
+                        position: relative;
+                        padding: 8px 25px;
+
+                        &:first-child {
+                            margin-right: 10px;
+                        }
+
+                        &::after {
+                            content: '';
+                            width: 8px;
+                            height: 8px;
+                            background: #D4D8E9;
+                            display: block;
+                            position: absolute;
+                            border-radius: 100px;
+                            left: 10px;
+                            top: 0;
+                            bottom: 0;
+                            margin: auto;
+                        }
+
+                        &.isActive {
+                            background: #DDD1FF0D;
+                            border: 1px solid #7F57F14D;
+                            color: #7F57F1;
+
+                            &::after {
+                                background: #7F57F1;
+                            }
+                        }
+                    }
+
+
+                }
+            }
+
+            img {
+                margin-top: 30px;
+            }
         }
     }
 
@@ -105,8 +168,46 @@
         max-width: 100%;
         background: #FFFFFF;
         border-radius: 14px;
-        height: 400px;
         margin-top: 24px;
+        padding: 30px;
+
+        .custom-chart-title {
+            display: flex;
+            margin-bottom: 30px;
+
+            .title {
+                text-align: left;
+                font: 600 18px $primary-font;
+                color: #000000;
+            }
+
+            .action {
+                margin: auto;
+                margin-right: 0;
+
+                .dropdown {
+                    width: 150px;
+                    height: 38px;
+                    background: #F7F5FF;
+                    border-radius: 100px;
+
+                    .btn {
+                        text-align: left;
+                        font: 500 13px $primary-font;
+                        color: #9272A4;
+                        display: flex;
+                        align-items: center;
+                        padding: 8px 10px;
+                    }
+                }
+
+
+            }
+        }
+
+        img {
+            height: 290px;
+        }
     }
 }
 
