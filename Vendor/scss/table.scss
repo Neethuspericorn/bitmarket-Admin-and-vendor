@@ -1,0 +1,140 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+.table-section
+{
+    margin-top:30px;
+    table
+    {
+        tr:last-child td {
+            border-bottom: none !important;
+        }
+        th
+        {
+            background: #EAECF3;
+            padding:25px 20px;
+            font:600 15px/21px $primary-font;
+            @media(max-width:1679px)
+            {
+                font-size:14px;
+                padding: 20px 20px;
+            }
+            @media(max-width:1440px)
+            {
+                font-size:13px;
+            }
+        }
+        td
+        {
+            background:#fff;
+            padding:23px 20px;
+            border-bottom: 1px solid #D4D8E9;
+            color: #000000;
+            font:400 15px/21px $primary-font;
+            @media(max-width:1679px)
+            {
+                font-size:14px;
+                padding:18px 20px;
+            }
+            @media(max-width:1440px)
+            {
+                font-size:13px;
+            }
+        }
+        .checkbox-section {
+            width:80px;
+        }
+        .action
+        {
+            width: 210px;
+        }
+        
+    }
+    .container-checkbox
+    {
+        .checkmark
+        {
+            left:8px;
+        }
+    }
+    .action-icons {
+        img
+        {
+            margin-left: 14px;
+            cursor: pointer;
+        }
+        @media(max-width:1679px)
+        {
+            img.delete-icon {
+                width: 14px;
+            }
+            img.block-icon {
+                width: 17px;
+            }
+            img.edit-icon {
+                width: 15px;
+            }
+            img.view-icon {
+                width: 22px;
+            }
+        }
+        
+    }
+}
+.footer-table
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+    .pagination
+    {
+        li
+        {
+            &.active
+            {
+                .page-link
+                {
+                    background:#7F57F1;
+                    border-radius:50px;
+                    color:#fff;
+                }
+            }
+            .page-link {
+                background: transparent;
+                border: none;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                padding: 0 !important;
+                line-height: 40px;
+                color: #8B91AA;
+                font:600 15px/21px $primary-font;
+                line-height: 40px;
+                margin-left: 12px;
+                border-radius:50px;
+                &:hover
+                {
+                    background:#7F57F1;
+                    border-radius:50px;
+                    color:#fff;
+                }
+                @media(max-width:1679px)
+                {
+                    font-size:13px;
+                }
+            }
+        }
+        
+    }
+    .prev-arrow {
+        margin-right: 15px;
+    }
+    .prev-arrow,.next-arrow {
+        display: flex;
+        align-items: center;
+        color: #8B91AA;
+    }
+    .next-arrow {
+        margin-left: 15px;
+    }
+}

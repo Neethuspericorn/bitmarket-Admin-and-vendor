@@ -1,0 +1,591 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+@media(min-width: 1679px){
+    .login-container{
+        max-width: 1400px;
+    }
+}
+.login-cover{
+    padding: 15px 0;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: {
+        image: url('../img/login-g.svg');
+        position: top left;
+        repeat: no-repeat;
+        color: $primary-color;
+    };
+    .login-wrapper{
+        display: flex;
+        .left-block{
+            display: flex;
+            .welcome-title{
+                margin-top: auto;
+                font-family: $primary-font;
+                .welcome-img{
+                    margin-bottom: 50px;
+                }
+                h2{
+                    font-weight: 500;
+                    font-size: 36px;
+                    color: $secondary-color;
+                    margin-bottom: 5px;
+                }
+                p{
+                    margin-bottom: 0;
+                    color: #fff;
+                    font-size: 16px;
+                }
+            }
+        }
+        .right-block{
+            // display: flex;
+            // justify-content: flex-end;
+            flex: 1 1 auto;
+            .form-block-cover{
+                margin-left: auto;
+            }
+        }
+    }
+}
+.form-block-cover{
+    width: 100%;
+    border-radius: 60px;
+    min-height: 720px;
+    max-width: 568px;
+    background-color: #fff;
+    padding: 60px 70px 40px;
+    &.form-block-cover-reg{
+        max-width: 800px;
+        padding: 60px 65px;
+        .form-container .btn-wrapper{
+            padding-top: 15px;
+        }
+        .form-container .cutom-form-control {
+            margin-bottom: 25px;
+            .form-control{
+                padding-left: 20px !important;
+                padding-right: 20px;
+            }
+        }
+    }
+    &.form-block-h-pswd{
+        min-height: 615px;
+    }
+    &.form-block-cover-login{
+        padding-top: 105px;
+    }
+    .sub-form-title{
+        margin-bottom: 25px;
+        position: relative;
+        z-index: 1;
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 100%;
+            height: 1px;
+            background-color: #F7F5FF;
+            z-index: -1;
+        }
+        span{
+            color: $secondary-color;
+            font-family: $primary-font;
+            font-size: 18px;
+            font-weight: 600;
+            display: inline-block;
+            background-color: #fff;
+            padding-right: 15px;
+        }
+    }
+    .form-logo{
+        margin-bottom: 60px;
+        a{
+            display: inline-block;
+        }
+    }
+    .form-title{
+        display: flex;
+        align-items: center;
+        font-family: $primary-font;
+        font-size: 24px;
+        color: #00245E;
+        font-weight: 600;
+        margin-bottom: 60px;
+        img{
+            margin-right: 15px;
+        }
+    }
+    .form-img-block{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .form-container{
+        .cutom-form-control{
+            font-family: $primary-font;
+            margin-bottom: 30px;
+            .form-label{
+                color: #1D1D39;
+                font-size: 16px;
+                font-weight: normal;
+            }
+            .cutom-input-group{
+                background-color: #F7F5FF;
+                border-radius: 14px;
+                padding: 0 10px;
+                height: 66px;
+                position: relative;
+                .val-msg{
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    display: none;
+                    // display: inline-flex;
+                    align-items: center;
+                    padding-top: 4px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #FF4141;
+                    img{
+                        margin-right: 10px;
+                    }
+                }
+                .input-group-text, .form-control{
+                    background-color: transparent;
+                    border: none;
+                }
+                @include placeholder{
+                    color: #B1A5E1;
+                }
+                .form-control{
+                    box-shadow: none;
+                    color: $secondary-color;
+                    padding-left: 5px;
+                }
+            }
+            .file-input{
+                position: relative;
+                overflow: hidden;
+                background-color: transparent;
+                padding: 0;
+                border: 1px dashed #EED5FC;
+            }
+            .file-input__input {
+                width: 0.1px;
+                height: 0.1px;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                z-index: -1;
+              }
+              
+              .file-input__label {
+                cursor: pointer;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                font-size: 14px;
+                font-weight: 500;
+                color: #000;
+                font-size: 14px;
+                padding: 10px 12px;
+                background-color: #fff;
+                box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+                img{
+                    margin-right: 8px;
+                    max-width: 38px;
+                    max-height: 100%;
+                }
+              }
+              
+              .file-input__label svg {
+                height: 16px;
+                margin-right: 4px;
+              }
+
+        }
+        .fgt-pswd-lnk{
+            a{
+                color: $secondary-color;
+                font-weight: 500;
+                transition: .3s;
+                &:hover{
+                    opacity: .8;
+                }
+            }
+        }
+        .btn-wrapper{
+            justify-content: space-between;
+            padding-top: 60px;
+            &.btn-wrapper-fluid{
+                width: 100%;
+                .btn-def{
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+            .btn-def{
+                width: calc(50% - 6px);
+                transition: .3s;
+                border-radius: 14px;
+                height: 66px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                font-size: 20px;
+                font-weight: 600;
+                text-decoration: none;
+                &:hover{
+                    opacity: .9;
+                }
+            }
+            .btn-cancel{
+                background-color: #DFD5FC;
+                color: #2C00AA;
+            }
+            .btn-submit{
+                background: transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%) 0% 0% no-repeat padding-box;
+                color: #fff;
+            }
+        }
+    }
+}
+.reg-mob-title{
+    @media (min-width: 992px) {
+        display: none !important;
+    }
+}
+.modal-login{
+    .modal-content{
+        border: none;
+        background-color: transparent;
+    }
+    .modal-body{
+        display: flex;
+        padding: 0;
+        justify-content: center;
+    }
+}
+.modal-backdrop{
+    background-color: #0D0031D1;
+}
+
+@media($sm-1679){
+    .signup-block{
+        font-size: 15px;
+    }
+    .form-block-cover.form-block-cover-reg {
+        max-width: 750px;
+        padding: 50px 55px;
+    }
+    .login-cover .login-wrapper .left-block .welcome-title .welcome-img img{
+        max-width: 320px;
+    }
+    .form-block-cover.form-block-h-pswd {
+        min-height: 570px;
+    }
+    .form-block-cover .form-title{
+        font-size: 22px;
+        margin-bottom: 40px;
+        img{
+            max-height: 38px;
+        }
+    }
+    .form-block-cover .form-container .cutom-form-control .cutom-input-group{
+        height: 60px;
+    }
+    .form-block-cover .form-container .btn-wrapper .btn-def{
+        font-size: 18px;
+        height: 60px;
+    }
+    .form-block-cover .form-container .fgt-pswd-lnk a, .form-block-cover .form-container .cutom-form-control .cutom-input-group .form-control, 
+    .form-block-cover .form-container .cutom-form-control .form-label, .login-cover .login-wrapper .left-block .welcome-title p{
+        font-size: 15px;
+    }
+    .form-block-cover.form-block-cover-login {
+        padding-top: 70px;
+    }
+    .form-block-cover .form-logo {
+        margin-bottom: 50px;
+    }
+    .form-block-cover{
+        max-width: 510px;
+        min-height: 620px;
+    }
+    .login-cover .login-wrapper .left-block .welcome-title h2{
+        font-size: 34px;
+    }
+    .form-block-cover .form-container .btn-wrapper {
+        padding-top: 55px;
+    }
+    .form-block-cover.form-block-cover-pswd .form-container .btn-wrapper{
+        padding-top: 40px;
+    }
+    .form-block-cover .form-img-block {
+        margin-bottom: 30px;
+        img{
+            max-height: 185px;
+        }
+    }
+    .form-block-cover .sub-form-title span{
+        font-size: 16px;
+    }
+}
+@media($sm-1441){
+    .form-block-cover .form-logo {
+        margin-bottom: 35px;
+    }
+    .form-block-cover.form-block-cover-pswd .form-container .btn-wrapper{
+        padding-top: 40px;
+    }
+    .login-cover .login-wrapper .left-block .welcome-title .welcome-img img{
+        max-width: 270px;
+    }
+    .form-block-cover.form-block-h-pswd {
+        min-height: 510px;
+    }
+    .form-block-cover.form-block-h-pswd .form-container .btn-wrapper {
+        padding-top: 40px;
+    }
+    .form-block-cover .form-title{
+        font-size: 20px;
+        margin-bottom: 40px;
+        img{
+            max-height: 36px;
+        }
+    }
+    .form-block-cover .form-img-block{
+        margin-bottom: 30px;
+        img{
+            max-height: 165px;
+        }
+    }
+    .form-block-cover{
+        padding: 50px 60px 40px;
+        max-width: 470px;
+        min-height: 570px;
+    }
+    .form-block-cover .form-container .btn-wrapper {
+        padding-top: 45px;
+    }
+    .form-block-cover.form-block-cover-login {
+        padding-top: 70px;
+    }
+    .form-block-cover .form-container .btn-wrapper .btn-def {
+        font-size: 16px;
+        height: 52px;
+    }
+    .form-block-cover .form-container .cutom-form-control .cutom-input-group {
+        height: 52px;
+    }
+    .form-block-cover .form-container .fgt-pswd-lnk a, .form-block-cover .form-container .cutom-form-control .cutom-input-group .form-control, 
+    .form-block-cover .form-container .cutom-form-control .form-label, .login-cover .login-wrapper .left-block .welcome-title p{
+        font-size: 14px;
+    }
+    .login-cover .login-wrapper .left-block .welcome-title h2 {
+        font-size: 30px;
+    }
+    .form-block-cover.form-block-cover-reg {
+        max-width: 680px;
+        padding: 35px 45px;
+    }
+    .form-block-cover .form-container .cutom-form-control .file-input__label{
+        font-size: 13px;
+    }
+    .form-block-cover.form-block-cover-reg .form-container .cutom-form-control .form-control {
+        padding-left: 10px !important;
+        padding-right: 10px;
+    }
+    .form-block-cover.form-block-cover-reg .form-container .cutom-form-control {
+        margin-bottom: 20px;
+    }
+    .form-block-cover .sub-form-title span{
+        font-size: 15px;
+    }
+    .form-block-cover .form-container .cutom-form-control .file-input__label img{
+        max-width: 26px;
+    }
+    .form-block-cover .sub-form-title {
+        margin-bottom: 15px;
+    }
+    .form-block-cover.form-block-cover-reg {
+        max-width: 550px;
+        padding: 35px 30px;
+    }
+}
+@media($sm-1199){
+    .welcome-logo img{
+        max-height: 38px;
+    }
+    .login-cover .login-wrapper .left-block .welcome-title .welcome-img img{
+        max-width: 250px;
+    }
+    .form-block-cover.form-block-h-pswd {
+        min-height: 480px;
+    }
+    .form-block-cover.form-block-h-pswd .form-container .btn-wrapper {
+        padding-top: 20px;
+    }
+    .form-block-cover .form-title{
+        font-size: 19px;
+        margin-bottom: 30px;
+        img{
+            max-height: 35px;
+        }
+    }
+    .form-block-cover .form-img-block{
+        margin-bottom: 20px;
+        img{
+            max-height: 160px;
+        }
+    }
+    .form-block-cover {
+        padding: 50px 50px 35px;
+        max-width: 420px;
+        min-height: 545px;
+    }
+    .form-block-cover .form-logo {
+        margin-bottom: 35px;
+    }
+    .form-block-cover.form-block-cover-login {
+        padding-top: 45px;
+    }
+    .form-block-cover .form-container .cutom-form-control .cutom-input-group .val-msg{
+        padding-top: 5px;
+    }
+    .form-block-cover .form-container .cutom-form-control .cutom-input-group .input-group-text img{
+        max-height: 21px;
+    }
+    .form-block-cover .form-container .btn-wrapper {
+        padding-top: 45px;
+    }
+    .login-cover .login-wrapper .left-block .welcome-title h2 {
+        font-size: 26px;
+    }
+}
+@media($sm-991){
+    .login-cover .login-wrapper .right-block{
+        width: 100%;
+    }
+    .login-cover .login-wrapper .right-block .form-block-cover{
+        margin: auto;
+    }
+    .login-cover .login-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .login-cover .login-wrapper .left-block{
+        display: none;
+    }
+}
+@media($sm-767){
+    .signup-block{
+        font-size: 14px;
+    }
+    .form-block-cover .form-img-block img {
+        max-height: 142px;
+    }
+    .form-block-cover.form-block-h-pswd {
+        min-height: 470px;
+    }
+    .form-block-cover {
+        max-width: 380px;
+        min-height: 510px;
+        padding: 40px;
+        border-radius: 50px;
+    }
+    .form-block-cover .form-logo img{
+        max-height: 36px;
+    }
+    .form-block-cover.form-block-cover-login {
+        padding-top: 35px;
+    }
+    .form-block-cover .form-container .btn-wrapper {
+        padding-top: 30px;
+    }
+    .form-block-cover .form-logo {
+        margin-bottom: 30px;
+    }
+}
+@media($sm-579){
+    .form-block-cover .form-container .cutom-form-control{
+        margin-bottom: 25px;
+    }
+    .form-block-cover.form-block-h-pswd {
+        min-height: 430px;
+    }
+    .form-block-cover .form-title{
+        font-size: 17px;
+        margin-bottom: 25px;
+        img{
+            max-height: 33px;
+        }
+    }
+    .form-block-cover .form-img-block img{
+        margin-bottom: 10px;
+        max-height: 115px;
+    }
+    .form-block-cover {
+        max-width: 350px;
+        min-height: 470px;
+        padding: 35px;
+        border-radius: 45px;
+    }
+    .form-block-cover.form-block-cover-login {
+        padding-top: 26px;
+    }
+    .form-block-cover .form-logo {
+        margin-bottom: 20px;
+    }
+    .form-block-cover .form-container .cutom-form-control .cutom-input-group {
+        height: 50px;
+    }
+    .form-block-cover .form-container .btn-wrapper .btn-def {
+        font-size: 15px;
+        height: 48px;
+    }
+    .form-block-cover.form-block-cover-pswd .form-container .btn-wrapper {
+        padding-top: 15px;
+    }
+}
+@media($sm-479){
+    .form-block-cover .form-logo {
+        margin-bottom: 15px;
+    }
+    .form-block-cover.form-block-cover-reg {
+        padding: 35px 20px;
+    }
+    .form-block-cover.form-block-h-pswd {
+        min-height: 405px;
+    }
+    .form-block-cover .form-container .cutom-form-control .cutom-input-group {
+        height: 46px;
+    }
+    .form-block-cover .form-container .btn-wrapper .btn-def {
+        height: 46px;
+    }
+    .form-block-cover {
+        max-width: 310px;
+        min-height: 450px;
+        padding: 35px 25px;
+        border-radius: 45px;
+    }
+    .form-block-cover .form-container .btn-wrapper .btn-def, .form-block-cover .form-container .btn-wrapper .btn-def {
+        height: 46px;
+    }
+}
+.signup-block{
+    text-align: center;
+    padding-top: 15px;
+    a{
+        display: inline-block;
+    }
+}

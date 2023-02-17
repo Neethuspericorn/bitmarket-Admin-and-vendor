@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+    
+<body>
+    <div class="login-cover d-flex">
+        <div class="container login-container">
+            <div class="login-wrapper">
+                <div class="left-block">
+                    <div class="welcome-title">
+                        <div class="welcome-logo mb-3">
+                            <a href="#"><img src="img/logo-wht.svg" alt=""></a>
+                        </div>
+                        <h2>Register Your Account</h2>
+                        <p>Add vendor basic details</p>
+                    </div>
+                </div>
+                <div class="right-block">
+                    <div class="form-block-cover form-block-cover-reg">
+                        <div class="form-title reg-mob-title">
+                            <img src="img/reg-titl.svg" alt="">Register Your Account
+                        </div>
+                        <div class="form-container">
+                            <div class="row gx-2">
+                                <div class="col-sm-6">
+                                    <div class="cutom-form-control">
+                                        <label for="Vendor Name" class="form-label">Vendor Name</label>
+                                        <div class="input-group cutom-input-group">
+                                            <input type="text" class="form-control" placeholder="Enter vendor name" aria-label="Vendor Name" aria-describedby="basic-addon1">
+                                            <!-- add style inline-flex for showing validation msg -->
+                                            <span class="val-msg"><img src="img/warn-dngr.svg" alt=""> Field required</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="cutom-form-control">
+                                        <label for="Email Address" class="form-label">Email Address</label>
+                                        <div class="input-group cutom-input-group">
+                                            <input type="email" class="form-control" placeholder="Enter email address" aria-label="Email Address" aria-describedby="basic-addon1">
+                                            <!-- add style inline-flex for showing validation msg -->
+                                            <span class="val-msg"><img src="img/warn-dngr.svg" alt=""> Field required</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="cutom-form-control">
+                                        <label for="Address" class="form-label">Address</label>
+                                        <div class="input-group cutom-input-group">
+                                            <input type="text" class="form-control" placeholder="Enter Address" aria-label="Address" aria-describedby="basic-addon1">
+                                            <!-- add style inline-flex for showing validation msg -->
+                                            <span class="val-msg"><img src="img/warn-dngr.svg" alt=""> Field required</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="cutom-form-control">
+                                        <label for="Phone number" class="form-label">Phone number</label>
+                                        <div class="input-group cutom-input-group">
+                                            <input type="text" class="form-control" placeholder="Enter Phone number" aria-label="Phone number" aria-describedby="basic-addon1">
+                                            <!-- add style inline-flex for showing validation msg -->
+                                            <span class="val-msg"><img src="img/warn-dngr.svg" alt=""> Field required</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="cutom-form-control">
+                                        <label for="Phone number" class="form-label">Upload image</label>
+                                        <!-- <div class="input-group cutom-input-group">
+                                            <input type="text" class="form-control" placeholder="Enter Phone number" aria-label="Phone number" aria-describedby="basic-addon1">
+                                            <span class="val-msg"><img src="img/warn-dngr.svg" alt=""> Field required</span>
+                                        </div> -->
+                                        <!-- add style inline-flex for showing validation msg -->
+                                        
+
+                                        <div class="file-input cutom-input-group">
+                                            <input type="file" name="file-input" id="file-input" class="file-input__input"/>
+                                            <label class="file-input__label" for="file-input">
+                                                <img src="img/upload-img-sm.svg" alt="">
+                                                <span>Upload your image</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="sub-form-title">
+                                <span>Shop Details</span>
+                            </div>
+                            <div class="row gx-2">
+                                <div class="col-sm-6">
+                                    <div class="cutom-form-control">
+                                        <label for="Shop name" class="form-label">Shop name</label>
+                                        <div class="input-group cutom-input-group">
+                                            <input type="text" class="form-control" placeholder="Enter Shop name" aria-label="Shop name" aria-describedby="basic-addon1">
+                                            <!-- add style inline-flex for showing validation msg -->
+                                            <span class="val-msg"><img src="img/warn-dngr.svg" alt=""> Field required</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="cutom-form-control">
+                                        <label for="Shop Email ID" class="form-label">Shop Email ID</label>
+                                        <div class="input-group cutom-input-group">
+                                            <input type="email" class="form-control" placeholder="Enter Shop Email ID" aria-label="Shop Email ID" aria-describedby="basic-addon1">
+                                            <!-- add style inline-flex for showing validation msg -->
+                                            <span class="val-msg"><img src="img/warn-dngr.svg" alt=""> Field required</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="cutom-form-control">
+                                        <label for="Shop Address" class="form-label">Shop Address</label>
+                                        <div class="input-group cutom-input-group">
+                                            <input type="text" class="form-control" placeholder="Enter Shop Address" aria-label="Shop Address" aria-describedby="basic-addon1">
+                                            <!-- add style inline-flex for showing validation msg -->
+                                            <span class="val-msg"><img src="img/warn-dngr.svg" alt=""> Field required</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrapper d-flex">
+                                <button type="button" class="btn-def btn-cancel">Cancel</button>
+                                <button type="button" class="btn-def btn-submit">Register</button>
+                            </div>
+                            <div class="fgt-pswd-lnk signup-block">
+                                <span>Already have an account? <a class="signup-btn" href="#">Sign In</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="Js/vendor/bootstrap.min.js"></script>
+</body>
+
+</html>

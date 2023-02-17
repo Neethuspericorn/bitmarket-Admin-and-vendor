@@ -1,0 +1,258 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+.page-wrapper {
+    header {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        padding: 25px 29px;
+
+        .left-block {
+            span {
+                text-align: left;
+                font: 600 18px/27px $primary-font;
+                color: #000000;
+                margin-left: 25px;
+            }
+        }
+
+        .right-block {
+            margin: auto;
+            margin-right: 0;
+            display: flex;
+
+            .input-group {
+                background: rgba(239, 242, 251, 0.63);
+                border-radius: 34px;
+                width: 435px;
+                height: 48px;
+
+                .form-control {
+                    background: transparent !important;
+                    border: none !important;
+                    padding: 19px 20px;
+                    height: 48px;
+                    text-align: left;
+                    border-radius: 34px;
+                    font: 500 14px/21px $primary-font;
+                    color: #7F57F1;
+                }
+
+                .input-group-text {
+                    background: transparent !important;
+                    border: none !important;
+                    padding-right: 14px;
+                }
+            }
+
+            .notification-block {
+                margin: 0 51px 0 39px;
+
+                .btn {
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+                .badge {
+                    width: 30px;
+                    height: 30px;
+                    background: #7F57F1;
+                    border-radius: 100px;
+                    padding: 9px 0;
+                    position: absolute;
+                    right: 0;
+                    margin: auto;
+                    top: -5px;
+                    font: normal normal 600 12px/18px $primary-font;
+                }
+            }
+
+            .Profile {
+                .btn {
+                    display: flex;
+                    padding: 0;
+                    position: relative;
+                    padding-right: 35px;
+
+                    &::after {
+                        content: '';
+                        border: none;
+                        background-image: url('../img/left-arrow.svg');
+                        width: 13px;
+                        height: 7px;
+                        display: block;
+                        position: absolute;
+                        top: 15px;
+                        right: 0;
+                    }
+
+                    img {
+                        margin-right: 17px;
+                    }
+
+                    h6 {
+                        text-align: left;
+                        font: 600 16px/25px $primary-font;
+                        letter-spacing: 0px;
+                        color: #000000;
+                        text-transform: capitalize;
+
+                        span {
+                            display: block;
+                            text-align: left;
+                            font: normal 14px/21px $primary-font;
+                            letter-spacing: 0px;
+                            color: #A3AEBC;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ($sm-1679) {
+    .page-wrapper header .right-block .input-group {
+        width: 315px;
+        height: 44px;
+    }
+    .page-wrapper header .right-block .input-group .form-control{
+        height: 44px;
+    }
+    .page-wrapper header .right-block .notification-block {
+        margin: 0 30px 0 30px;
+    }
+
+    .page-wrapper header .left-block span {
+        margin-left: 20px;
+    }
+
+    .page-wrapper header {
+        padding: 20px 29px;
+    }
+
+    .page-wrapper header .right-block .notification-block .badge {
+        padding: 5px 0;
+        width: 26px;
+        height: 26px;
+    }
+
+    .page-wrapper header .right-block .Profile .btn h6 {
+        font: 600 14px "Poppins", sans-serif;
+        margin: 0;
+    }
+
+    .page-wrapper header .right-block .Profile .btn h6 span {
+        font: normal 13px "Poppins", sans-serif;
+    }
+}
+
+@media ($sm-1441) {
+    .page-wrapper header .left-block span {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .left-block button.btn img {
+        width: 30px;
+    }
+
+    .page-wrapper header .right-block .input-group {
+        width: 275px;
+        height: 44px;
+    }
+
+    .page-wrapper header .right-block .input-group .form-control {
+        font-size: 12px;
+    }
+
+    .page-wrapper header .right-block .input-group .input-group-text {
+        padding: 0;
+        padding-right: 14px;
+    }
+
+    .page-wrapper header .right-block .input-group .input-group-text img {
+        position: relative;
+        top: -3px;
+    }
+
+    .page-wrapper header .right-block .notification-block .btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .page-wrapper header .right-block .notification-block .badge {
+        padding: 3px 0;
+        width: 22px;
+        height: 22px;
+    }
+
+    .page-wrapper header .right-block .notification-block {
+        margin: 0 10px 0 10px;
+    }
+}
+
+@media ($sm-1367) {
+    .page-wrapper header .right-block .Profile .btn h6 {
+        font: 600 12px "Poppins", sans-serif;
+    }
+
+    .page-wrapper header .right-block .Profile .btn h6 span {
+        font: normal 11px "Poppins", sans-serif;
+    }
+
+    .page-wrapper header .right-block .Profile .btn::after {
+        top: 10px;
+    }
+
+    .page-wrapper header {
+        padding: 20px 25px;
+    }
+
+    .page-wrapper header .left-block span {
+        margin-left: 0px;
+    }
+
+}
+
+@media ($sm-1199) {
+    .page-wrapper header .left-block span {
+        margin-left: 0px;
+        font-size: 14px;
+    }
+    .page-wrapper header .right-block .Profile .btn::after {
+        background-size:9px;
+        background-repeat: no-repeat;
+    }
+}
+
+
+@media ($sm-1023) {
+    .page-wrapper header .right-block .input-group {
+        width: 200px;
+        height: 44px;
+    }
+    .page-wrapper header {
+        padding: 20px 18px;
+    }
+}
+@media ($sm-991) {
+    .page-wrapper header .right-block .Profile .btn h6{
+        display: none;
+    }
+    .page-wrapper header .right-block .Profile .btn img{
+        margin: 0;
+    }
+}
+
+@media ($sm-767) {
+    .page-wrapper header{
+        display: block;
+    }
+    .page-wrapper header .right-block{
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,91 @@
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.form-group .form-label {
+  color: #1D1D39;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 10px; }
+.form-group .form-control {
+  background: #F7F5FF;
+  border-radius: 14px;
+  color: #7F57F1;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 20px; }
+  .form-group .form-control::placeholder {
+    color: #7F57F1; }
+
+.btn-cus {
+  background: #DFD5FC;
+  padding: 20px 35px;
+  border: none;
+  box-shadow: none !important;
+  outline: none !important;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 29px;
+  font-family: "Poppins", sans-serif;
+  color: #2C00AA;
+  border-radius: 14px; }
+  .btn-cus img {
+    margin-right: 10px;
+    height: 16px; }
+  .btn-cus:hover {
+    opacity: 0.8;
+    color: #2C00AA; }
+  @media (max-width: 1679px) {
+    .btn-cus {
+      padding: 10px 25px;
+      font-size: 15px; } }
+  @media (max-width: 1480px) {
+    .btn-cus {
+      font-size: 14px; } }
+  @media (max-width: 1280px) {
+    .btn-cus {
+      font-size: 13px; } }
+  .btn-cus.btn-save {
+    padding: 20px 60px;
+    background: transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%);
+    color: #fff; }
+    @media (max-width: 1679px) {
+      .btn-cus.btn-save {
+        padding: 10px 40px; } }
+  .btn-cus.btn-cancel {
+    padding: 20px 60px; }
+    @media (max-width: 1679px) {
+      .btn-cus.btn-cancel {
+        padding: 10px 40px; } }
+
+.btn-red {
+  background: transparent linear-gradient(180deg, #FF6868 0%, #FC0067 100%);
+  color: #fff; }
+  .btn-red:hover {
+    color: #fff;
+    opacity: 0.8; }
+
+/*# sourceMappingURL=form.css.map */
