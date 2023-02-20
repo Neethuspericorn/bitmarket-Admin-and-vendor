@@ -28,7 +28,7 @@
 
 <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#sub-category-management">Sub-Category Management Add </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#category-management-view">Category Management View </button>
+<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#category-management-view">Sub Category Management View </button>
 
 <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#sub-category-management-edit">Sub-Category Management Edit </button>
 
@@ -39,6 +39,25 @@
 <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#delete-modal">Delete </button>
 
 <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#category-management-add">Category Management Add </button>
+
+<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#cat-management-view">Category Management View </button>
+
+<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#OrderView">Order View </button>
+
+<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#PaymentView">Payment View </button>
+
+<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#ProfileEdit">Profile Edit </button>
+
+<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#VariantsAdd">Variants Add </button>
+
+<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#variants-view">Variants View </button>
+
+<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#passwordSuccess">Password Changed Successfully </button>
+
+<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#error-modal">Error </button>
+
+<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#logout">Logot </button>
+
 
 
 
@@ -353,8 +372,6 @@
     </div>
   </div>
 
-
-
   <div class="modal fade sub-cat-edit mid" id="sub-category-management" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sub-category-managementLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -605,7 +622,7 @@
   </div>
 
 
-  <div class="modal fade  delete-modal" id="delete-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="delete-modalLabel" aria-hidden="true" data-backdrop="static">
+  <div class="modal fade  delete-modal sml-modal" id="delete-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="delete-modalLabel" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
@@ -678,6 +695,409 @@
                 <button type="button" class="btn btn-cus btn-cancel">Cancel</button>
                 <button type="button" class="btn btn-cus btn-save">Submit</button>
             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade cat-view mid" id="cat-management-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cat-management-viewLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="cat-management-viewLabel">Category Management View</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="outer-main">
+            <div class="col-md-6 content-sec">
+                <div class="product-info">
+                  <div class="frm-itm">
+                    <label class="form-label"> Category</label>
+                    <h3 class="frm-value">Sony Home Theatre 5.1</h3>
+                  </div>
+
+                  <div class="frm-itm light-red">
+                    <label class="form-label"> Description</label>
+                    <h3 class="frm-value">lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum</h3>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-6 imge-sec">
+              <div class="img-area">
+                <img src="img/product-img.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-area">
+                <button type="button" class="btn btn-cus"> <img src="img/edit-pen-icon.svg"/> Edit </button>
+                <button type="button" class="btn btn-cus btn-del"><img src="img/delete-icon-red.svg"/> Delete</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade oder-view mid" id="OrderView" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="OrderViewLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="OrderViewLabel">Order View</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="outer-main">
+            <div class=" row OrderView">
+              <div class="col-md-9 oder-cont">
+                <div class="row oder-spc">
+                  <div class="col-md-4 frm-itm">
+                    <label class="form-label">Order ID</label>
+                    <h3 class="frm-value">OD327212812194464100</h3>
+                  </div> 
+                  <div class="col-md-4 frm-itm light-red">
+                    <label class="form-label">Vendor name</label>
+                    <h3 class="frm-value">POPULAR</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm">
+                    <label class="form-label">Customer name</label>
+                    <h3 class="frm-value">Liam Noah</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm">
+                    <label class="form-label">Product Name</label>
+                    <h3 class="frm-value">iphone 14 pro max</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm light-red">
+                    <label class="form-label">Brand</label>
+                    <h3 class="frm-value">Apple</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm light-red  ">
+                    <label class="form-label">Quantity</label>
+                    <h3 class="frm-value">10</h3>
+                  </div>
+                  <div class="col-md-12 variant">
+                    <label class="form-label">Variant</label>
+                    <h3 class="frm-value">Variant</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm">
+                    <label class="form-label">Order Date</label>
+                    <h3 class="frm-value">10 February 2023</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm light-red">
+                    <label class="form-label">Delivery Date</label>
+                    <h3 class="frm-value">15 February 2023</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm light-red status">
+                    <label class="form-label">Order Status</label>
+                    <div class="status-area">
+                      <div class="icon">
+                          <img src="img/status-green.svg"/>
+                      </div>
+                      <span class="txt">Completed</span>
+                    </div>
+                  </div>
+                  <div class="col-md-12 head">
+                    <h3>Payment</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm">
+                    <label class="form-label">Payment Date</label>
+                    <h3 class="frm-value">10 February 2023</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm light-red">
+                    <label class="form-label">Payment ID</label>
+                    <h3 class="frm-value">VADE0B248932</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm light-red">
+                    <label class="form-label">Total Amount</label>
+                    <h3 class="frm-value">1,32,990</h3>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-md-3 oder-img">
+                <div class="oder-preview">
+                  <img src="img/order-view.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade payment-view mid" id="PaymentView" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="OrderViewLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="OrderViewLabel">Payment View</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="outer-main">
+            <div class=" row payment-value">
+              <div class="col-md-3 frm-itm">
+                <label class="form-label">Date</label>
+                <h3 class="frm-value">15 Feb 2023</h3>
+              </div> 
+
+              <div class="col-md-3 frm-itm light-red">
+                <label class="form-label">Vendor</label>
+                <h3 class="frm-value">POPULAR</h3>
+              </div> 
+
+              <div class="col-md-3 frm-itm">
+                <label class="form-label">Total amount</label>
+                <h3 class="frm-value">1,32,990</h3>
+              </div> 
+
+              <div class="col-md-3 frm-itm">
+                <label class="form-label">Commission received</label>
+                <h3 class="frm-value">100000</h3>
+              </div> 
+
+              <div class="col-md-3 frm-itm light-red">
+                <label class="form-label">Product</label>
+                <h3 class="frm-value">Iphone 14 Pro Max</h3>
+              </div> 
+
+              <div class="col-md-3 frm-itm light-red">
+                <label class="form-label">Category</label>
+                <h3 class="frm-value">Electronic</h3>
+              </div> 
+
+              <div class="col-md-3 frm-itm light-red">
+                <label class="form-label">Order ID</label>
+                <h3 class="frm-value">OD327212812194464100</h3>
+              </div> 
+
+              <div class="col-md-3 frm-itm">
+                <label class="form-label">Customer</label>
+                <h3 class="frm-value">Liam Noah</h3>
+              </div> 
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="modal fade vedr-edit mid" id="ProfileEdit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ProfileEditLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="ProfileEditLabel">Profile Edit </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+           <div class="outer-main">
+            <div class="col-md-4 profile-img-up">
+              <label class="form-label"> Upload Image</label>
+              <div class="profile-img">
+                  <img src="img/profileimg.png"/>
+                  <div class="upload-btn">
+                    <input type="file">
+                    <img src="img/gallery-import.svg"/>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-8 profile-data-main">
+              <div class=" row profile-data">
+                <div class="col-md-6 form-group frm-itm">
+                  <label class="form-label">First Name</label>
+                  <input type="text" class="form-control" placeholder="First Name">
+                </div>
+
+                <div class="col-md-6 form-group frm-itm">
+                  <label class="form-label"> Last Name</label>
+                  <input type="text" class="form-control" placeholder="First Name">
+                </div>
+
+                <div class="col-md-6 form-group frm-itm tel">
+                  <label class="form-label"> Phone number</label>
+                  <div class="phone-number">
+                    <input type="tel" class="form-control code-sec" placeholder="+91">
+                    <input type="tel" class="form-control" placeholder="Phone number">
+                  </div>
+                </div>
+
+                <div class="col-md-6 form-group frm-itm">
+                  <label class="form-label"> Email ID</label>
+                  <input type="email" class="form-control" placeholder="  jamesrobert@gmail.com">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+            <div class="btn-area">
+                <button type="button" class="btn btn-cus btn-cancel">Cancel</button>
+                <button type="button" class="btn btn-cus btn-save">Save</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade variants-add sml-modal" id="VariantsAdd" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="VariantsLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="VariantsLabel">Variants Add </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="outer-main">
+            <div class="row variant">
+              <div class="col-md-12 form-group frm-itm">
+                <label class="form-label"> Variant Category</label>
+                <input type="text" class="form-control" placeholder="Color">
+              </div>
+
+              <div class="col-md-12 form-group frm-itm add">
+                <label class="form-label"> Variant Name</label>
+                <div class="add-sec">
+                  <input type="text" class="form-control" placeholder="Red">
+                  <button class="btn btn-add">
+                    <img src="img/btn-view.svg"/>
+                  </button>
+                </div>
+                <div class="add-sec">
+                  <input type="text" class="form-control" placeholder="Red">
+                  <button class="btn btn-min">
+                    <img src="img/btn-min.svg"/> 
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="btn-area">
+              <button type="button" class="btn btn-cus btn-cancel">Cancel</button>
+              <button type="button" class="btn btn-cus btn-save">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <div class="modal fade variants-view sml-modal " id="variants-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="variants-viewLabel" aria-hidden="true" data-backdrop="static" >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="variants-viewLabel">Variants View</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="outer-main">
+              <div class="row variant">
+                <div class="col-md-6 frm-itm line">
+                  <label class="form-label">Variants Category</label>
+                  <h3 class="frm-value">Color</h3>
+                </div>
+                <div class="col-md-6 frm-itm line">
+                  <label class="form-label">No of Variants</label>
+                  <h3 class="frm-value">03</h3>
+                </div>
+                <div class="col-md-12 frm-itm line light-red">
+                  <label class="form-label">Variant Name</label>
+                  <div class="colors">
+                    <span class="color-view">Red</span>
+                    <span class="color-view">Blue</span>
+                    <span class="color-view">Black</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade  pass-modal sml-modal " id="passwordSuccess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="passwordSuccessLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="outer-main">
+              <div class="icons">
+                <img src="img/green-password.svg"/>
+              </div> 
+              <h3 class="heading">Password Changed Successfully</h3>
+              <P class="content">Your password has been changed successfully.</P>
+              <div class="btn-area">
+                <button class="btn btn-cus btn-green">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div class="modal fade  delete-modal sml-modal" id="error-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="error-modalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="outer-main">
+            <div class="icons">
+              <img src="img/delete-icon-white.svg"/>
+            </div> 
+            <h3 class="heading">Error. Please Try Again Later</h3>
+            <P class="content">The error must be show the password has not match please try again later</P>
+            <div class="btn-area">
+              <button class="btn btn-cus btn-delete">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade pass-modal sml-modal" id="logout"data-bs-keyboard="false" tabindex="-1" aria-labelledby="logout-modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="outer-main">
+            <div class="icons">
+              <img src="img/logoout.svg"/>
+            </div> 
+
+            <h3 class="heading">Are you sure want to Logout ?</h3>
+            <P class="content">You Are Leaving Bitmarket. Please Confirm</P>
+
+            <div class="btn-area">
+              <button class="btn btn-cus btn-cancel">Cancel</button>
+              <button class="btn btn-cus btn-save">Logout</button>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>

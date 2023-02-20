@@ -67,7 +67,7 @@
   line-height: 20px;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 .modal .modal-dialog .modal-content .modal-body .outer-main .frm-value {
   color: #00245E;
@@ -320,6 +320,136 @@
 .modal .modal-dialog .modal-content .modal-body .outer-main .imge-sec .img-area img {
   width: 100%;
 }
+.modal .modal-dialog .modal-content .modal-body .outer-main .OrderView {
+  width: 100%;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-cont {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-cont .oder-spc {
+  margin: 0px;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-cont .oder-spc .frm-itm {
+  padding-left: 30px;
+  position: relative;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-cont .oder-spc .frm-itm::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0px;
+  background-color: #DFD5FC;
+  width: 5px;
+  height: 49px;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-cont .oder-spc .frm-itm.light-red::before {
+  background-color: #F1C8FE;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-cont .oder-spc .variant h3 {
+  color: #7F57F1;
+  background: #F7F5FF;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 50%;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 8px;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-cont .oder-spc .status {
+  flex-direction: column;
+  display: flex;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-cont .oder-spc .status .status-area {
+  align-items: center;
+  padding: 6px 15px 6px 10px;
+  background: #30CC701A;
+  display: inline-flex;
+  border-radius: 18px;
+  width: fit-content;
+  margin-top: 10px;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-cont .oder-spc .status .status-area .icon {
+  margin-right: 10px;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-cont .oder-spc .status .status-area .txt {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 27px;
+  font-family: "Poppins", sans-serif;
+  color: #30CC70;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-cont .oder-spc .head {
+  margin-bottom: 0px;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-cont .oder-spc .head h3 {
+  color: #7F57F1;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0px;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-img .oder-preview img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .payment-value .frm-itm {
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .payment-value .frm-itm::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0px;
+  background-color: #DFD5FC;
+  width: 5px;
+  height: 49px;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .payment-value .frm-itm.light-red::before {
+  background-color: #F1C8FE;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .add-sec {
+  display: flex;
+  margin-bottom: 20px;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .add-sec .form-control {
+  margin-right: 15px;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .add-sec .btn-add {
+  background: transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%);
+  color: #fff;
+  border-radius: 14px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .add-sec .btn-add img {
+  width: 10px;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .add-sec .btn-min {
+  background: #F7F5FF;
+  border-radius: 14px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.modal .modal-dialog .modal-content .modal-body .outer-main .add-sec .btn-min img {
+  width: 10px;
+}
 .modal .modal-dialog .modal-content .modal-footer {
   padding: 0px 90px 50px;
   margin: 0px;
@@ -366,12 +496,95 @@
 .modal.sub-cat-edit .modal-dialog .modal-content .modal-body .outer-main .profile-data-main .form-label {
   margin-bottom: 10px;
 }
-.modal.delete-modal .modal-dialog {
+.modal.sml-modal .modal-dialog {
   max-width: 560px;
 }
-.modal.delete-modal .modal-dialog .modal-content .modal-body .outer-main {
-  padding: 60px;
+.modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main {
+  padding: 50px 50px;
   justify-content: center;
+}
+.modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main .variant {
+  margin: 0px;
+  width: 100%;
+}
+.modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main .variant .frm-itm {
+  margin-bottom: 30px;
+  padding: 0px;
+}
+.modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main .variant .frm-itm.line {
+  padding-left: 25px;
+  position: relative;
+}
+.modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main .variant .frm-itm.line::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 8px;
+  width: 5px;
+  max-height: calc(100% - 10px);
+  min-height: 49px;
+  background: #DFD5FC;
+  border-radius: 10px;
+}
+.modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main .variant .frm-itm.line.light-red::before {
+  background-color: #F1C8FE;
+}
+.modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main .variant .colors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main .variant .colors .color-view {
+  color: #1D1D39;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #F7EEFF;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  min-width: 100px;
+  padding: 10px 20px 10px;
+}
+.modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main .heading {
+  color: #2C00AA;
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 35px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+.modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main .content {
+  color: #896E98;
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+.modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main .btn-area {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main .btn-area .btn {
+  margin-right: 15px;
+}
+.modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main .btn-area .btn:last-child {
+  margin-right: 0px;
+}
+.modal.sml-modal .modal-dialog .modal-content .modal-footer {
+  padding: 30px 50px;
+}
+.modal.sml-modal .modal-dialog .modal-content .modal-footer .btn-area .btn {
+  width: calc(50% - 8px);
+}
+.modal.delete-modal .modal-dialog {
+  max-width: 560px;
 }
 .modal.delete-modal .modal-dialog .modal-content .modal-body .outer-main .icons {
   background: transparent linear-gradient(180deg, #FF3737 0%, #9F0000 100%);
@@ -384,34 +597,18 @@
 .modal.delete-modal .modal-dialog .modal-content .modal-body .outer-main .icons img {
   width: 40px;
 }
-.modal.delete-modal .modal-dialog .modal-content .modal-body .outer-main .heading {
-  color: #2C00AA;
-  margin-bottom: 15px;
-  font-size: 24px;
-  line-height: 35px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  text-align: center;
+.modal.payment-view .modal-dialog .modal-content .modal-body .outer-main {
+  min-height: 500px;
+  display: inline-block;
 }
-.modal.delete-modal .modal-dialog .modal-content .modal-body .outer-main .content {
-  color: #896E98;
-  margin-bottom: 50px;
-  font-size: 16px;
-  line-height: 28px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  text-align: center;
+.modal.pass-modal .modal-dialog .modal-content .modal-body .outer-main .icons {
+  margin-bottom: 40px;
 }
-.modal.delete-modal .modal-dialog .modal-content .modal-body .outer-main .btn-area {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+.modal.pass-modal .modal-dialog .modal-content .modal-body .outer-main .heading {
+  color: #090909;
 }
-.modal.delete-modal .modal-dialog .modal-content .modal-body .outer-main .btn-area .btn {
-  margin-right: 15px;
-}
-.modal.delete-modal .modal-dialog .modal-content .modal-body .outer-main .btn-area .btn:last-child {
-  margin-right: 0px;
+.modal.pass-modal .modal-dialog .modal-content .modal-body .outer-main .content {
+  color: #858894;
 }
 
 @media (max-width: 1679px) {
@@ -450,6 +647,12 @@
     margin-bottom: 20px;
     line-height: 20px;
   }
+  .modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main {
+    padding: 40px 40px;
+  }
+  .modal.sml-modal .modal-dialog .modal-content .modal-footer {
+    padding: 40px 40px;
+  }
 }
 @media (max-width: 1367px) {
   .modal .modal-dialog .modal-content {
@@ -479,6 +682,12 @@
   }
   .modal.delete-modal .modal-dialog .modal-content .modal-body .outer-main .content {
     font-size: 14px;
+  }
+  .modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main {
+    padding: 30px 20px;
+  }
+  .modal.sml-modal .modal-dialog .modal-content .modal-footer {
+    padding: 30px 20px;
   }
 }
 @media (max-width: 1281px) {
@@ -556,6 +765,12 @@
   .modal.sub-cat-edit .modal-dialog .modal-content .modal-body .outer-main .profile-data-main .profile-data .frm-itm {
     width: 100%;
   }
+  .modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main {
+    padding: 30px 15px;
+  }
+  .modal.sml-modal .modal-dialog .modal-content .modal-footer {
+    padding: 30px 15px;
+  }
 }
 @media (max-width: 767px) {
   .modal .modal-dialog .modal-content {
@@ -601,6 +816,12 @@
     margin-top: 15px;
     width: 100%;
   }
+  .modal.oder-view .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-cont {
+    margin-bottom: 20px;
+  }
+  .modal.oder-view .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-cont .oder-spc .frm-itm {
+    margin-bottom: 15px;
+  }
 }
 @media (max-width: 579px) {
   .modal .modal-dialog .modal-content .modal-body .outer-main {
@@ -624,6 +845,17 @@
   }
   .modal .modal-dialog .modal-content .modal-footer .btn-area .btn:last-child {
     margin-bottom: 0px !important;
+  }
+  .modal.oder-view .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-cont {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .modal.oder-view .modal-dialog .modal-content .modal-body .outer-main .OrderView .oder-cont .oder-spc .variant h3 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .modal.sml-modal .modal-dialog .modal-content .modal-footer .btn-area .btn {
+    width: 100%;
   }
 }
 @media (max-width: 479px) {
