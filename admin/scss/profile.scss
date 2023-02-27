@@ -1,0 +1,138 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+.profile-block-section {
+    background: #FFFFFF;
+    border-radius: 14px;
+    padding: 75px 95px;
+    margin-top: 30px;
+    display: flex;
+    overflow: auto;
+    align-items: self-start;
+
+    @media ($sm-1679) {
+        padding: 50px 70px;
+    }
+
+    @media ($sm-1367) {
+        padding: 40px 50px;
+    }
+
+    @media ($sm-1281) {
+        padding: 40px 50px;
+    }
+
+    @media ($sm-1023) {
+        flex-direction: column;
+        padding: 25px 30px;
+        height: 350px;
+        overflow: auto;
+    }
+
+    .profile-pic-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 100px;
+
+        @media ($sm-1679) {
+            margin-right: 70px;
+        }
+
+        @media ($sm-1367) {
+            margin-right: 50px;
+        }
+
+        @media ($sm-1023) {
+            margin-right: 0;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .profile-pic {
+            max-width: 173px;
+            height: 173px;
+            border-radius: 100px;
+            object-fit: cover;
+            border: 21px solid #F7EEFF;
+
+            @media ($sm-1679) {
+                max-width: 160px;
+                height: 160px;
+                border: 16px solid #F7EEFF;
+            }
+
+            @media ($sm-1367) {
+                max-width: 140px;
+                height: 140px;
+                border: 11px solid #F7EEFF;
+            }
+
+            @media ($sm-991) {
+                max-width: 110px;
+                height: 110px;
+                border: 5px solid #F7EEFF;
+            }
+        }
+    }
+
+    .profile-txt-section {
+        display: flex;
+        flex: 1 1 100%;
+        flex-wrap: wrap;
+        gap: 50px 0;
+
+        @media ($sm-1199) {
+            gap: 40px 0;
+        }
+
+        @media ($sm-1023) {
+            gap: 30px 0;
+        }
+
+        @media ($sm-767) {
+            gap: 20px 0;
+        }
+
+        .profile-txt-block {
+            width: calc(100% / 3);
+            padding-right: 20px;
+
+            @media ($sm-1199) {
+                width: calc(100% / 2);
+            }
+
+            @media ($sm-991) {
+                width: calc(100% / 1);
+            }
+
+            .profile-txt {
+                border-left: 5px solid #DFD5FC;
+                padding-left: 20px;
+
+                .profile-label {
+                    text-align: left;
+                    font: normal 16px $primary-font;
+                    color: #1D1D39;
+                    margin-bottom: 8px;
+
+                    @media ($sm-1281) {
+                        font-size: 14px;
+                    }
+                }
+
+                .user-txt {
+                    text-align: left;
+                    font: 600 16px $primary-font;
+                    color: #00245E;
+                    margin: 0;
+
+                    @media ($sm-1281) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+

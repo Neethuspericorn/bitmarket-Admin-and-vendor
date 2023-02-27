@@ -170,6 +170,16 @@
                     color: $secondary-color;
                     padding-left: 5px;
                 }
+                .form-select{
+                    box-shadow: none;
+                    color: $secondary-color;
+                    padding-left: 5px;
+                    background-color: transparent !important;
+                    border: none;
+                    @include placeholder{
+                        color: #B1A5E1;
+                    }
+                }
             }
             .file-input{
                 position: relative;
@@ -390,7 +400,7 @@
         height: 52px;
     }
     .form-block-cover .form-container .fgt-pswd-lnk a, .form-block-cover .form-container .cutom-form-control .cutom-input-group .form-control, 
-    .form-block-cover .form-container .cutom-form-control .form-label, .login-cover .login-wrapper .left-block .welcome-title p{
+    .form-block-cover .form-container .cutom-form-control .form-label, .login-cover .login-wrapper .left-block .welcome-title p, .form-block-cover .form-container .cutom-form-control .cutom-input-group .form-select{
         font-size: 14px;
     }
     .login-cover .login-wrapper .left-block .welcome-title h2 {

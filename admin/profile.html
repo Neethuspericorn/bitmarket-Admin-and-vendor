@@ -5,16 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dashboard</title>
+    <title>Profile</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/side-nav.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/customer-management.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/profile.css">
 </head>
 
 <body>
@@ -28,7 +34,7 @@
             </div>
             <div class="side-nav custom-scroll">
                 <ul class="nav-list">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="dashboard.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -62,7 +68,7 @@
                             <span>Dashboard</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a href="customer-management.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -120,7 +126,7 @@
                             <span>Vendor Management</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="category-management.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -449,67 +455,117 @@
 
             </header>
             <main class="content-block custom-scroll">
-                <div class="outer-content-block">
-                    <div class="dash-vendor-block">
-                        <div class="custom-cards-block">
-                            <div class="custom-cards">
-                                <div class="cards-header">
-                                    <div class="img-block">
-                                        <img src="img/vendor.svg" alt="">
-                                    </div>
-                                    <h4>156 <span>Total Vendor</span></h4>
-                                </div>
-                                <div class="cards-footer">
-                                    <img src="img/vuesax-linear-send.svg" alt="">
-                                    <span class="txt-success">20</span>
-                                    <span>Last one month</span>
-                                </div>
-                            </div>
-                            <div class="custom-cards mb-0">
-                                <div class="cards-header">
-                                    <div class="img-block">
-                                        <img src="img/customers.svg" alt="">
-                                    </div>
-                                    <h4>1120 <span>Total Customers</span></h4>
-                                </div>
-                                <div class="cards-footer">
-                                    <img src="img/vuesax-linear-send.svg" alt="">
-                                    <span class="txt-success">20 </span>
-                                    <span>Last one month</span>
-                                </div>
-                            </div>
+                <div class="right-section-outer">
+                    <div class="top-title-section">
+                        <div class="title-text">
+                            <h3>Profile</h3>
                         </div>
-                        <div class="custom-chart-block">
-                            <div class="custom-chart-title">
-                                <h6 class="title">Total commission received</h6>
-                                <div class="action ">
-                                    <button class="btn isActive">This Month</button>
-                                    <button class="btn">Last Month</button>
-                                </div>
+                        <div class="right-filter">
+                            <div class="profile-edit-block">
+                                <button class="btn edit-btn" data-bs-toggle="modal" data-bs-target="#ProfileEdit">
+                                    <img src="img/edit-pen-icon.svg" class="profile-edit-icon" alt="edit">
+                                    Edit Profile
+                                </button>
                             </div>
-                            <img src="img/chart2.svg" alt="">
                         </div>
                     </div>
-                    <div class="custom-chart-blocks">
-                        <div class="custom-chart-title">
-                            <h6 class="title">Total Revenue graph</h6>
-                            <div class="action ">
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Dropdown button
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                      <li><a class="dropdown-item" href="#">Action</a></li>
-                                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                  </div>
+                    <div class="profile-block-section">
+                        <div class="profile-pic-block">
+                            <img src="img/profileimg.png" class="profile-pic" alt="">
+                        </div>
+
+                        <div class="profile-txt-section">
+                            <div class="profile-txt-block">
+                                <div class="profile-txt">
+                                    <label for="" class="profile-label">First Name</label>
+                                    <h6 class="user-txt">James Robert</h6>
+                                </div>
+                            </div>
+                            <div class="profile-txt-block">
+                                <div class="profile-txt">
+                                    <label for="" class="profile-label">Last Name</label>
+                                    <h6 class="user-txt">Robert</h6>
+                                </div>
+                            </div>
+                            <div class="profile-txt-block">
+                                <div class="profile-txt">
+                                    <label for="" class="profile-label">Phone number</label>
+                                    <h6 class="user-txt">+91 8866 228800</h6>
+                                </div>
+                            </div>
+                            <div class="profile-txt-block">
+                                <div class="profile-txt">
+                                    <label for="" class="profile-label">Email ID</label>
+                                    <h6 class="user-txt">jamesrobert0899@gmail.com</h6>
+                                </div>
                             </div>
                         </div>
-                        <img src="img/chart1.svg" alt="">
                     </div>
                 </div>
+
             </main>
+        </div>
+    </div>
+    <div class="modal fade vedr-edit mid" id="ProfileEdit" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="ProfileEditLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ProfileEditLabel">Profile Edit </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="outer-main">
+                        <div class="col-md-3 profile-img-up">
+                            <label class="form-label"> Upload Image</label>
+                            <div class="profile-img">
+                                <img src="img/profileimg.png" />
+                                <div class="upload-btn">
+                                    <input type="file">
+                                    <img src="img/gallery-import.svg" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-9 profile-data-main">
+                            <div class=" row profile-data">
+                                <div class="col-md-6 form-group frm-itm">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+
+                                <div class="col-md-6 form-group frm-itm">
+                                    <label class="form-label"> Last Name</label>
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+
+                                <div class="col-md-6 form-group frm-itm tel">
+                                    <label class="form-label"> Phone number</label>
+                                    <div class="phone-number">
+                                        <input type="tel" class="form-control code-sec" placeholder="+91">
+                                        <input type="tel" class="form-control" placeholder="Phone number">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 form-group frm-itm">
+                                    <label class="form-label"> Email ID</label>
+                                    <input type="email" class="form-control" placeholder="  jamesrobert@gmail.com">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-area">
+                        <button type="button" class="btn btn-cus btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-cus btn-save">Save</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="Js/vendor/bootstrap.min.js"></script>

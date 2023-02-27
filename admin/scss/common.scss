@@ -134,7 +134,7 @@ body {
     overflow: auto;
 
     @media(max-width:1679px) {
-       min-height: calc(100vh - 96px);
+        min-height: calc(100vh - 96px);
     }
 }
 
@@ -178,9 +178,54 @@ body {
     }
 }
 
+.profile-edit-block {
+    .edit-btn {
+        width: 159px;
+        height: 48px;
+        background: #E0D5FF;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        font: 500 16px $primary-font;
+        color: #2C00AA;
+        text-transform: capitalize;
+
+        @media ($sm-1679) {
+            width: 135px;
+        }
+
+        @media ($sm-1281) {
+            width: 125px;
+            font: 500 14px $primary-font;
+        }
+        @media ($sm-991) {
+            width: 125px;
+            font: 500 12px $primary-font;
+            height: 40px;
+        }
+
+        .profile-edit-icon {
+            width: 13px;
+            height: 14px;
+            margin-right: 10px;
+            @media ($sm-991) {
+                width: 10px;
+                height: 10px;
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
 .search-filter {
     background: rgb(255, 255, 255);
     border-radius: 50px;
+
+    @media(max-width:1367px) {
+        height: 44px;
+    }
 
     .form-control {
         background: transparent;
@@ -195,8 +240,17 @@ body {
             width: 310px;
         }
 
+        @media(max-width:1367px) {
+            width: 280px;
+            height: 44px;
+        }
+
         @media(max-width:1289px) {
             width: 250px;
+        }
+
+        @media(max-width:1023px) {
+            width: 200px;
         }
 
         @media(max-width:991px) {
@@ -241,8 +295,13 @@ body {
             width: 200px;
         }
 
+        @media(max-width:1367px) {
+            height: 44px;
+        }
+
         @media(max-width:1281px) {
             font-size: 12px;
+            width: 170px;
         }
 
         @media(max-width:767px) {
@@ -265,13 +324,189 @@ body {
     }
 }
 
-.tbl-filter {
+.tbl-filter-block {
     margin-left: 18px;
+
     .btn {
         width: 48px;
         height: 48px;
         background: #FFFFFF;
         border-radius: 34px;
+
+        @media(max-width:1367px) {
+            width: 44px;
+            height: 44px;
+        }
+    }
+
+    .dropdown-menu {
+        background: #FFFFFF;
+        box-shadow: 0px 3px 20px #B1A5E126;
+        border-radius: 18px;
+        border: none;
+        width: 230px;
+        top: 15px !important;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            background-image: url('../img/filter-arrow.svg');
+            top: -10px;
+            width: 15px;
+            height: 10px;
+            right: 20px;
+        }
+
+        li {
+            .dropdown-item {
+                text-align: left;
+                font: 500 14px $primary-font;
+                color: #8A90A8;
+                text-transform: capitalize;
+                padding: 10px 20px;
+                position: relative;
+                padding-left: 39px;
+                border-bottom: 1px solid #D4D8E9;
+
+                &:hover {
+                    background: transparent !important;
+                    color: $secondary-color;
+
+                    &::after {
+                        background: $secondary-color;
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 8px;
+                    height: 8px;
+                    background: #8B91AA;
+                    position: absolute;
+                    border-radius: 100px;
+                    left: 18px;
+                    top: 0;
+                    margin: auto;
+                    bottom: 0;
+                }
+            }
+
+            &:last-child {
+                .dropdown-item {
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.tbl-Order {
+    margin-left: 15px;
+
+    .dropdown {
+        .btn {
+            width: 168px;
+            height: 48px;
+            background: #FFFFFF;
+            border-radius: 34px;
+            text-align: left;
+            font: 500 14px $primary-font;
+            letter-spacing: 0px;
+            text-transform: capitalize;
+            color: #7F57F1;
+            padding-left: 18px;
+
+            @media(max-width:1367px) {
+                width: 140px;
+                height: 44px;
+            }
+
+            @media(max-width:1199px) {
+                width: 120px;
+                height: 44px;
+            }
+
+            &.dropdown-toggle {
+                &::after {
+                    border: none;
+                    background-image: url('../img/arrow-selt.svg');
+                    width: 10px;
+                    height: 6px;
+                    background-size: 10px;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    right: 18px;
+                    top: 23px;
+
+                    @media(max-width:1199px) {
+                        top: 21px;
+                    }
+                }
+            }
+        }
+
+        .dropdown-menu {
+            background: #FFFFFF;
+            box-shadow: 0px 3px 20px #B1A5E126;
+            border-radius: 18px;
+            border: none;
+            top: 15px !important;
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                background-image: url('../img/filter-arrow.svg');
+                top: -10px;
+                width: 15px;
+                height: 10px;
+                right: 20px;
+            }
+
+            li {
+                .dropdown-item {
+                    text-align: left;
+                    font: 500 14px $primary-font;
+                    color: #8A90A8;
+                    text-transform: capitalize;
+                    padding: 10px 20px;
+                    position: relative;
+                    padding-left: 39px;
+                    border-bottom: 1px solid #D4D8E9;
+
+                    &:hover {
+                        background: transparent !important;
+                        color: $secondary-color;
+
+                        &::after {
+                            background: $secondary-color;
+                        }
+                    }
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 8px;
+                        height: 8px;
+                        background: #8B91AA;
+                        position: absolute;
+                        border-radius: 100px;
+                        left: 18px;
+                        top: 0;
+                        margin: auto;
+                        bottom: 0;
+                    }
+                }
+
+                &:last-child {
+                    .dropdown-item {
+                        border: none;
+                    }
+                }
+            }
+        }
     }
 }
 

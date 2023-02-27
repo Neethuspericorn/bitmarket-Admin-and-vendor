@@ -2,72 +2,93 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dashboard</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/form.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
 </head>
 
 <body>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#cust-mng-view">Customer Management View </button>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#cust-mng-view">Customer Management View </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#cust-mng-edit">Customer Management Edit </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#cust-mng-edit">Customer Management Edit </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#vedr-mng-view">Vendor Management View </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#vedr-mng-view">Vendor Management View </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#vedr-mng-edit">Vendor Management Edit </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#vedr-mng-edit">Vendor Management Edit </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#sub-category-management">Sub-Category Management Add </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#sub-category-management">Sub-Category Management Add </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#category-management-view">Sub Category Management View </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#category-management-view">Sub Category Management View </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#sub-category-management-edit">Sub-Category Management Edit </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#sub-category-management-edit">Sub-Category Management Edit </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#category-management-edit">Category Management Edit </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#category-management-edit">Category Management Edit </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#management-view">Category Management View </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#management-view">Category Management View </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#delete-modal">Delete </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#delete-modal">Delete </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#category-management-add">Category Management Add </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#category-management-add">Category Management Add </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#cat-management-view">Category Management View </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#cat-management-view">Category Management View </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#OrderView">Order View </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#OrderView">Order
+    View </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#PaymentView">Payment View </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#PaymentView">Payment View </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#ProfileEdit">Profile Edit </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#ProfileEdit">Profile Edit </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#VariantsAdd">Variants Add </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#VariantsAdd">Variants Add </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#variants-view">Variants View </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#variants-view">Variants View </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#passwordSuccess">Password Changed Successfully </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#passwordSuccess">Password Changed Successfully </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#error-modal">Error </button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#error-modal">Error
+  </button>
 
-<button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#logout">Logot </button>
-
-
-
-
-
-
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#logout">Logot
+  </button>
 
 
-  
+
+
+
+
+
+
+
   <!-- Modal -->
-  <div class="modal fade cust-man mid" id="cust-mng-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cust-mng-viewLabel" aria-hidden="true">
+  <div class="modal fade cust-man mid" id="cust-mng-view" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="cust-mng-viewLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -77,55 +98,56 @@
         </div>
 
         <div class="modal-body">
-           <div class="outer-main">
-              <div class="col-md-4 profile-img-view">
-                <div class="profile-img">
-                    <img src="img/profileimg.png"/>
+          <div class="outer-main">
+            <div class="col-md-4 profile-img-view">
+              <div class="profile-img">
+                <img src="img/profileimg.png" />
+              </div>
+            </div>
+
+            <div class="col-md-8 profile-data-main">
+              <div class="row profile-data">
+                <div class="col-md-4 frm-itm">
+                  <label class="form-label"> First name</label>
+                  <h3 class="frm-value">James</h3>
+                </div>
+                <div class="col-md-4 frm-itm">
+                  <label class="form-label"> Last name</label>
+                  <h3 class="frm-value">Robert</h3>
+
+                </div>
+                <div class="col-md-4 frm-itm">
+                  <label class="form-label"> Email ID</label>
+                  <h3 class="frm-value">jamesrobert19886@gmail.com</h3>
+
+                </div>
+                <div class="col-md-8 frm-itm address">
+                  <label class="form-label"> Address</label>
+                  <h3 class="frm-value">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</h3>
+
+                </div>
+                <div class="col-md-4 frm-itm">
+                  <label class="form-label"> Phone number</label>
+                  <h3 class="frm-value">+91 8899153538</h3>
                 </div>
               </div>
-
-              <div class="col-md-8 profile-data-main">
-                <div class="row profile-data">
-                  <div class="col-md-4 frm-itm">
-                    <label class="form-label"> First name</label>
-                    <h3 class="frm-value">James</h3>
-                  </div>
-                  <div class="col-md-4 frm-itm">
-                    <label class="form-label"> Last name</label>
-                    <h3 class="frm-value">Robert</h3>
-
-                  </div>
-                  <div class="col-md-4 frm-itm">
-                    <label class="form-label"> Email ID</label>
-                    <h3 class="frm-value">jamesrobert19886@gmail.com</h3>
-
-                  </div>
-                  <div class="col-md-8 frm-itm address">
-                    <label class="form-label"> Address</label>
-                    <h3 class="frm-value">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</h3>
-
-                  </div>
-                  <div class="col-md-4 frm-itm">
-                    <label class="form-label"> Phone number</label>
-                    <h3 class="frm-value">+91 8899153538</h3>
-                  </div>
-                </div>
-              </div>
-           </div>
+            </div>
+          </div>
         </div>
         <div class="modal-footer">
-            <div class="btn-area">
-                <button type="button" class="btn btn-cus"><img src="img/delete-icon.svg"/> Delete</button>
-                <button type="button" class="btn btn-cus"><img src="img/edit-pen-icon.svg"/> Edit</button>
-                <button type="button" class="btn btn-cus btn-red"><img src="img/block.svg"/> Bloack</button>
-            </div>
+          <div class="btn-area">
+            <button type="button" class="btn btn-cus"><img src="img/delete-icon.svg" /> Delete</button>
+            <button type="button" class="btn btn-cus"><img src="img/edit-pen-icon.svg" /> Edit</button>
+            <button type="button" class="btn btn-cus btn-red"><img src="img/block.svg" /> Bloack</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
 
-  <div class="modal fade cust-man mid" id="cust-mng-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cust-mng-editLabel" aria-hidden="true">
+  <div class="modal fade cust-man mid" id="cust-mng-edit" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="cust-mng-editLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -135,61 +157,63 @@
         </div>
 
         <div class="modal-body">
-           <div class="outer-main">
+          <div class="outer-main">
             <div class="col-md-4 profile-img-up">
               <div class="profile-img">
-                  <img src="img/profileimg.png"/>
-                  <div class="upload-btn">
-                    <input type="file">
-                    <img src="img/gallery-import.svg"/>
-                  </div>
+                <img src="img/profileimg.png" />
+                <div class="upload-btn">
+                  <input type="file">
+                  <img src="img/gallery-import.svg" />
+                </div>
               </div>
             </div>
 
             <div class="col-md-8 profile-data-main">
               <div class=" row profile-data">
-                  <div class="col-md-6 form-group frm-itm">
-                    <label class="form-label"> First name</label>
-                    <input type="text" class="form-control" placeholder="First Name">
+                <div class="col-md-6 form-group frm-itm">
+                  <label class="form-label"> First name</label>
+                  <input type="text" class="form-control" placeholder="First Name">
+                </div>
+                <div class="col-md-6 form-group frm-itm">
+                  <label class="form-label"> First name</label>
+                  <input type="text" class="form-control" placeholder="First Name">
+                </div>
+                <div class="col-md-6 form-group frm-itm">
+                  <label class="form-label"> Email ID</label>
+                  <input type="email" class="form-control" placeholder="  jamesrobert@gmail.com">
+                </div>
+                <div class="col-md-6 form-group frm-itm tel">
+                  <label class="form-label"> Phone number</label>
+                  <div class="phone-number">
+                    <input type="tel" class="form-control code-sec" placeholder="+91">
+                    <input type="tel" class="form-control" placeholder="Phone number">
                   </div>
-                  <div class="col-md-6 form-group frm-itm">
-                    <label class="form-label"> First name</label>
-                    <input type="text" class="form-control" placeholder="First Name">
-                  </div>
-                  <div class="col-md-6 form-group frm-itm">
-                    <label class="form-label"> Email ID</label>
-                    <input type="email" class="form-control" placeholder="  jamesrobert@gmail.com">
-                  </div>
-                  <div class="col-md-6 form-group frm-itm tel">
-                    <label class="form-label"> Phone number</label>
-                    <div class="phone-number">
-                      <input type="tel" class="form-control code-sec" placeholder="+91">
-                      <input type="tel" class="form-control" placeholder="Phone number">
-                    </div>
-                  </div>
-                  <div class="col-md-12 form-group frm-itm address">
-                    <label class="form-label"> Address</label>
-                    <input type="text" class="form-control" placeholder="Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016">
-                  </div>
+                </div>
+                <div class="col-md-12 form-group frm-itm address">
+                  <label class="form-label"> Address</label>
+                  <input type="text" class="form-control"
+                    placeholder="Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016">
+                </div>
               </div>
             </div>
 
-           </div>
+          </div>
 
 
         </div>
         <div class="modal-footer">
-            <div class="btn-area">
-                <button type="button" class="btn btn-cus btn-cancel">Cancel</button>
-                <button type="button" class="btn btn-cus btn-save">Save</button>
-            </div>
+          <div class="btn-area">
+            <button type="button" class="btn btn-cus btn-cancel"  data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-cus btn-save">Save</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
 
-  <div class="modal fade vedr-man mid" id="vedr-mng-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vedr-mng-viewLabel" aria-hidden="true">
+  <div class="modal fade vedr-man mid" id="vedr-mng-view" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="vedr-mng-viewLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -199,49 +223,49 @@
         </div>
 
         <div class="modal-body">
-           <div class="outer-main">
+          <div class="outer-main">
             <div class="col-md-4 profile-img-view">
               <div class="profile-img">
-                  <img src="img/profileimg.png"/>
-                  <div class="upload-btn">
-                    <input type="file">
-                    <img src="img/gallery-import.svg"/>
-                  </div>
+                <img src="img/profileimg.png" />
+                <div class="upload-btn">
+                  <input type="file">
+                  <img src="img/gallery-import.svg" />
+                </div>
               </div>
               <div class="profile-info">
-                  <span class="profile-lab">Request Date</span>
-                  <h3 class="date">28 January 2022</h3>
+                <span class="profile-lab">Request Date</span>
+                <h3 class="date">28 January 2022</h3>
 
-                  <div class="profile-lab">Status</div>
-                  <span class="status orng">
-                    <span class="icon"><img src="img/pending-clock-icon.svg"/> </span>
-                    <span class="txt">Pending</span>
-                  </span>
+                <div class="profile-lab">Status</div>
+                <span class="status orng">
+                  <span class="icon"><img src="img/pending-clock-icon.svg" /> </span>
+                  <span class="txt">Pending</span>
+                </span>
               </div>
             </div>
 
             <div class="col-md-8 profile-data-main">
               <div class=" row profile-data border-bot">
-                  <div class="col-md-4 form-group frm-itm">
-                    <label class="form-label"> Vendor Name</label>
-                    <h3 class="frm-value">James Robert</h3>
-                  </div>
-                  <div class="col-md-4 form-group frm-itm light-red">
-                    <label class="form-label"> Email</label>
-                    <h3 class="frm-value">jamesrobert0899@gmail.com</h3>                    
-                  </div>
-                  <div class="col-md-4 form-group frm-itm">
-                    <label class="form-label"> Commission %</label>
-                    <h3 class="frm-value">50 %</h3>                    
-                  </div>
-                  <div class="col-md-8 form-group frm-itm ">
-                    <label class="form-label"> Address</label>
-                    <h3 class="frm-value">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</h3>                    
-                  </div>
-                  <div class="col-md-4 form-group frm-itm light-red">
-                    <label class="form-label"> Phone number</label>
-                    <h3 class="frm-value">+91 8899153538</h3>
-                  </div>
+                <div class="col-md-4 form-group frm-itm">
+                  <label class="form-label"> Vendor Name</label>
+                  <h3 class="frm-value">James Robert</h3>
+                </div>
+                <div class="col-md-4 form-group frm-itm light-red">
+                  <label class="form-label"> Email</label>
+                  <h3 class="frm-value">jamesrobert0899@gmail.com</h3>
+                </div>
+                <div class="col-md-4 form-group frm-itm">
+                  <label class="form-label"> Commission %</label>
+                  <h3 class="frm-value">50 %</h3>
+                </div>
+                <div class="col-md-8 form-group frm-itm ">
+                  <label class="form-label"> Address</label>
+                  <h3 class="frm-value">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</h3>
+                </div>
+                <div class="col-md-4 form-group frm-itm light-red">
+                  <label class="form-label"> Phone number</label>
+                  <h3 class="frm-value">+91 8899153538</h3>
+                </div>
               </div>
 
               <div class=" row profile-data">
@@ -254,35 +278,36 @@
                 </div>
                 <div class="col-md-4 form-group frm-itm">
                   <label class="form-label"> Shop Email</label>
-                  <h3 class="frm-value">cozmo.store@gmail.com</h3>                    
+                  <h3 class="frm-value">cozmo.store@gmail.com</h3>
                 </div>
-                
+
                 <div class="col-md-12 form-group frm-itm light-red ">
                   <label class="form-label">Address</label>
                   <h3 class="frm-value">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</h3>
                 </div>
-            </div>
+              </div>
 
 
             </div>
 
-           </div>
+          </div>
 
 
         </div>
         <div class="modal-footer">
-            <div class="btn-area">
-              <button type="button" class="btn btn-cus"><img src="img/delete-icon.svg"/> Delete</button>
-              <button type="button" class="btn btn-cus"><img src="img/edit-pen-icon.svg"/> Edit</button>
-              <button type="button" class="btn btn-cus btn-red"><img src="img/block.svg"/> Reject</button>
-              <button type="button" class="btn btn-cus btn-green"><img src="img/approve.svg"/> Approve</button>
-            </div>
+          <div class="btn-area">
+            <button type="button" class="btn btn-cus"><img src="img/delete-icon.svg" /> Delete</button>
+            <button type="button" class="btn btn-cus"><img src="img/edit-pen-icon.svg" /> Edit</button>
+            <button type="button" class="btn btn-cus btn-red"><img src="img/block.svg" /> Reject</button>
+            <button type="button" class="btn btn-cus btn-green"><img src="img/approve.svg" /> Approve</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade vedr-edit mid" id="vedr-mng-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vedr-mng-editLabel" aria-hidden="true" >
+  <div class="modal fade vedr-edit mid" id="vedr-mng-edit" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="vedr-mng-editLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -292,14 +317,14 @@
         </div>
 
         <div class="modal-body">
-           <div class="outer-main">
+          <div class="outer-main">
             <div class="col-md-4 profile-img-up">
               <div class="profile-img">
-                  <img src="img/profileimg.png"/>
-                  <div class="upload-btn">
-                    <input type="file">
-                    <img src="img/gallery-import.svg"/>
-                  </div>
+                <img src="img/profileimg.png" />
+                <div class="upload-btn">
+                  <input type="file">
+                  <img src="img/gallery-import.svg" />
+                </div>
               </div>
             </div>
 
@@ -328,13 +353,14 @@
                   <input type="email" class="form-control" placeholder="  jamesrobert@gmail.com">
                   <div class="double-input">
                     <label class="form-label"> Request Date</label>
-                    <input id="datepicker" placeholder="13 January 2023" autocomplete="off" class="form-control date-input">
+                    <input id="datepicker" placeholder="13 January 2023" autocomplete="off"
+                      class="form-control date-input">
                   </div>
                 </div>
-                
+
                 <div class="col-md-8 form-group frm-itm">
                   <label class="form-label"> Address</label>
-                  <textarea class="form-control" placeholder="Address" ></textarea>
+                  <textarea class="form-control" placeholder="Address"></textarea>
                 </div>
 
                 <div class="col-md-12 head">
@@ -347,15 +373,15 @@
                   <div class="double-input">
                     <label class="form-label"> Shop Email ID</label>
                     <input type="text" class="form-control" placeholder="First Name">
-                  </div>                 
+                  </div>
                 </div>
 
                 <div class="col-md-8 form-group frm-itm">
                   <label class="form-label"> Address</label>
-                  <textarea class="form-control" placeholder="Address" ></textarea>
+                  <textarea class="form-control" placeholder="Address"></textarea>
                 </div>
 
-                
+
 
               </div>
             </div>
@@ -363,16 +389,17 @@
 
         </div>
         <div class="modal-footer">
-            <div class="btn-area">
-                <button type="button" class="btn btn-cus btn-cancel">Cancel</button>
-                <button type="button" class="btn btn-cus btn-save">Save</button>
-            </div>
+          <div class="btn-area">
+            <button type="button" class="btn btn-cus btn-cancel"  data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-cus btn-save">Save</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade sub-cat-edit mid" id="sub-category-management" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sub-category-managementLabel" aria-hidden="true">
+  <div class="modal fade sub-cat-edit mid" id="sub-category-management" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1" aria-labelledby="sub-category-managementLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -388,10 +415,10 @@
 
               <div class="upload-area">
                 <div class="upload">
-                  <img src="img/upload-img.svg"/>
+                  <img src="img/upload-img.svg" />
                   <h3 class="heading">Drag And Drop Your Files Here</h3>
                   <p class="content">Drag And Drop Your Files Here</p>
-                  <input type="file" class="upload-hide"/>
+                  <input type="file" class="upload-hide" />
                 </div>
                 <div class="process">
                   <div class="head-sec">
@@ -399,45 +426,47 @@
                     <h3 class="size">150 kB</h3>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75"
+                      aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
                   </div>
                 </div>
               </div>
-              </div>
-              <div class="col-md-8 profile-data-main">
-                <div class=" row profile-data">
-                  <div class="col-md-6 form-group frm-itm">
-                    <label class="form-label"> Category</label>
-                    <select class="form-control select">
-                      <option>Select Category</option>
-                      <option>Option 1</option>
-                      <option>Option 2</option>
-                      <option>Option 3</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6 form-group frm-itm">
-                    <label class="form-label"> Subcategory</label>
-                    <input type="text" class="form-control" placeholder="Subcategory">
-                  </div>
-                  <div class="col-md-6 form-group frm-itm address">
-                    <label class="form-label"> Description</label>
-                    <textarea class="form-control" placeholder="Type Here.."></textarea>
-                  </div>
+            </div>
+            <div class="col-md-8 profile-data-main">
+              <div class=" row profile-data">
+                <div class="col-md-6 form-group frm-itm">
+                  <label class="form-label"> Category</label>
+                  <select class="form-control select">
+                    <option>Select Category</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                  </select>
+                </div>
+                <div class="col-md-6 form-group frm-itm">
+                  <label class="form-label"> Subcategory</label>
+                  <input type="text" class="form-control" placeholder="Subcategory">
+                </div>
+                <div class="col-md-6 form-group frm-itm address">
+                  <label class="form-label"> Description</label>
+                  <textarea class="form-control" placeholder="Type Here.."></textarea>
                 </div>
               </div>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
-            <div class="btn-area">
-                <button type="button" class="btn btn-cus btn-cancel">Cancel</button>
-                <button type="button" class="btn btn-cus btn-save">Submit</button>
-            </div>
+          <div class="btn-area">
+            <button type="button" class="btn btn-cus btn-cancel" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-cus btn-save">Submit</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  
-  <div class="modal fade cat-view mid" id="category-management-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sub-category-managementLabel" aria-hidden="true">
+
+  <div class="modal fade cat-view mid" id="category-management-view" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="sub-category-managementLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -449,39 +478,43 @@
         <div class="modal-body">
           <div class="outer-main">
             <div class="col-md-6 content-sec">
-                <div class="product-info">
-                  <div class="frm-itm">
-                    <label class="form-label"> Category</label>
-                    <h3 class="frm-value">Sony Home Theatre 5.1</h3>
-                  </div>
-                  <div class="frm-itm">
-                    <label class="form-label"> Subcategory</label>
-                    <h3 class="frm-value">Sony Home Theatre 5.1</h3>
-                  </div>
-                  <div class="frm-itm light-red">
-                    <label class="form-label"> Description</label>
-                    <h3 class="frm-value">lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum</h3>
-                  </div>
+              <div class="product-info">
+                <div class="frm-itm">
+                  <label class="form-label"> Category</label>
+                  <h3 class="frm-value">Sony Home Theatre 5.1</h3>
                 </div>
+                <div class="frm-itm">
+                  <label class="form-label"> Subcategory</label>
+                  <h3 class="frm-value">Sony Home Theatre 5.1</h3>
+                </div>
+                <div class="frm-itm light-red">
+                  <label class="form-label"> Description</label>
+                  <h3 class="frm-value">lorem ipsum is simply dummy text of the printing and typesetting industry .
+                    lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum is simply
+                    dummy text of the printing and typesetting industry . lorem ipsum is simply dummy text of the
+                    printing and typesetting industry . lorem ipsum</h3>
+                </div>
+              </div>
             </div>
             <div class="col-md-6 imge-sec">
               <div class="img-area">
-                <img src="img/product-img.png"/>
+                <img src="img/product-img.png" />
               </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-            <div class="btn-area">
-                <button type="button" class="btn btn-cus"> <img src="img/edit-pen-icon.svg"/> Edit </button>
-                <button type="button" class="btn btn-cus btn-del"><img src="img/delete-icon-red.svg"/> Delete</button>
-            </div>
+          <div class="btn-area">
+            <button type="button" class="btn btn-cus"> <img src="img/edit-pen-icon.svg" /> Edit </button>
+            <button type="button" class="btn btn-cus btn-del"><img src="img/delete-icon-red.svg" /> Delete</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade sub-cat-edit mid" id="sub-category-management-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sub-category-management-editLabel" aria-hidden="true">
+  <div class="modal fade sub-cat-edit mid" id="sub-category-management-edit" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1" aria-labelledby="sub-category-management-editLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -495,47 +528,48 @@
             <div class="col-md-4 upload-sec">
               <label class="form-label"> Upload Image</label>
               <div class="profile-img">
-                <img src="img/profileimg.png"/>
+                <img src="img/profileimg.png" />
                 <div class="upload-btn">
                   <input type="file">
-                  <img src="img/gallery-import.svg"/>
+                  <img src="img/gallery-import.svg" />
                 </div>
               </div>
-              </div>
-              <div class="col-md-8 profile-data-main">
-                <div class=" row profile-data">
-                  <div class="col-md-6 form-group frm-itm">
-                    <label class="form-label"> Category</label>
-                    <select class="form-control select">
-                      <option>Select Category</option>
-                      <option>Option 1</option>
-                      <option>Option 2</option>
-                      <option>Option 3</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6 form-group frm-itm">
-                    <label class="form-label"> Subcategory</label>
-                    <input type="text" class="form-control" placeholder="Subcategory">
-                  </div>
-                  <div class="col-md-6 form-group frm-itm address">
-                    <label class="form-label"> Description</label>
-                    <textarea class="form-control" placeholder="Type Here.."></textarea>
-                  </div>
+            </div>
+            <div class="col-md-8 profile-data-main">
+              <div class=" row profile-data">
+                <div class="col-md-6 form-group frm-itm">
+                  <label class="form-label"> Category</label>
+                  <select class="form-control select">
+                    <option>Select Category</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                  </select>
+                </div>
+                <div class="col-md-6 form-group frm-itm">
+                  <label class="form-label"> Subcategory</label>
+                  <input type="text" class="form-control" placeholder="Subcategory">
+                </div>
+                <div class="col-md-6 form-group frm-itm address">
+                  <label class="form-label"> Description</label>
+                  <textarea class="form-control" placeholder="Type Here.."></textarea>
                 </div>
               </div>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
-            <div class="btn-area">
-                <button type="button" class="btn btn-cus btn-cancel">Cancel</button>
-                <button type="button" class="btn btn-cus btn-save">Submit</button>
-            </div>
+          <div class="btn-area">
+            <button type="button" class="btn btn-cus btn-cancel" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-cus btn-save">Submit</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade sub-cat-edit mid" id="category-management-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="category-management-editLabel" aria-hidden="true" >
+  <div class="modal fade sub-cat-edit mid" id="category-management-edit" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1" aria-labelledby="category-management-editLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -549,39 +583,40 @@
             <div class="col-md-4 upload-sec">
               <label class="form-label"> Upload Image</label>
               <div class="profile-img">
-                <img src="img/profileimg.png"/>
+                <img src="img/profileimg.png" />
                 <div class="upload-btn">
                   <input type="file">
-                  <img src="img/gallery-import.svg"/>
+                  <img src="img/gallery-import.svg" />
                 </div>
               </div>
-              </div>
-              <div class="col-md-8 profile-data-main">
-                <div class=" row profile-data">
-                  <div class="col-md-12 form-group frm-itm">
-                    <label class="form-label"> Category Name</label>
-                    <input type="text" class="form-control" placeholder="Subcategory">
-                  </div>
-                  <div class="col-md-6 form-group frm-itm address">
-                    <label class="form-label"> Description</label>
-                    <textarea class="form-control" placeholder="Type Here.."></textarea>
-                  </div>
+            </div>
+            <div class="col-md-8 profile-data-main">
+              <div class=" row profile-data">
+                <div class="col-md-12 form-group frm-itm">
+                  <label class="form-label"> Category Name</label>
+                  <input type="text" class="form-control" placeholder="Subcategory">
+                </div>
+                <div class="col-md-6 form-group frm-itm address">
+                  <label class="form-label"> Description</label>
+                  <textarea class="form-control" placeholder="Type Here.."></textarea>
                 </div>
               </div>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
-            <div class="btn-area">
-                <button type="button" class="btn btn-cus btn-cancel">Cancel</button>
-                <button type="button" class="btn btn-cus btn-save">Submit</button>
-            </div>
+          <div class="btn-area">
+            <button type="button" class="btn btn-cus btn-cancel" data-bs-dismiss="modal" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-cus btn-save">Submit</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
 
-  <div class="modal fade cat-view mid" id="management-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="managementLabel" aria-hidden="true" >
+  <div class="modal fade cat-view mid" id="management-view" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="managementLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -593,58 +628,64 @@
         <div class="modal-body">
           <div class="outer-main">
             <div class="col-md-6 content-sec">
-                <div class="product-info">
-                  <div class="frm-itm">
-                    <label class="form-label"> Category</label>
-                    <h3 class="frm-value">Sony Home Theatre 5.1</h3>
-                  </div>
-                  <div class="frm-itm light-red">
-                    <label class="form-label"> Description</label>
-                    <h3 class="frm-value">lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum</h3>
-                  </div>
+              <div class="product-info">
+                <div class="frm-itm">
+                  <label class="form-label"> Category</label>
+                  <h3 class="frm-value">Sony Home Theatre 5.1</h3>
                 </div>
+                <div class="frm-itm light-red">
+                  <label class="form-label"> Description</label>
+                  <h3 class="frm-value">lorem ipsum is simply dummy text of the printing and typesetting industry .
+                    lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum is simply
+                    dummy text of the printing and typesetting industry . lorem ipsum is simply dummy text of the
+                    printing and typesetting industry . lorem ipsum</h3>
+                </div>
+              </div>
             </div>
             <div class="col-md-6 imge-sec">
               <div class="img-area">
-                <img src="img/product-img.png"/>
+                <img src="img/product-img.png" />
               </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-            <div class="btn-area">
-                <button type="button" class="btn btn-cus"> <img src="img/edit-pen-icon.svg"/> Edit </button> 
-                <button type="button" class="btn btn-cus btn-del"><img src="img/delete-icon-red.svg" data-bs-toggle="modal" data-bs-target="#delete-modal"/> Delete</button>
-            </div>
+          <div class="btn-area">
+            <button type="button" class="btn btn-cus"> <img src="img/edit-pen-icon.svg" /> Edit </button>
+            <button type="button" class="btn btn-cus btn-del"><img src="img/delete-icon-red.svg" data-bs-toggle="modal"
+                data-bs-target="#delete-modal" /> Delete</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
 
-  <div class="modal fade  delete-modal sml-modal" id="delete-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="delete-modalLabel" aria-hidden="true" data-backdrop="static">
+  <div class="modal fade  delete-modal sml-modal" id="delete-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="delete-modalLabel" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
           <div class="outer-main">
-              <div class="icons">
-                <img src="img/delete-icon-white.svg"/>
-              </div> 
-              <h3 class="heading">Are you sure you want to delete ?</h3>
-              <P class="content">This will delete your product from category. Are you sure ?</P>
-              <div class="btn-area">
-                <button class="btn btn-cus">Cancel</button>
-                <button class="btn btn-cus btn-delete">Delete</button>
-              </div>
+            <div class="icons">
+              <img src="img/delete-icon-white.svg" />
+            </div>
+            <h3 class="heading">Are you sure you want to delete ?</h3>
+            <P class="content">This will delete your product from category. Are you sure ?</P>
+            <div class="btn-area">
+              <button class="btn btn-cus" data-bs-dismiss="modal" data-bs-dismiss="modal">Cancel</button>
+              <button class="btn btn-cus btn-delete">Delete</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+  </div>
 
-  <div class="modal fade sub-cat-edit mid" id="category-management-add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="category-management-addLabel" aria-hidden="true">
+
+  <div class="modal fade sub-cat-edit mid" id="category-management-add" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1" aria-labelledby="category-management-addLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -660,10 +701,10 @@
 
               <div class="upload-area">
                 <div class="upload">
-                  <img src="img/upload-img.svg"/>
+                  <img src="img/upload-img.svg" />
                   <h3 class="heading">Drag And Drop Your Files Here</h3>
                   <p class="content">Drag And Drop Your Files Here</p>
-                  <input type="file" class="upload-hide"/>
+                  <input type="file" class="upload-hide" />
                 </div>
                 <div class="process">
                   <div class="head-sec">
@@ -671,37 +712,39 @@
                     <h3 class="size">150 kB</h3>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75"
+                      aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
                   </div>
                 </div>
               </div>
-              </div>
-              <div class="col-md-8 profile-data-main">
-                <div class=" row profile-data">
-                  <div class="col-md-12 form-group frm-itm">
-                    <label class="form-label"> Subcategory</label>
-                    <input type="text" class="form-control" placeholder="Subcategory">
-                  </div>
-                  <div class="col-md-12 form-group frm-itm address">
-                    <label class="form-label"> Description</label>
-                    <textarea class="form-control" placeholder="Type Here.."></textarea>
-                  </div>
+            </div>
+            <div class="col-md-8 profile-data-main">
+              <div class=" row profile-data">
+                <div class="col-md-12 form-group frm-itm">
+                  <label class="form-label"> Subcategory</label>
+                  <input type="text" class="form-control" placeholder="Subcategory">
+                </div>
+                <div class="col-md-12 form-group frm-itm address">
+                  <label class="form-label"> Description</label>
+                  <textarea class="form-control" placeholder="Type Here.."></textarea>
                 </div>
               </div>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
-            <div class="btn-area">
-                <button type="button" class="btn btn-cus btn-cancel">Cancel</button>
-                <button type="button" class="btn btn-cus btn-save">Submit</button>
-            </div>
+          <div class="btn-area">
+            <button type="button" class="btn btn-cus btn-cancel" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-cus btn-save">Submit</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
 
-  <div class="modal fade cat-view mid" id="cat-management-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cat-management-viewLabel" aria-hidden="true">
+  <div class="modal fade cat-view mid" id="cat-management-view" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="cat-management-viewLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -713,37 +756,41 @@
         <div class="modal-body">
           <div class="outer-main">
             <div class="col-md-6 content-sec">
-                <div class="product-info">
-                  <div class="frm-itm">
-                    <label class="form-label"> Category</label>
-                    <h3 class="frm-value">Sony Home Theatre 5.1</h3>
-                  </div>
-
-                  <div class="frm-itm light-red">
-                    <label class="form-label"> Description</label>
-                    <h3 class="frm-value">lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum</h3>
-                  </div>
+              <div class="product-info">
+                <div class="frm-itm">
+                  <label class="form-label"> Category</label>
+                  <h3 class="frm-value">Sony Home Theatre 5.1</h3>
                 </div>
+
+                <div class="frm-itm light-red">
+                  <label class="form-label"> Description</label>
+                  <h3 class="frm-value">lorem ipsum is simply dummy text of the printing and typesetting industry .
+                    lorem ipsum is simply dummy text of the printing and typesetting industry . lorem ipsum is simply
+                    dummy text of the printing and typesetting industry . lorem ipsum is simply dummy text of the
+                    printing and typesetting industry . lorem ipsum</h3>
+                </div>
+              </div>
             </div>
             <div class="col-md-6 imge-sec">
               <div class="img-area">
-                <img src="img/product-img.png"/>
+                <img src="img/product-img.png" />
               </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-            <div class="btn-area">
-                <button type="button" class="btn btn-cus"> <img src="img/edit-pen-icon.svg"/> Edit </button>
-                <button type="button" class="btn btn-cus btn-del"><img src="img/delete-icon-red.svg"/> Delete</button>
-            </div>
+          <div class="btn-area">
+            <button type="button" class="btn btn-cus"> <img src="img/edit-pen-icon.svg" /> Edit </button>
+            <button type="button" class="btn btn-cus btn-del"><img src="img/delete-icon-red.svg" /> Delete</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
 
-  <div class="modal fade oder-view mid" id="OrderView" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="OrderViewLabel" aria-hidden="true">
+  <div class="modal fade oder-view mid" id="OrderView" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="OrderViewLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -760,7 +807,7 @@
                   <div class="col-md-4 frm-itm">
                     <label class="form-label">Order ID</label>
                     <h3 class="frm-value">OD327212812194464100</h3>
-                  </div> 
+                  </div>
                   <div class="col-md-4 frm-itm light-red">
                     <label class="form-label">Vendor name</label>
                     <h3 class="frm-value">POPULAR</h3>
@@ -797,7 +844,7 @@
                     <label class="form-label">Order Status</label>
                     <div class="status-area">
                       <div class="icon">
-                          <img src="img/status-green.svg"/>
+                        <img src="img/status-green.svg" />
                       </div>
                       <span class="txt">Completed</span>
                     </div>
@@ -832,7 +879,8 @@
     </div>
   </div>
 
-  <div class="modal fade payment-view mid" id="PaymentView" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="OrderViewLabel" aria-hidden="true" >
+  <div class="modal fade payment-view mid" id="PaymentView" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="OrderViewLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -847,42 +895,42 @@
               <div class="col-md-3 frm-itm">
                 <label class="form-label">Date</label>
                 <h3 class="frm-value">15 Feb 2023</h3>
-              </div> 
+              </div>
 
               <div class="col-md-3 frm-itm light-red">
                 <label class="form-label">Vendor</label>
                 <h3 class="frm-value">POPULAR</h3>
-              </div> 
+              </div>
 
               <div class="col-md-3 frm-itm">
                 <label class="form-label">Total amount</label>
                 <h3 class="frm-value">1,32,990</h3>
-              </div> 
+              </div>
 
               <div class="col-md-3 frm-itm">
                 <label class="form-label">Commission received</label>
                 <h3 class="frm-value">100000</h3>
-              </div> 
+              </div>
 
               <div class="col-md-3 frm-itm light-red">
                 <label class="form-label">Product</label>
                 <h3 class="frm-value">Iphone 14 Pro Max</h3>
-              </div> 
+              </div>
 
               <div class="col-md-3 frm-itm light-red">
                 <label class="form-label">Category</label>
                 <h3 class="frm-value">Electronic</h3>
-              </div> 
+              </div>
 
               <div class="col-md-3 frm-itm light-red">
                 <label class="form-label">Order ID</label>
                 <h3 class="frm-value">OD327212812194464100</h3>
-              </div> 
+              </div>
 
               <div class="col-md-3 frm-itm">
                 <label class="form-label">Customer</label>
                 <h3 class="frm-value">Liam Noah</h3>
-              </div> 
+              </div>
 
             </div>
           </div>
@@ -890,9 +938,10 @@
       </div>
     </div>
   </div>
-  
 
-  <div class="modal fade vedr-edit mid" id="ProfileEdit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ProfileEditLabel" aria-hidden="true" >
+
+  <div class="modal fade vedr-edit mid" id="ProfileEdit" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="ProfileEditLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -902,15 +951,15 @@
         </div>
 
         <div class="modal-body">
-           <div class="outer-main">
+          <div class="outer-main">
             <div class="col-md-4 profile-img-up">
               <label class="form-label"> Upload Image</label>
               <div class="profile-img">
-                  <img src="img/profileimg.png"/>
-                  <div class="upload-btn">
-                    <input type="file">
-                    <img src="img/gallery-import.svg"/>
-                  </div>
+                <img src="img/profileimg.png" />
+                <div class="upload-btn">
+                  <input type="file">
+                  <img src="img/gallery-import.svg" />
+                </div>
               </div>
             </div>
 
@@ -945,10 +994,10 @@
 
         </div>
         <div class="modal-footer">
-            <div class="btn-area">
-                <button type="button" class="btn btn-cus btn-cancel">Cancel</button>
-                <button type="button" class="btn btn-cus btn-save">Save</button>
-            </div>
+          <div class="btn-area">
+            <button type="button" class="btn btn-cus btn-cancel" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-cus btn-save">Save</button>
+          </div>
         </div>
       </div>
     </div>
@@ -956,7 +1005,8 @@
 
 
 
-  <div class="modal fade variants-add sml-modal" id="VariantsAdd" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="VariantsLabel" aria-hidden="true" data-backdrop="static">
+  <div class="modal fade variants-add sml-modal" id="VariantsAdd" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="VariantsLabel" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -976,13 +1026,13 @@
                 <div class="add-sec">
                   <input type="text" class="form-control" placeholder="Red">
                   <button class="btn btn-add">
-                    <img src="img/btn-view.svg"/>
+                    <img src="img/btn-view.svg" />
                   </button>
                 </div>
                 <div class="add-sec">
                   <input type="text" class="form-control" placeholder="Red">
                   <button class="btn btn-min">
-                    <img src="img/btn-min.svg"/> 
+                    <img src="img/btn-min.svg" />
                   </button>
                 </div>
               </div>
@@ -991,17 +1041,18 @@
         </div>
         <div class="modal-footer">
           <div class="btn-area">
-              <button type="button" class="btn btn-cus btn-cancel">Cancel</button>
-              <button type="button" class="btn btn-cus btn-save">Submit</button>
+            <button type="button" class="btn btn-cus btn-cancel"  data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-cus btn-save">Submit</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
 
-  
-  <div class="modal fade variants-view sml-modal " id="variants-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="variants-viewLabel" aria-hidden="true" data-backdrop="static" >
+
+
+  <div class="modal fade variants-view sml-modal " id="variants-view" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="variants-viewLabel" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -1010,22 +1061,21 @@
         </div>
         <div class="modal-body">
           <div class="outer-main">
-              <div class="row variant">
-                <div class="col-md-6 frm-itm line">
-                  <label class="form-label">Variants Category</label>
-                  <h3 class="frm-value">Color</h3>
-                </div>
-                <div class="col-md-6 frm-itm line">
-                  <label class="form-label">No of Variants</label>
-                  <h3 class="frm-value">03</h3>
-                </div>
-                <div class="col-md-12 frm-itm line light-red">
-                  <label class="form-label">Variant Name</label>
-                  <div class="colors">
-                    <span class="color-view">Red</span>
-                    <span class="color-view">Blue</span>
-                    <span class="color-view">Black</span>
-                  </div>
+            <div class="row variant">
+              <div class="col-md-6 frm-itm line">
+                <label class="form-label">Variants Category</label>
+                <h3 class="frm-value">Color</h3>
+              </div>
+              <div class="col-md-6 frm-itm line">
+                <label class="form-label">No of Variants</label>
+                <h3 class="frm-value">03</h3>
+              </div>
+              <div class="col-md-12 frm-itm line light-red">
+                <label class="form-label">Variant Name</label>
+                <div class="colors">
+                  <span class="color-view">Red</span>
+                  <span class="color-view">Blue</span>
+                  <span class="color-view">Black</span>
                 </div>
               </div>
             </div>
@@ -1034,39 +1084,42 @@
       </div>
     </div>
   </div>
-
-
-
-  <div class="modal fade  pass-modal sml-modal " id="passwordSuccess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="passwordSuccessLabel" aria-hidden="true" data-backdrop="static">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="outer-main">
-              <div class="icons">
-                <img src="img/green-password.svg"/>
-              </div> 
-              <h3 class="heading">Password Changed Successfully</h3>
-              <P class="content">Your password has been changed successfully.</P>
-              <div class="btn-area">
-                <button class="btn btn-cus btn-green">OK</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 
 
-  
-  <div class="modal fade  delete-modal sml-modal" id="error-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="error-modalLabel" aria-hidden="true" data-backdrop="static">
+
+  <div class="modal fade  pass-modal sml-modal " id="passwordSuccess" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="passwordSuccessLabel" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
           <div class="outer-main">
             <div class="icons">
-              <img src="img/delete-icon-white.svg"/>
-            </div> 
+              <img src="img/green-password.svg" />
+            </div>
+            <h3 class="heading">Password Changed Successfully</h3>
+            <P class="content">Your password has been changed successfully.</P>
+            <div class="btn-area">
+              <button class="btn btn-cus btn-green">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="modal fade  delete-modal sml-modal" id="error-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="error-modalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="outer-main">
+            <div class="icons">
+              <img src="img/delete-icon-white.svg" />
+            </div>
             <h3 class="heading">Error. Please Try Again Later</h3>
             <P class="content">The error must be show the password has not match please try again later</P>
             <div class="btn-area">
@@ -1080,20 +1133,21 @@
 
 
 
-  <div class="modal fade pass-modal sml-modal" id="logout"data-bs-keyboard="false" tabindex="-1" aria-labelledby="logout-modalLabel" aria-hidden="true">
+  <div class="modal fade pass-modal sml-modal" id="logout" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="logout-modalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
           <div class="outer-main">
             <div class="icons">
-              <img src="img/logoout.svg"/>
-            </div> 
+              <img src="img/logoout.svg" />
+            </div>
 
             <h3 class="heading">Are you sure want to Logout ?</h3>
             <P class="content">You Are Leaving Bitmarket. Please Confirm</P>
 
             <div class="btn-area">
-              <button class="btn btn-cus btn-cancel">Cancel</button>
+              <button class="btn btn-cus btn-cancel" data-bs-dismiss="modal">Cancel</button>
               <button class="btn btn-cus btn-save">Logout</button>
             </div>
 
@@ -1109,14 +1163,14 @@
   <script src="Js/vendor/jquery.min.js"></script>
   <script src="Js/vendor/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
+
   <script>
-    $(function() {
-        $( "#datepicker" ).datepicker({
-            changeMonth: true,
-            changeYear: true,
-            yearRange: "2020:2030", 
-        });
+    $(function () {
+      $("#datepicker").datepicker({
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "2020:2030",
+      });
     });
   </script>
 

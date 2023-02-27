@@ -1,0 +1,123 @@
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.profile-block-section {
+  background: #FFFFFF;
+  border-radius: 14px;
+  padding: 75px 95px;
+  margin-top: 30px;
+  display: flex;
+  overflow: auto;
+  align-items: self-start; }
+  @media (max-width: 1679px) {
+    .profile-block-section {
+      padding: 50px 70px; } }
+  @media (max-width: 1367px) {
+    .profile-block-section {
+      padding: 40px 50px; } }
+  @media (max-width: 1281px) {
+    .profile-block-section {
+      padding: 40px 50px; } }
+  @media (max-width: 1023px) {
+    .profile-block-section {
+      flex-direction: column;
+      padding: 25px 30px;
+      height: 350px;
+      overflow: auto; } }
+  .profile-block-section .profile-pic-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px; }
+    @media (max-width: 1679px) {
+      .profile-block-section .profile-pic-block {
+        margin-right: 70px; } }
+    @media (max-width: 1367px) {
+      .profile-block-section .profile-pic-block {
+        margin-right: 50px; } }
+    @media (max-width: 1023px) {
+      .profile-block-section .profile-pic-block {
+        margin-right: 0;
+        margin: auto;
+        margin-bottom: 30px; } }
+    .profile-block-section .profile-pic-block .profile-pic {
+      max-width: 173px;
+      height: 173px;
+      border-radius: 100px;
+      object-fit: cover;
+      border: 21px solid #F7EEFF; }
+      @media (max-width: 1679px) {
+        .profile-block-section .profile-pic-block .profile-pic {
+          max-width: 160px;
+          height: 160px;
+          border: 16px solid #F7EEFF; } }
+      @media (max-width: 1367px) {
+        .profile-block-section .profile-pic-block .profile-pic {
+          max-width: 140px;
+          height: 140px;
+          border: 11px solid #F7EEFF; } }
+      @media (max-width: 991px) {
+        .profile-block-section .profile-pic-block .profile-pic {
+          max-width: 110px;
+          height: 110px;
+          border: 5px solid #F7EEFF; } }
+  .profile-block-section .profile-txt-section {
+    display: flex;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    gap: 50px 0; }
+    @media (max-width: 1199px) {
+      .profile-block-section .profile-txt-section {
+        gap: 40px 0; } }
+    @media (max-width: 1023px) {
+      .profile-block-section .profile-txt-section {
+        gap: 30px 0; } }
+    @media (max-width: 767px) {
+      .profile-block-section .profile-txt-section {
+        gap: 20px 0; } }
+    .profile-block-section .profile-txt-section .profile-txt-block {
+      width: calc(100% / 3);
+      padding-right: 20px; }
+      @media (max-width: 1199px) {
+        .profile-block-section .profile-txt-section .profile-txt-block {
+          width: calc(100% / 2); } }
+      @media (max-width: 991px) {
+        .profile-block-section .profile-txt-section .profile-txt-block {
+          width: calc(100% / 1); } }
+      .profile-block-section .profile-txt-section .profile-txt-block .profile-txt {
+        border-left: 5px solid #DFD5FC;
+        padding-left: 20px; }
+        .profile-block-section .profile-txt-section .profile-txt-block .profile-txt .profile-label {
+          text-align: left;
+          font: normal 16px "Poppins", sans-serif;
+          color: #1D1D39;
+          margin-bottom: 8px; }
+          @media (max-width: 1281px) {
+            .profile-block-section .profile-txt-section .profile-txt-block .profile-txt .profile-label {
+              font-size: 14px; } }
+        .profile-block-section .profile-txt-section .profile-txt-block .profile-txt .user-txt {
+          text-align: left;
+          font: 600 16px "Poppins", sans-serif;
+          color: #00245E;
+          margin: 0; }
+          @media (max-width: 1281px) {
+            .profile-block-section .profile-txt-section .profile-txt-block .profile-txt .user-txt {
+              font-size: 14px; } }
+
+/*# sourceMappingURL=profile.css.map */

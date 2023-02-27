@@ -5,16 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dashboard</title>
+    <title>Order</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/side-nav.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/customer-management.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body>
@@ -28,7 +35,7 @@
             </div>
             <div class="side-nav custom-scroll">
                 <ul class="nav-list">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="dashboard.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -62,7 +69,7 @@
                             <span>Dashboard</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a href="customer-management.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -88,7 +95,7 @@
                             <span>Customer Management</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a href="vendor-management.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -269,7 +276,7 @@
                             <span>Products</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="Order.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -449,69 +456,387 @@
 
             </header>
             <main class="content-block custom-scroll">
-                <div class="outer-content-block">
-                    <div class="dash-vendor-block">
-                        <div class="custom-cards-block">
-                            <div class="custom-cards">
-                                <div class="cards-header">
-                                    <div class="img-block">
-                                        <img src="img/vendor.svg" alt="">
-                                    </div>
-                                    <h4>156 <span>Total Vendor</span></h4>
-                                </div>
-                                <div class="cards-footer">
-                                    <img src="img/vuesax-linear-send.svg" alt="">
-                                    <span class="txt-success">20</span>
-                                    <span>Last one month</span>
-                                </div>
-                            </div>
-                            <div class="custom-cards mb-0">
-                                <div class="cards-header">
-                                    <div class="img-block">
-                                        <img src="img/customers.svg" alt="">
-                                    </div>
-                                    <h4>1120 <span>Total Customers</span></h4>
-                                </div>
-                                <div class="cards-footer">
-                                    <img src="img/vuesax-linear-send.svg" alt="">
-                                    <span class="txt-success">20 </span>
-                                    <span>Last one month</span>
-                                </div>
-                            </div>
+                <div class="right-section-outer">
+                    <div class="top-title-section">
+                        <div class="title-text">
+                            <h3>Order</h3>
                         </div>
-                        <div class="custom-chart-block">
-                            <div class="custom-chart-title">
-                                <h6 class="title">Total commission received</h6>
-                                <div class="action ">
-                                    <button class="btn isActive">This Month</button>
-                                    <button class="btn">Last Month</button>
+                        <div class="right-filter">
+                            <div class="input-group search-filter">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <span class="input-group-text">
+                                    <img src="img/search-icon.svg" alt="search-icon">
+                                </span>
+                            </div>
+                            <div class="tbl-filter-block">
+                                <div class="dropdown">
+                                    <button class="btn " type="button" id="tbl-filter" data-bs-toggle="dropdown"
+                                        aria-expanded="true">
+                                        <img src="img/filter-filled.svg" alt="filter">
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="tbl-filter">
+                                        <li><a class="dropdown-item" href="#">Request Date</a></li>
+                                        <li><a class="dropdown-item" href="#">Status</a></li>
+                                    </ul>
                                 </div>
                             </div>
-                            <img src="img/chart2.svg" alt="">
+                            
+                            <div class="tbl-Order">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="tbl-Order" data-bs-toggle="dropdown"
+                                        aria-expanded="true">
+                                        Monthly
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="tbl-Order"
+                                        data-popper-placement="bottom-end">
+                                        <li><a class="dropdown-item" href="#">Request Date</a></li>
+                                        <li><a class="dropdown-item" href="#">Status</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="tbl-add-btn">
+                                <button class="btn" data-bs-toggle="modal" data-bs-target="#sub-category-management"><img src="img/export-excel.svg" alt="excel">
+                                    <span>Export Excel</span>
+                                </button>
+                            </div>
+                            
                         </div>
                     </div>
-                    <div class="custom-chart-blocks">
-                        <div class="custom-chart-title">
-                            <h6 class="title">Total Revenue graph</h6>
-                            <div class="action ">
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Dropdown button
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                      <li><a class="dropdown-item" href="#">Action</a></li>
-                                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                  </div>
-                            </div>
-                        </div>
-                        <img src="img/chart1.svg" alt="">
+                    <div class="table-section custom-scroll table-section-lg">
+                        <table class="table">
+                            <tr>
+                                <th class="checkbox-section">
+                                    <label class="container-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </th>
+                                <th>Order ID</th>
+                                <th>Vendor name</th>
+                                <th>Customer name</th>
+                                <th>Order date</th>
+                                <th>Total amount</th>
+                                <th>Order status</th>
+                                <th class="action order-action">Action</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="container-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>OD327212812194464100</td>
+                                <td>POPULAR</td>
+                                <td>Liam Noah</td>
+                                <td>15 Feb 2023</td>
+                                <td>1,32,990</td>
+                                <td class="status-block">
+                                    <span class="status-txt approved-txt">
+                                        <img src="img/approved-icon.svg" alt="Approved">
+                                        Approved
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" class="view-icon" data-bs-toggle="modal"
+                                            data-bs-target="#OrderView">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="container-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>OD327212812194464100</td>
+                                <td>POPULAR</td>
+                                <td>Liam Noah</td>
+                                <td>15 Feb 2023</td>
+                                <td>1,32,990</td>
+                                <td class="status-block">
+                                    <span class="status-txt pending-txt">
+                                        <img src="img/pending-clock-icon.svg" alt="Approved">
+                                        Approved
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" class="view-icon" data-bs-toggle="modal"
+                                            data-bs-target="#vedr-mng-view">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="container-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>OD327212812194464100</td>
+                                <td>POPULAR</td>
+                                <td>Liam Noah</td>
+                                <td>15 Feb 2023</td>
+                                <td>1,32,990</td>
+                                <td class="status-block">
+                                    <span class="status-txt rejected-txt">
+                                        <img src="img/reject-icons.svg" alt="Approved">
+                                        Approved
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" class="view-icon" data-bs-toggle="modal"
+                                            data-bs-target="#OrderView">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                    <div class="footer-table col-md-12">
+                        <ul class="pagination pagination-lg">
+                            <li class="prev-arrow">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="next-arrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </main>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade vedr-man mid" id="vedr-mng-view" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="vedr-mng-viewLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vedr-mng-viewLabel">Vendor Management View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="outer-main">
+                        <div class="col-md-3 profile-img-view">
+                            <div class="profile-img">
+                                <img src="img/profileimg.png" />
+                                <div class="upload-btn">
+                                    <input type="file">
+                                    <img src="img/gallery-import.svg" />
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <span class="profile-lab">Request Date</span>
+                                <h3 class="date">28 January 2022</h3>
+
+                                <div class="profile-lab">Status</div>
+                                <span class="status orng">
+                                    <span class="icon"><img src="img/pending-clock-icon.svg" /> </span>
+                                    <span class="txt">Pending</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-9 profile-data-main">
+                            <div class=" row profile-data border-bot">
+                                <div class="col-md-4 form-group frm-itm">
+                                    <label class="form-label"> Vendor Name</label>
+                                    <h3 class="frm-value">James Robert</h3>
+                                </div>
+                                <div class="col-md-4 form-group frm-itm">
+                                    <label class="form-label"> Email</label>
+                                    <h3 class="frm-value">jamesrobert0899@gmail.com</h3>
+                                </div>
+                                <div class="col-md-4 form-group frm-itm">
+                                    <label class="form-label"> Commission %</label>
+                                    <h3 class="frm-value">50 %</h3>
+                                </div>
+                                <div class="col-md-8 form-group frm-itm">
+                                    <label class="form-label"> Address</label>
+                                    <h3 class="frm-value">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
+                                        Bangalore-560016</h3>
+                                </div>
+                                <div class="col-md-4 form-group frm-itm ">
+                                    <label class="form-label"> Phone number</label>
+                                    <h3 class="frm-value">+91 8899153538</h3>
+                                </div>
+                            </div>
+
+                            <div class=" row profile-data">
+                                <div class="col-md-12 head">
+                                    <h3>Shop Details</h3>
+                                </div>
+                                <div class="col-md-4 form-group frm-itm">
+                                    <label class="form-label">Shop Name</label>
+                                    <h3 class="frm-value">Cozmo.Store</h3>
+                                </div>
+                                <div class="col-md-4 form-group frm-itm">
+                                    <label class="form-label"> Shop Email</label>
+                                    <h3 class="frm-value">cozmo.store@gmail.com</h3>
+                                </div>
+
+                                <div class="col-md-12 form-group frm-itm ">
+                                    <label class="form-label">Address</label>
+                                    <h3 class="frm-value">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
+                                        Bangalore-560016</h3>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-area">
+                        <button type="button" class="btn btn-cus"><img src="img/delete-icon.svg" /> Delete</button>
+                        <button type="button" class="btn btn-cus"><img src="img/edit-pen-icon.svg" /> Edit</button>
+                        <button type="button" class="btn btn-cus btn-red"><img src="img/block.svg" /> Reject</button>
+                        <button type="button" class="btn btn-cus btn-green"><img src="img/approve.svg" />
+                            Approve</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade oder-view mid" id="OrderView" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="OrderViewLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="OrderViewLabel">Order View</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="outer-main">
+            <div class=" row OrderView">
+              <div class="col-md-9 oder-cont">
+                <div class="row oder-spc">
+                  <div class="col-md-4 frm-itm">
+                    <label class="form-label">Order ID</label>
+                    <h3 class="frm-value">OD327212812194464100</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm light-red">
+                    <label class="form-label">Vendor name</label>
+                    <h3 class="frm-value">POPULAR</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm">
+                    <label class="form-label">Customer name</label>
+                    <h3 class="frm-value">Liam Noah</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm">
+                    <label class="form-label">Product Name</label>
+                    <h3 class="frm-value">iphone 14 pro max</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm light-red">
+                    <label class="form-label">Brand</label>
+                    <h3 class="frm-value">Apple</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm light-red  ">
+                    <label class="form-label">Quantity</label>
+                    <h3 class="frm-value">10</h3>
+                  </div>
+                  <div class="col-md-12 variant">
+                    <label class="form-label">Variant</label>
+                    <h3 class="frm-value">Variant</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm">
+                    <label class="form-label">Order Date</label>
+                    <h3 class="frm-value">10 February 2023</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm light-red">
+                    <label class="form-label">Delivery Date</label>
+                    <h3 class="frm-value">15 February 2023</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm light-red status">
+                    <label class="form-label">Order Status</label>
+                    <div class="status-area">
+                      <div class="icon">
+                        <img src="img/status-green.svg" />
+                      </div>
+                      <span class="txt">Completed</span>
+                    </div>
+                  </div>
+                  <div class="col-md-12 head">
+                    <h3>Payment</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm">
+                    <label class="form-label">Payment Date</label>
+                    <h3 class="frm-value">10 February 2023</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm light-red">
+                    <label class="form-label">Payment ID</label>
+                    <h3 class="frm-value">VADE0B248932</h3>
+                  </div>
+                  <div class="col-md-4 frm-itm light-red">
+                    <label class="form-label">Total Amount</label>
+                    <h3 class="frm-value">1,32,990</h3>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-md-3 oder-img">
+                <div class="oder-preview">
+                  <img src="img/order-view.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="modal fade  delete-modal sml-modal" id="delete-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="delete-modalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="outer-main">
+                        <div class="icons">
+                            <img src="img/delete-icon-white.svg" />
+                        </div>
+                        <h3 class="heading">Are you sure you want to delete ?</h3>
+                        <P class="content">This will delete your product from category. Are you sure ?</P>
+                        <div class="btn-area">
+                            <button class="btn btn-cus" data-bs-dismiss="modal">Cancel</button>
+                            <button class="btn btn-cus btn-delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="Js/vendor/bootstrap.min.js"></script>
     <script src="Js/vendor/jquery.min.js"></script>
     <script src="Js/vendor/script.js"></script>

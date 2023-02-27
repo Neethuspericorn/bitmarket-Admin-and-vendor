@@ -5,16 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dashboard</title>
+    <title>Variants</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/side-nav.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/customer-management.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/sub-category.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body>
@@ -28,7 +36,7 @@
             </div>
             <div class="side-nav custom-scroll">
                 <ul class="nav-list">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="dashboard.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -62,7 +70,7 @@
                             <span>Dashboard</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a href="customer-management.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -120,7 +128,7 @@
                             <span>Vendor Management</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a href="category-management.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -182,7 +190,7 @@
                             <span>Sub-Category Management</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item  active">
                         <a href="variants.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -238,7 +246,7 @@
                             <span>Variants Module</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a href="products.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -449,67 +457,191 @@
 
             </header>
             <main class="content-block custom-scroll">
-                <div class="outer-content-block">
-                    <div class="dash-vendor-block">
-                        <div class="custom-cards-block">
-                            <div class="custom-cards">
-                                <div class="cards-header">
-                                    <div class="img-block">
-                                        <img src="img/vendor.svg" alt="">
-                                    </div>
-                                    <h4>156 <span>Total Vendor</span></h4>
-                                </div>
-                                <div class="cards-footer">
-                                    <img src="img/vuesax-linear-send.svg" alt="">
-                                    <span class="txt-success">20</span>
-                                    <span>Last one month</span>
-                                </div>
-                            </div>
-                            <div class="custom-cards mb-0">
-                                <div class="cards-header">
-                                    <div class="img-block">
-                                        <img src="img/customers.svg" alt="">
-                                    </div>
-                                    <h4>1120 <span>Total Customers</span></h4>
-                                </div>
-                                <div class="cards-footer">
-                                    <img src="img/vuesax-linear-send.svg" alt="">
-                                    <span class="txt-success">20 </span>
-                                    <span>Last one month</span>
-                                </div>
-                            </div>
+                <div class="right-section-outer">
+                    <div class="top-title-section">
+                        <div class="title-text">
+                            <h3>Variants</h3>
                         </div>
-                        <div class="custom-chart-block">
-                            <div class="custom-chart-title">
-                                <h6 class="title">Total commission received</h6>
-                                <div class="action ">
-                                    <button class="btn isActive">This Month</button>
-                                    <button class="btn">Last Month</button>
+                        <div class="right-filter">
+                            <div class="input-group search-filter">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <span class="input-group-text">
+                                    <img src="img/search-icon.svg" alt="search-icon">
+                                </span>
+                            </div>
+
+                            <div class="tbl-filter-block">
+                                <div class="dropdown">
+                                    <button class="btn " type="button" id="tbl-filter" data-bs-toggle="dropdown"
+                                        aria-expanded="true">
+                                        <img src="img/filter-filled.svg" alt="filter">
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="tbl-filter">
+                                        <li><a class="dropdown-item" href="#">Request Date</a></li>
+                                        <li><a class="dropdown-item" href="#">Status</a></li>
+                                    </ul>
                                 </div>
                             </div>
-                            <img src="img/chart2.svg" alt="">
+                            <div class="tbl-add-btn">
+                                <button class="btn" data-bs-toggle="modal" data-bs-target="#VariantsAdd"><img
+                                        src="img/plus.svg" alt="plus">
+                                    <span>Add Category</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="custom-chart-blocks">
-                        <div class="custom-chart-title">
-                            <h6 class="title">Total Revenue graph</h6>
-                            <div class="action ">
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Dropdown button
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                      <li><a class="dropdown-item" href="#">Action</a></li>
-                                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                  </div>
-                            </div>
-                        </div>
-                        <img src="img/chart1.svg" alt="">
+                    <div class="table-section custom-scroll sub-category-tbl">
+                        <table class="table">
+                            <tr>
+                                <th class="checkbox-section">
+                                    <label class="container-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </th>
+                                <th>Variant Category</th>
+                                <th>Variant Name</th>
+                                <th>No of Variants</th>
+                                <th class="action">Action</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="container-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>Color</td>
+                                <td>Red, Blue, White</td>
+                                <td>10</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal"
+                                            data-bs-target="#variants-view">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="container-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>Color</td>
+                                <td>Red, Blue, White</td>
+                                <td>10</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal"
+                                            data-bs-target="#variants-view">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="footer-table col-md-12">
+                        <ul class="pagination pagination-lg">
+                            <li class="prev-arrow">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="next-arrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </main>
+        </div>
+    </div>
+
+    <div class="modal fade variants-add sml-modal" id="VariantsAdd" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="VariantsLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="VariantsLabel">Variants Add </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="outer-main">
+                        <div class="row variant">
+                            <div class="col-md-12 form-group frm-itm">
+                                <label class="form-label"> Variant Category</label>
+                                <input type="text" class="form-control" placeholder="Color">
+                            </div>
+
+                            <div class="col-md-12 form-group frm-itm add">
+                                <label class="form-label"> Variant Name</label>
+                                <div class="add-sec">
+                                    <input type="text" class="form-control" placeholder="Red">
+                                    <button class="btn btn-add">
+                                        <img src="img/btn-view.svg" />
+                                    </button>
+                                </div>
+                                <div class="add-sec">
+                                    <input type="text" class="form-control" placeholder="Red">
+                                    <button class="btn btn-min">
+                                        <img src="img/btn-min.svg" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-area">
+                        <button type="button" class="btn btn-cus btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-cus btn-save">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade variants-view sml-modal " id="variants-view" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="variants-viewLabel" aria-hidden="true"
+        data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="variants-viewLabel">Variants View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="outer-main">
+                        <div class="row variant">
+                            <div class="col-md-6 frm-itm line">
+                                <label class="form-label">Variants Category</label>
+                                <h3 class="frm-value">Color</h3>
+                            </div>
+                            <div class="col-md-6 frm-itm line">
+                                <label class="form-label">No of Variants</label>
+                                <h3 class="frm-value">03</h3>
+                            </div>
+                            <div class="col-md-12 frm-itm line light-red">
+                                <label class="form-label">Variant Name</label>
+                                <div class="colors">
+                                    <span class="color-view">Red</span>
+                                    <span class="color-view">Blue</span>
+                                    <span class="color-view">Black</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="Js/vendor/bootstrap.min.js"></script>

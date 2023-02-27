@@ -72,11 +72,14 @@
         height: 21px;
         margin-right: 8px; }
       .table-section table td.status-block .status-txt.approved-txt {
-        background: #30CC701A; }
+        background: #30CC701A;
+        color: #30CC70; }
       .table-section table td.status-block .status-txt.pending-txt {
-        background: rgba(255, 237, 220, 0.5); }
+        background: rgba(255, 237, 220, 0.5);
+        color: #FF7900; }
       .table-section table td.status-block .status-txt.rejected-txt {
-        background: rgba(253, 229, 224, 0.5); }
+        background: rgba(253, 229, 224, 0.5);
+        color: #F95858; }
     .table-section table td .approved-block img {
       width: 24px;
       height: 24px; }
@@ -100,6 +103,32 @@
       width: 15px; }
     .table-section .action-icons img.view-icon {
       width: 22px; } }
+  @media (max-width: 1441px) {
+    .table-section.table-section-lg table th {
+      padding: 20px 15px; } }
+  @media (max-width: 1281px) {
+    .table-section.table-section-lg table th {
+      padding: 20px 10px; } }
+  @media (max-width: 1441px) {
+    .table-section.table-section-lg table .tbl-description {
+      width: 300px; } }
+  @media (max-width: 1441px) {
+    .table-section.table-section-lg table td {
+      padding: 18px 15px;
+      vertical-align: middle; } }
+  @media (max-width: 1441px) {
+    .table-section.table-section-lg table .action {
+      width: 150px; } }
+  @media (max-width: 1441px) {
+    .table-section.table-section-lg table .action.order-action {
+      width: 120px; } }
+  @media (max-width: 1441px) {
+    .table-section.table-section-lg table .status-block .status-txt {
+      width: 110px; } }
+  @media (max-width: 1441px) {
+    .table-section.table-section-lg table .action-icons img {
+      margin-left: 15px;
+      cursor: pointer; } }
 
 .footer-table {
   display: flex;

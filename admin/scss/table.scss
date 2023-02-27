@@ -2,9 +2,10 @@
 @import "partials/mixins";
 
 
-.table>:not(:first-child){
+.table>:not(:first-child) {
     border: none !important;
 }
+
 .table-section {
     margin-top: 30px;
     max-height: calc(100vh - 312px);
@@ -38,7 +39,8 @@
             @media(max-width:1440px) {
                 font-size: 13px;
             }
-            &.tbl-description{
+
+            &.tbl-description {
                 width: 400px;
             }
         }
@@ -76,14 +78,17 @@
 
                     &.approved-txt {
                         background: #30CC701A;
+                        color: #30CC70;
                     }
 
                     &.pending-txt {
                         background: rgba(255, 237, 220, 0.5);
+                        color: #FF7900;
                     }
 
                     &.rejected-txt {
                         background: rgba(253, 229, 224, 0.5);
+                        color: #F95858;
                     }
                 }
             }
@@ -92,7 +97,8 @@
                 img {
                     width: 24px;
                     height: 24px;
-                    &.approved-icons{
+
+                    &.approved-icons {
                         margin-right: 8px;
                     }
                 }
@@ -140,6 +146,66 @@
         }
 
     }
+
+    &.table-section-lg {
+        table {
+            th {
+                @media($sm-1441) {
+                    padding: 20px 15px;
+                }
+
+                @media($sm-1281) {
+                    padding: 20px 10px;
+                }
+
+
+            }
+
+            .tbl-description {
+                @media($sm-1441) {
+                    width: 300px;
+                }
+            }
+
+            td {
+                @media($sm-1441) {
+                    padding: 18px 15px;
+                    vertical-align: middle;
+                }
+            }
+
+            .action {
+                @media($sm-1441) {
+                    width: 150px;
+                }
+
+                &.order-action {
+                    @media($sm-1441) {
+                        width: 120px;
+                    }
+                }
+            }
+
+            .status-block {
+                .status-txt {
+                    @media($sm-1441) {
+                        width: 110px;
+                    }
+                }
+            }
+
+            .action-icons {
+                @media($sm-1441) {
+                    img {
+                        margin-left: 15px;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+    }
+
 }
 
 .footer-table {

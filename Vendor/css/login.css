@@ -100,6 +100,8 @@
     margin-bottom: 60px; }
     .form-block-cover .form-logo a {
       display: inline-block; }
+      .form-block-cover .form-logo a img {
+        max-width: 230px; }
   .form-block-cover .form-title {
     display: flex;
     align-items: center;
@@ -153,6 +155,20 @@
         box-shadow: none;
         color: #7F57F1;
         padding-left: 5px; }
+      .form-block-cover .form-container .cutom-form-control .cutom-input-group .form-select {
+        box-shadow: none;
+        color: #7F57F1;
+        padding-left: 5px;
+        background-color: transparent !important;
+        border: none; }
+        .form-block-cover .form-container .cutom-form-control .cutom-input-group .form-select ::-webkit-input-placeholder {
+          color: #B1A5E1; }
+        .form-block-cover .form-container .cutom-form-control .cutom-input-group .form-select :-moz-placeholder {
+          color: #B1A5E1; }
+        .form-block-cover .form-container .cutom-form-control .cutom-input-group .form-select ::-moz-placeholder {
+          color: #B1A5E1; }
+        .form-block-cover .form-container .cutom-form-control .cutom-input-group .form-select :-ms-input-placeholder {
+          color: #B1A5E1; }
     .form-block-cover .form-container .cutom-form-control .file-input {
       position: relative;
       overflow: hidden;
@@ -340,7 +356,7 @@
     height: 52px; }
 
   .form-block-cover .form-container .fgt-pswd-lnk a, .form-block-cover .form-container .cutom-form-control .cutom-input-group .form-control,
-  .form-block-cover .form-container .cutom-form-control .form-label, .login-cover .login-wrapper .left-block .welcome-title p {
+  .form-block-cover .form-container .cutom-form-control .form-label, .login-cover .login-wrapper .left-block .welcome-title p, .form-block-cover .form-container .cutom-form-control .cutom-input-group .form-select {
     font-size: 14px; }
 
   .login-cover .login-wrapper .left-block .welcome-title h2 {

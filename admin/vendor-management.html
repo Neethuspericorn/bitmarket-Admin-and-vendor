@@ -128,7 +128,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="category-management.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                     <g id="vuesax_linear_note" data-name="vuesax/linear/note"
@@ -190,7 +190,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="variants.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                     <g id="vuesax_linear_convert-3d-cube" data-name="vuesax/linear/convert-3d-cube"
@@ -246,7 +246,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="products.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                     <g id="vuesax_linear_bag-2" data-name="vuesax/linear/bag-2"
@@ -277,7 +277,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="Order.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                     <g id="vuesax_linear_box" data-name="vuesax/linear/box"
@@ -313,7 +313,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="payment.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                     <g id="vuesax_linear_card" data-name="vuesax/linear/card"
@@ -468,21 +468,23 @@
                                     <img src="img/search-icon.svg" alt="search-icon">
                                 </span>
                             </div>
-                            <div class="tbl-filter">
+                            <div class="tbl-filter-block">
                                 <div class="dropdown">
-                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
+                                    <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                        aria-expanded="true">
                                         <img src="img/filter-filled.svg" alt="filter">
                                     </button>
-                                    <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate3d(0px, 50px, 0px);">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul> -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"
+                                        data-popper-placement="bottom-end">
+                                        <li><a class="dropdown-item" href="#">Request Date</a></li>
+                                        <li><a class="dropdown-item" href="#">Status</a></li>
+                                    </ul>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
-                    <div class="table-section custom-scroll">
+                    <div class="table-section custom-scroll table-section-lg">
                         <table class="table">
                             <tr>
                                 <th class="checkbox-section">
@@ -520,9 +522,8 @@
                                             data-bs-target="#vedr-mng-view">
                                         <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
                                             data-bs-target="#vedr-mng-edit">
-                                        <img src="img/block-icon.svg" class="block-icon">
                                         <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
-                                        data-bs-target="#delete-modal">
+                                            data-bs-target="#delete-modal">
                                     </div>
                                 </td>
                                 <td>
@@ -554,13 +555,12 @@
                                             data-bs-target="#vedr-mng-view">
                                         <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
                                             data-bs-target="#vedr-mng-edit">
-                                        <img src="img/block-icon.svg" class="block-icon">
                                         <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
-                                        data-bs-target="#delete-modal">
+                                            data-bs-target="#delete-modal">
                                     </div>
                                 </td>
                                 <td>
-                                
+
                                 </td>
                             </tr>
                             <tr>
@@ -585,13 +585,12 @@
                                             data-bs-target="#vedr-mng-view">
                                         <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
                                             data-bs-target="#vedr-mng-edit">
-                                        <img src="img/block-icon.svg" class="block-icon">
                                         <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
-                                        data-bs-target="#delete-modal">
+                                            data-bs-target="#delete-modal">
                                     </div>
                                 </td>
                                 <td>
-                                    
+
                                 </td>
                             </tr>
                         </table>
@@ -619,211 +618,218 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade vedr-man mid" id="vedr-mng-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vedr-mng-viewLabel" aria-hidden="true">
+    <div class="modal fade vedr-man mid" id="vedr-mng-view" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="vedr-mng-viewLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-    
-            <div class="modal-header">
-              <h5 class="modal-title" id="vedr-mng-viewLabel">Vendor Management View</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-    
-            <div class="modal-body">
-               <div class="outer-main">
-                <div class="col-md-4 profile-img-view">
-                  <div class="profile-img">
-                      <img src="img/profileimg.png"/>
-                      <div class="upload-btn">
-                        <input type="file">
-                        <img src="img/gallery-import.svg"/>
-                      </div>
-                  </div>
-                  <div class="profile-info">
-                      <span class="profile-lab">Request Date</span>
-                      <h3 class="date">28 January 2022</h3>
-    
-                      <div class="profile-lab">Status</div>
-                      <span class="status orng">
-                        <span class="icon"><img src="img/pending-clock-icon.svg"/> </span>
-                        <span class="txt">Pending</span>
-                      </span>
-                  </div>
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vedr-mng-viewLabel">Vendor Management View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-    
-                <div class="col-md-8 profile-data-main">
-                  <div class=" row profile-data border-bot">
-                      <div class="col-md-4 form-group frm-itm">
-                        <label class="form-label"> Vendor Name</label>
-                        <h3 class="frm-value">James Robert</h3>
-                      </div>
-                      <div class="col-md-4 form-group frm-itm">
-                        <label class="form-label"> Email</label>
-                        <h3 class="frm-value">jamesrobert0899@gmail.com</h3>                    
-                      </div>
-                      <div class="col-md-4 form-group frm-itm">
-                        <label class="form-label"> Commission %</label>
-                        <h3 class="frm-value">50 %</h3>                    
-                      </div>
-                      <div class="col-md-8 form-group frm-itm">
-                        <label class="form-label"> Address</label>
-                        <h3 class="frm-value">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</h3>                    
-                      </div>
-                      <div class="col-md-4 form-group frm-itm ">
-                        <label class="form-label"> Phone number</label>
-                        <h3 class="frm-value">+91 8899153538</h3>
-                      </div>
-                  </div>
-    
-                  <div class=" row profile-data">
-                    <div class="col-md-12 head">
-                      <h3>Shop Details</h3>
-                    </div>
-                    <div class="col-md-4 form-group frm-itm">
-                      <label class="form-label">Shop Name</label>
-                      <h3 class="frm-value">Cozmo.Store</h3>
-                    </div>
-                    <div class="col-md-4 form-group frm-itm">
-                      <label class="form-label"> Shop Email</label>
-                      <h3 class="frm-value">cozmo.store@gmail.com</h3>                    
-                    </div>
-                    
-                    <div class="col-md-12 form-group frm-itm ">
-                      <label class="form-label">Address</label>
-                      <h3 class="frm-value">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</h3>
-                    </div>
-                </div>
-    
-    
-                </div>
-    
-               </div>
-    
-    
-            </div>
-            <div class="modal-footer">
-                <div class="btn-area">
-                  <button type="button" class="btn btn-cus"><img src="img/delete-icon.svg"/> Delete</button>
-                  <button type="button" class="btn btn-cus"><img src="img/edit-pen-icon.svg"/> Edit</button>
-                  <button type="button" class="btn btn-cus btn-red"><img src="img/block.svg"/> Reject</button>
-                  <button type="button" class="btn btn-cus btn-green"><img src="img/approve.svg"/> Approve</button>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="modal fade vedr-edit mid" id="vedr-mng-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vedr-mng-editLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-    
-            <div class="modal-header">
-              <h5 class="modal-title" id="vedr-mng-editLabel">Vendor Management Edit </h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-    
-            <div class="modal-body">
-               <div class="outer-main">
-                <div class="col-md-4 profile-img-up">
-                  <div class="profile-img">
-                      <img src="img/profileimg.png"/>
-                      <div class="upload-btn">
-                        <input type="file">
-                        <img src="img/gallery-import.svg"/>
-                      </div>
-                  </div>
-                </div>
-    
-                <div class="col-md-8 profile-data-main">
-                  <div class=" row profile-data">
-                    <div class="col-md-4 form-group frm-itm">
-                      <label class="form-label">Vendor Name</label>
-                      <input type="text" class="form-control" placeholder="First Name">
-                    </div>
-    
-                    <div class="col-md-4 form-group frm-itm">
-                      <label class="form-label"> Commission %</label>
-                      <input type="text" class="form-control" placeholder="First Name">
-                    </div>
-    
-                    <div class="col-md-4 form-group frm-itm tel">
-                      <label class="form-label"> Phone number</label>
-                      <div class="phone-number">
-                        <input type="tel" class="form-control code-sec" placeholder="+91">
-                        <input type="tel" class="form-control" placeholder="Phone number">
-                      </div>
-                    </div>
-    
-                    <div class="col-md-4 form-group frm-itm">
-                      <label class="form-label"> Email ID</label>
-                      <input type="email" class="form-control" placeholder="  jamesrobert@gmail.com">
-                      <div class="double-input">
-                        <label class="form-label"> Request Date</label>
-                        <input id="datepicker" placeholder="13 January 2023" autocomplete="off" class="form-control date-input">
-                      </div>
-                    </div>
-                    
-                    <div class="col-md-8 form-group frm-itm">
-                      <label class="form-label"> Address</label>
-                      <textarea class="form-control" placeholder="Address" ></textarea>
-                    </div>
-    
-                    <div class="col-md-12 head">
-                      <h3>Shop Details</h3>
-                    </div>
-    
-                    <div class="col-md-4 form-group frm-itm">
-                      <label class="form-label">Shop name</label>
-                      <input type="text" class="form-control" placeholder="First Name">
-                      <div class="double-input">
-                        <label class="form-label"> Shop Email ID</label>
-                        <input type="text" class="form-control" placeholder="First Name">
-                      </div>                 
-                    </div>
-    
-                    <div class="col-md-8 form-group frm-itm">
-                      <label class="form-label"> Address</label>
-                      <textarea class="form-control" placeholder="Address" ></textarea>
-                    </div>
-    
-                    
-    
-                  </div>
-                </div>
-              </div>
-    
-            </div>
-            <div class="modal-footer">
-                <div class="btn-area">
-                    <button type="button" class="btn btn-cus btn-cancel">Cancel</button>
-                    <button type="button" class="btn btn-cus btn-save">Save</button>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+                <div class="modal-body">
+                    <div class="outer-main">
+                        <div class="col-md-3 profile-img-view">
+                            <div class="profile-img">
+                                <img src="img/profileimg.png" />
+                                <div class="upload-btn">
+                                    <input type="file">
+                                    <img src="img/gallery-import.svg" />
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <span class="profile-lab">Request Date</span>
+                                <h3 class="date">28 January 2022</h3>
+
+                                <div class="profile-lab">Status</div>
+                                <span class="status orng">
+                                    <span class="icon"><img src="img/pending-clock-icon.svg" /> </span>
+                                    <span class="txt">Pending</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-9 profile-data-main">
+                            <div class=" row profile-data border-bot">
+                                <div class="col-md-4 form-group frm-itm">
+                                    <label class="form-label"> Vendor Name</label>
+                                    <h3 class="frm-value">James Robert</h3>
+                                </div>
+                                <div class="col-md-4 form-group frm-itm">
+                                    <label class="form-label"> Email</label>
+                                    <h3 class="frm-value">jamesrobert0899@gmail.com</h3>
+                                </div>
+                                <div class="col-md-4 form-group frm-itm">
+                                    <label class="form-label"> Commission %</label>
+                                    <h3 class="frm-value">50 %</h3>
+                                </div>
+                                <div class="col-md-8 form-group frm-itm">
+                                    <label class="form-label"> Address</label>
+                                    <h3 class="frm-value">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
+                                        Bangalore-560016</h3>
+                                </div>
+                                <div class="col-md-4 form-group frm-itm ">
+                                    <label class="form-label"> Phone number</label>
+                                    <h3 class="frm-value">+91 8899153538</h3>
+                                </div>
+                            </div>
+
+                            <div class=" row profile-data">
+                                <div class="col-md-12 head">
+                                    <h3>Shop Details</h3>
+                                </div>
+                                <div class="col-md-4 form-group frm-itm">
+                                    <label class="form-label">Shop Name</label>
+                                    <h3 class="frm-value">Cozmo.Store</h3>
+                                </div>
+                                <div class="col-md-4 form-group frm-itm">
+                                    <label class="form-label"> Shop Email</label>
+                                    <h3 class="frm-value">cozmo.store@gmail.com</h3>
+                                </div>
+
+                                <div class="col-md-12 form-group frm-itm ">
+                                    <label class="form-label">Address</label>
+                                    <h3 class="frm-value">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
+                                        Bangalore-560016</h3>
+                                </div>
+                            </div>
 
 
-      <div class="modal fade  delete-modal" id="delete-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="delete-modalLabel" aria-hidden="true" data-backdrop="static">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div class="outer-main">
-                  <div class="icons">
-                    <img src="img/delete-icon-white.svg"/>
-                  </div> 
-                  <h3 class="heading">Are you sure you want to delete ?</h3>
-                  <P class="content">This will delete your product from category. Are you sure ?</P>
-                  <div class="btn-area">
-                    <button class="btn btn-cus">Cancel</button>
-                    <button class="btn btn-cus btn-delete">Delete</button>
-                  </div>
+                        </div>
+
+                    </div>
+
+
                 </div>
-              </div>
+                <div class="modal-footer">
+                    <div class="btn-area">
+                        <button type="button" class="btn btn-cus" data-bs-toggle="modal" data-bs-target="#delete-modal"><img src="img/delete-icon.svg" /> Delete</button>
+                        <button type="button" class="btn btn-cus"><img src="img/edit-pen-icon.svg" /> Edit</button>
+                        <button type="button" class="btn btn-cus btn-red"><img src="img/block.svg" /> Reject</button>
+                        <button type="button" class="btn btn-cus btn-green"><img src="img/approve.svg" />
+                            Approve</button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      
+    </div>
+
+    <div class="modal fade vedr-edit mid" id="vedr-mng-edit" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="vedr-mng-editLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vedr-mng-editLabel">Vendor Management Edit </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="outer-main">
+                        <div class="col-md-3 profile-img-up">
+                            <label class="form-label"> Upload Image</label>
+                            <div class="profile-img">
+                                <img src="img/profileimg.png" />
+                                <div class="upload-btn">
+                                    <input type="file">
+                                    <img src="img/gallery-import.svg" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-9 profile-data-main">
+                            <div class=" row profile-data">
+                                <div class="col-md-4 form-group frm-itm">
+                                    <label class="form-label">Vendor Name</label>
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+
+                                <div class="col-md-4 form-group frm-itm">
+                                    <label class="form-label"> Commission %</label>
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+
+                                <div class="col-md-4 form-group frm-itm tel">
+                                    <label class="form-label"> Phone number</label>
+                                    <div class="phone-number">
+                                        <input type="tel" class="form-control code-sec" placeholder="+91">
+                                        <input type="tel" class="form-control" placeholder="Phone number">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 form-group frm-itm">
+                                    <label class="form-label"> Email ID</label>
+                                    <input type="email" class="form-control" placeholder="  jamesrobert@gmail.com">
+                                    <div class="double-input">
+                                        <label class="form-label"> Request Date</label>
+                                        <input id="datepicker" placeholder="13 January 2023" autocomplete="off"
+                                            class="form-control date-input">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-8 form-group frm-itm">
+                                    <label class="form-label"> Address</label>
+                                    <textarea class="form-control" placeholder="Address"></textarea>
+                                </div>
+
+                                <div class="col-md-12 head">
+                                    <h3>Shop Details</h3>
+                                </div>
+
+                                <div class="col-md-4 form-group frm-itm">
+                                    <label class="form-label">Shop name</label>
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                    <div class="double-input">
+                                        <label class="form-label"> Shop Email ID</label>
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-8 form-group frm-itm">
+                                    <label class="form-label"> Address</label>
+                                    <textarea class="form-control" placeholder="Address"></textarea>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-area">
+                        <button type="button" class="btn btn-cus btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-cus btn-save">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade  delete-modal sml-modal" id="delete-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="delete-modalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="outer-main">
+                        <div class="icons">
+                            <img src="img/delete-icon-white.svg" />
+                        </div>
+                        <h3 class="heading">Are you sure you want to delete ?</h3>
+                        <P class="content">This will delete your product from category. Are you sure ?</P>
+                        <div class="btn-area">
+                            <button class="btn btn-cus" data-bs-dismiss="modal">Cancel</button>
+                            <button class="btn btn-cus btn-delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="Js/vendor/bootstrap.min.js"></script>
     <script src="Js/vendor/jquery.min.js"></script>
