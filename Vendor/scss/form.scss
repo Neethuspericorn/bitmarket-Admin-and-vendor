@@ -27,14 +27,59 @@
         &::placeholder{
             color: #7F57F1;
         }
-    }    
+        &.select{
+            background-image: url(../img/arrow-selt.svg);
+            background-repeat: no-repeat;
+            background-position: 95% 25px;
+            background-size: 12px;
+        }
+    }   
+    .double-input{
+        margin-top: 15px;
+    }
+    .date-input{
+        background-image: url(../img/calander.svg);
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    textarea{
+        height: 165px;
+        resize: none;
+        overflow: auto;
+    }
 }
+
+.tel{
+    .phone-number{
+        display: flex;
+        align-items: center;
+        background: #F7F5FF;
+        border-radius: 14px;
+        color: #7F57F1;
+        font-size: 16px;
+        font-weight:400;
+        line-height: 17px;
+        font-family: $primary-font;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        .code-sec{
+            width: 80px;
+            border-right: 1px solid #7F57F1 !important;
+            border-radius: 0px !important;
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+            height: 30px;
+        }
+    } 
+}
+
 
 
 
 .btn-cus{
     background: #DFD5FC;
-    padding: 20px 35px;
+    padding: 20px 60px;
     border: none;
     box-shadow: none !important;
     outline: none !important;
@@ -54,33 +99,55 @@
     }
 
     @media(max-width:1679px){
-        padding: 10px 25px;
+        padding: 10px 50px;
         font-size: 15px;
     }
 
     @media(max-width:1480px){
         font-size: 14px;
+        padding: 10px 40px;
     }
     @media(max-width:1280px){
         font-size: 13px;
+        padding: 10px 30px;
     }
+   
     &.btn-save{
-        padding: 20px 60px;
         background:  transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%);
         color: #fff;
         @media(max-width:1679px){
-            padding: 10px 40px;
+            padding: 10px 50px;
         }
     }
     &.btn-cancel{
-        padding: 20px 60px;
         @media(max-width:1679px){
             padding: 10px 40px;
         }
     }
+    &.btn-del{
+        background-color: #FFD4D4;
+        color: #FF3737;
+    }
 }
+
 .btn-red{
     background: transparent linear-gradient(180deg, #FF6868 0%, #FC0067 100%);
+    color: #fff;
+    &:hover{
+        color: #fff;
+        opacity: 0.8;
+    }
+}
+.btn-delete{
+    background: transparent linear-gradient(180deg, #FF3737 0%, #AB0000 100%) ;
+    color: #fff ;
+    &:hover{
+        color: #fff;
+        opacity: 0.8;
+    }
+}
+.btn-green{
+    background: transparent linear-gradient(180deg, #30CC70 0%, #08AC4B 100%);
     color: #fff;
     &:hover{
         color: #fff;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Password</title>
+    <title>Products</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +17,12 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/side-nav.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/customer-management.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/sub-category.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/change-password.css">
 </head>
 
 <body>
@@ -126,7 +128,7 @@
                             <span>Vendor Management</span>
                         </a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a href="category-management.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -244,7 +246,7 @@
                             <span>Variants Module</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="products.html" class="nav-link">
                             <div class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -382,6 +384,7 @@
                         <div id="drop" class="collapse">
                             <ul class="drop-block">
                                 <li><a href="profile.html">Profile</a></li>
+                                <li><a href="#">Shipping charge</a></li>
                                 <li><a href="change-password.html">Change Password</a></li>
                             </ul>
                         </div>
@@ -457,57 +460,161 @@
                 <div class="right-section-outer">
                     <div class="top-title-section">
                         <div class="title-text">
-                            <h3>Change Password</h3>
+                            <h3>Products</h3>
                         </div>
                         <div class="right-filter">
+                            <div class="input-group search-filter">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <span class="input-group-text">
+                                    <img src="img/search-icon.svg" alt="search-icon">
+                                </span>
+                            </div>
+                            <div class="tbl-filter-block">
+                                <div class="dropdown">
+                                    <button class="btn " type="button" id="tbl-filter" data-bs-toggle="dropdown"
+                                        aria-expanded="true">
+                                        <img src="img/filter-filled.svg" alt="filter">
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="tbl-filter">
+                                        <li><a class="dropdown-item" href="#">Request Date</a></li>
+                                        <li><a class="dropdown-item" href="#">Status</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tbl-add-btn">
+                                <button class="btn" data-bs-toggle="modal" data-bs-target="#sub-category-management">
+                                    <img src="img/export-excel.svg" alt="plus">
+                                    <span>Export Excel</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="change-password-block">
-                        <div class="form-block">
-                            <div class="cutom-form-control">
-                                <label for="Password" class="form-label">Old Password</label>
-                                <div class="input-group cutom-input-group">
-                                    <span class="input-group-text"><img src="img/log-lock.svg" alt=""></span>
-                                    <input type="password" class="form-control" placeholder="Password" aria-label="Password">
-                                    <span class="input-group-text">
-                                        <img src="img/eye-locked.svg" alt="">
-                                        <!-- <img src="img/eye-unlock.svg" alt=""> -->
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="cutom-form-control">
-                                <label for="Password" class="form-label">New Password</label>
-                                <div class="input-group cutom-input-group">
-                                    <span class="input-group-text"><img src="img/log-lock.svg" alt=""></span>
-                                    <input type="password" class="form-control" placeholder="Password" aria-label="Password">
-                                    <span class="input-group-text">
-                                        <img src="img/eye-locked.svg" alt="">
-                                        <!-- <img src="img/eye-unlock.svg" alt=""> -->
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="cutom-form-control">
-                                <label for="Password" class="form-label">Re-enter the new password</label>
-                                <div class="input-group cutom-input-group">
-                                    <span class="input-group-text"><img src="img/log-lock.svg" alt=""></span>
-                                    <input type="password" class="form-control" placeholder="Password" aria-label="Password">
-                                    <span class="input-group-text">
-                                        <img src="img/eye-locked.svg" alt="">
-                                        <!-- <img src="img/eye-unlock.svg" alt=""> -->
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn-area">
-                            <button type="button" class="btn btn-cus btn-cancel">Cancel</button>
-                            <button type="button" class="btn btn-cus btn-save">Save</button>
-                        </div>
+                    <div class="table-section custom-scroll sub-category-tbl">
+                        <table class="table">
+                            <tr>
+                                <th class="checkbox-section">
+                                    <label class="container-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </th>
+                                <th>Image</th>
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Brand</th>
+                                <th>Vendor</th>
+                                <th class="action">Action</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="container-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <img src="img/pro-1.png" class="product-img" alt="product">
+                                </td>
+                                <td>Apple Phone</td>
+                                <td>Phone</td>
+                                <td>Apple</td>
+                                <td>James Robert</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal" data-bs-target="#category-management-view">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal" data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="container-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <img src="img/pro-1.png" class="product-img" alt="product">
+                                </td>
+                                <td>Apple Phone</td>
+                                <td>Phone</td>
+                                <td>Apple</td>
+                                <td>James Robert</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal" data-bs-target="#category-management-view">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal" data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="container-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <img src="img/pro-1.png" class="product-img" alt="product">
+                                </td>
+                                <td>Apple Phone</td>
+                                <td>Phone</td>
+                                <td>Apple</td>
+                                <td>James Robert</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal" data-bs-target="#category-management-view">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal" data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <div class="footer-table col-md-12">
+                        <ul class="pagination pagination-lg">
+                            <li class="prev-arrow">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="next-arrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
             </main>
         </div>
     </div>
+
+
+    <div class="modal fade  delete-modal sml-modal" id="delete-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="delete-modalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="outer-main">
+                    <div class="icons">
+                        <img src="img/delete-icon-white.svg" />
+                    </div>
+                    <h3 class="heading">Are you sure you want to delete ?</h3>
+                    <P class="content">This will delete your product from category. Are you sure ?</P>
+                    <div class="btn-area">
+                        <button class="btn btn-cus" data-bs-dismiss="modal">Cancel</button>
+                        <button class="btn btn-cus btn-delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <script src="Js/vendor/bootstrap.min.js"></script>
     <script src="Js/vendor/jquery.min.js"></script>

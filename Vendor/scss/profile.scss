@@ -7,7 +7,6 @@
     padding: 75px 95px;
     margin-top: 30px;
     display: flex;
-    overflow: auto;
     align-items: self-start;
 
     @media ($sm-1679) {
@@ -25,8 +24,7 @@
     @media ($sm-1023) {
         flex-direction: column;
         padding: 25px 30px;
-        height: 350px;
-        overflow: auto;
+        
     }
 
     .profile-pic-block {
@@ -95,7 +93,7 @@
         }
 
         .profile-txt-block {
-            width: calc(100% / 3);
+            width: calc(100% / 2);
             padding-right: 20px;
             word-break: break-all;
 
@@ -107,13 +105,7 @@
                 width: calc(100% / 1);
             }
 
-            &.profile-emil-block {
-                width: calc(100% / 2);
-
-                @media ($sm-991) {
-                    width: calc(100% / 1);
-                }
-            }
+           
 
             .profile-txt {
                 border-left: 5px solid #DFD5FC;
@@ -144,4 +136,3 @@
         }
     }
 }
-
