@@ -1,0 +1,121 @@
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.notification-block .dropdown-menu {
+  width: 400px;
+  background: #FFFFFF;
+  border: none !important;
+  box-shadow: 0px 3px 20px #B2B7CE1A;
+  top: 50px !important;
+  right: -45px !important; }
+  .notification-block .dropdown-menu::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 25px solid #FFf;
+    top: -20px;
+    right: 45px;
+    margin: auto; }
+  .notification-block .dropdown-menu .notification-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+    border-bottom: 1px solid rgba(223, 213, 252, 0.42);
+    margin-bottom: 10px; }
+    .notification-block .dropdown-menu .notification-header .badge {
+      position: relative !important;
+      top: 0 !important;
+      margin-left: 7px !important; }
+    .notification-block .dropdown-menu .notification-header .notification-header-title {
+      text-align: left;
+      font: 600 16px "Poppins", sans-serif;
+      color: #000000;
+      margin: 0;
+      display: flex;
+      align-items: center; }
+    .notification-block .dropdown-menu .notification-header .notification-header-mark {
+      margin: auto;
+      margin-right: 0;
+      text-align: left;
+      text-decoration: underline;
+      font: normal 12px "Poppins", sans-serif;
+      color: #7F57F1; }
+  .notification-block .dropdown-menu .notification-body {
+    max-height: calc(100vh - 230px);
+    overflow: auto; }
+    .notification-block .dropdown-menu .notification-body .dropdown-item {
+      padding-left: 30px;
+      padding-right: 50px; }
+      .notification-block .dropdown-menu .notification-body .dropdown-item:hover {
+        background: rgba(239, 242, 251, 0.63); }
+      .notification-block .dropdown-menu .notification-body .dropdown-item:active {
+        background: rgba(239, 242, 251, 0.83); }
+      .notification-block .dropdown-menu .notification-body .dropdown-item .list {
+        display: flex;
+        margin-top: 22px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        .notification-block .dropdown-menu .notification-body .dropdown-item .list .userIcon {
+          width: 47px;
+          height: 47px;
+          margin-right: 20px;
+          position: relative;
+          flex: 0 0 47px; }
+          .notification-block .dropdown-menu .notification-body .dropdown-item .list .userIcon::after {
+            content: '';
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            border-radius: 100px;
+            right: 2px;
+            bottom: 3px; }
+          .notification-block .dropdown-menu .notification-body .dropdown-item .list .userIcon.isactive::after {
+            background: #7F57F1; }
+          .notification-block .dropdown-menu .notification-body .dropdown-item .list .userIcon.isinactive::after {
+            background: #AFB6CF; }
+          .notification-block .dropdown-menu .notification-body .dropdown-item .list .userIcon .user-img {
+            width: 47px;
+            height: 47px;
+            border-radius: 100px;
+            object-fit: cover; }
+        .notification-block .dropdown-menu .notification-body .dropdown-item .list .details {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+          .notification-block .dropdown-menu .notification-body .dropdown-item .list .details .title {
+            text-align: left;
+            font: 600 14px "Poppins", sans-serif;
+            color: #1D1D39;
+            margin-bottom: 3px; }
+          .notification-block .dropdown-menu .notification-body .dropdown-item .list .details .description {
+            text-align: left;
+            font: normal 10px "Poppins", sans-serif;
+            color: #1D1D39;
+            margin-bottom: 4px; }
+          .notification-block .dropdown-menu .notification-body .dropdown-item .list .details .time {
+            text-align: left;
+            font: normal 10px "Poppins", sans-serif;
+            color: #A4AAC2; }
+
+/*# sourceMappingURL=notification.css.map */

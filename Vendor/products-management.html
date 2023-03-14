@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/side-nav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/customer-management.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/sub-category.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="side-nav-wrapper">
+            <div class="brand-name-wrapper">
+                <a href="dashboard.html">
+                    <img src="img/brand-name.svg" class="brand-name web-logo" alt="Blockchain">
+                    <img src="img/mob-logo.svg" class="brand-name mob-logo" alt="Blockchain">
+                </a>
+            </div>
+            <div class="side-nav custom-scroll">
+                <ul class="nav-list">
+                    <li class="nav-item active">
+                        <a href="dashboard.html" class="nav-link">
+                            <div class="nav-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g id="vuesax_linear_element-4" data-name="vuesax/linear/element-4"
+                                        transform="translate(-684 -252)">
+                                        <g id="element-4">
+                                            <g id="Group_1" data-name="Group 1" transform="translate(0 1)">
+                                                <path id="Vector"
+                                                    d="M7.722,8.085V1.908C7.722.545,7.14,0,5.7,0H2.026C.581,0,0,.545,0,1.908V8.085C0,9.448.581,9.993,2.026,9.993H5.7C7.14,9.993,7.722,9.448,7.722,8.085Z"
+                                                    transform="translate(697.384 253.901)" fill="none" stroke="#"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                                <path id="Vector-2" data-name="Vector"
+                                                    d="M7.722,3.543V1.908C7.722.545,7.14,0,5.7,0H2.026C.581,0,0,.545,0,1.908V3.543C0,4.906.581,5.451,2.026,5.451H5.7C7.14,5.451,7.722,4.906,7.722,3.543Z"
+                                                    transform="translate(697.384 266.62)" fill="none" stroke="#"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                                <path id="Vector-3" data-name="Vector"
+                                                    d="M7.722,1.908V8.085c0,1.363-.581,1.908-2.026,1.908H2.026C.581,9.993,0,9.448,0,8.085V1.908C0,.545.581,0,2.026,0H5.7C7.14,0,7.722.545,7.722,1.908Z"
+                                                    transform="translate(686.936 262.078)" fill="none" stroke="#"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                                <path id="Vector-4" data-name="Vector"
+                                                    d="M7.722,1.908V3.543c0,1.363-.581,1.908-2.026,1.908H2.026C.581,5.451,0,4.906,0,3.543V1.908C0,.545.581,0,2.026,0H5.7C7.14,0,7.722.545,7.722,1.908Z"
+                                                    transform="translate(686.936 253.901)" fill="none" stroke="#"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                            </g>
+                                            <path id="Vector-5" data-name="Vector" d="M0,0H24V24H0Z"
+                                                transform="translate(684 252)" fill="none" opacity="0" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#Product-drop">
+                            <div class="nav-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g id="vuesax_linear_bag-2" data-name="vuesax/linear/bag-2"
+                                        transform="translate(-556 -188)">
+                                        <g id="bag-2">
+                                            <path id="Vector"
+                                                d="M0,5.662v-.97A4.773,4.773,0,0,1,4.06.022,4.5,4.5,0,0,1,9,4.5v1.38"
+                                                transform="translate(563.5 190.008)" fill="none" stroke=""
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                            </path>
+                                            <path id="Vector-2" data-name="Vector"
+                                                d="M5.751,14h6c4.02,0,4.74-1.61,4.95-3.57l.75-6c.27-2.44-.43-4.43-4.7-4.43h-8C.481,0-.219,1.99.051,4.43l.75,6C1.011,12.39,1.731,14,5.751,14Z"
+                                                transform="translate(559.249 196)" fill="none" stroke=""
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                            </path>
+                                            <path id="Vector-3" data-name="Vector" d="M.495.5H.5"
+                                                transform="translate(571.001 199.5)" fill="none" stroke=""
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                            <path id="Vector-4" data-name="Vector" d="M.495.5H.5"
+                                                transform="translate(564 199.5)" fill="none" stroke=""
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                            <path id="Vector-5" data-name="Vector" d="M0,0H24V24H0Z"
+                                                transform="translate(556 188)" fill="none" opacity="0"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span>Product Management</span>
+
+                            <div id="Product-drop" class="collapse">
+                                <ul class="drop-block">
+                                    <li><a href="brand-management.html">Brand</a></li>
+                                    <li><a href="products-management.html">Products</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <div class="nav-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g id="vuesax_linear_box" data-name="vuesax/linear/box"
+                                        transform="translate(-556 -188)">
+                                        <g id="box">
+                                            <g id="Group">
+                                                <g id="Group-2" data-name="Group">
+                                                    <path id="Vector" d="M0,0,8.83,5.11,17.6.03"
+                                                        transform="translate(559.17 195.44)" fill="none" stroke=""
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.5"></path>
+                                                    <path id="Vector-2" data-name="Vector" d="M0,9.07V0"
+                                                        transform="translate(568 200.54)" fill="none" stroke=""
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.5"></path>
+                                                </g>
+                                                <path id="Vector-3" data-name="Vector"
+                                                    d="M7.54.48,2.2,3.45A4.719,4.719,0,0,0,0,7.18v5.65a4.719,4.719,0,0,0,2.2,3.73l5.34,2.97a4.792,4.792,0,0,0,4.15,0l5.34-2.97a4.719,4.719,0,0,0,2.2-3.73V7.18a4.719,4.719,0,0,0-2.2-3.73L11.69.48A4.725,4.725,0,0,0,7.54.48Z"
+                                                    transform="translate(558.39 190)" fill="none" stroke=""
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                                </path>
+                                            </g>
+                                            <path id="Vector-4" data-name="Vector" d="M9.49,9.14V5.48L0,0"
+                                                transform="translate(563.51 192.1)" fill="none" stroke=""
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                            </path>
+                                            <path id="Vector-5" data-name="Vector" d="M0,0H24V24H0Z"
+                                                transform="translate(556 188)" fill="none" opacity="0"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span>Order Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <div class="nav-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g id="vuesax_linear_card" data-name="vuesax/linear/card"
+                                        transform="translate(-492 -508)">
+                                        <g id="card">
+                                            <path id="Vector" d="M0,0H20" transform="translate(494 516.505)" fill="none"
+                                                stroke="" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="1.5"></path>
+                                            <path id="Vector-2" data-name="Vector" d="M0,0H2"
+                                                transform="translate(498 524.505)" fill="none" stroke=""
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                            </path>
+                                            <path id="Vector-3" data-name="Vector" d="M0,0H4"
+                                                transform="translate(502.5 524.505)" fill="none" stroke=""
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                            </path>
+                                            <path id="Vector-4" data-name="Vector"
+                                                d="M4.44,0H15.55C19.11,0,20,.88,20,4.39V12.6c0,3.51-.89,4.39-4.44,4.39H4.44C.89,17,0,16.12,0,12.61V4.39C0,.88.89,0,4.44,0Z"
+                                                transform="translate(494 511.505)" fill="none" stroke=""
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                            </path>
+                                            <path id="Vector-5" data-name="Vector" d="M0,0H24V24H0Z"
+                                                transform="translate(492 508)" fill="none" opacity="0"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span>Payment Management</span>
+
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#drop">
+                            <div class="nav-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g id="vuesax_bold_user" data-name="vuesax/bold/user"
+                                        transform="translate(-108 -188)">
+                                        <g id="user">
+                                            <path id="Vector" d="M0,0H24V24H0Z" transform="translate(108 188)"
+                                                fill="none" opacity="0" />
+                                            <g id="Group_2" data-name="Group 2" transform="translate(1.147 1.442)">
+                                                <path id="Vector-2" data-name="Vector"
+                                                    d="M8.349,4.174A4.174,4.174,0,1,1,4.174,0,4.174,4.174,0,0,1,8.349,4.174Z"
+                                                    transform="translate(114.546 190)" fill="none" stroke=""
+                                                    stroke-width="1.5" />
+                                                <path id="Vector-3" data-name="Vector"
+                                                    d="M7.589,0C3.406,0,0,2.805,0,6.262a.413.413,0,0,0,.417.417H14.761a.413.413,0,0,0,.417-.417C15.178,2.805,11.772,0,7.589,0Z"
+                                                    transform="translate(111.132 200.436)" fill="none" stroke=""
+                                                    stroke-width="1.5" />
+                                            </g>
+                                        </g>
+                                        <circle id="Ellipse_11" data-name="Ellipse 11" cx="6" cy="6" r="6"
+                                            transform="translate(120 199)" fill="#4a1fc4" />
+                                        <g id="Group_118" data-name="Group 118" transform="translate(-180.686 9.362)">
+                                            <path id="Vector-4" data-name="Vector"
+                                                d="M2.613,1.307A1.307,1.307,0,1,1,1.307,0,1.307,1.307,0,0,1,2.613,1.307Z"
+                                                transform="translate(305.735 194.013)" fill="none" stroke=""
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                                            <path id="Vector-5" data-name="Vector"
+                                                d="M0,4.494V3.728A.83.83,0,0,1,.827,2.9c.788,0,1.111-.557.714-1.241a.827.827,0,0,1,.3-1.128L2.6.1a.727.727,0,0,1,.993.261l.048.083a.757.757,0,0,0,1.433,0L5.122.361A.727.727,0,0,1,6.115.1l.753.431a.827.827,0,0,1,.3,1.128c-.4.684-.074,1.241.714,1.241a.83.83,0,0,1,.827.827v.767a.83.83,0,0,1-.827.827c-.788,0-1.111.557-.714,1.241a.826.826,0,0,1-.3,1.128l-.753.431a.727.727,0,0,1-.993-.261l-.048-.083a.757.757,0,0,0-1.433,0l-.048.083a.727.727,0,0,1-.993.261l-.753-.431a.827.827,0,0,1-.3-1.128c.4-.684.074-1.241-.714-1.241A.83.83,0,0,1,0,4.494Z"
+                                                transform="translate(302.686 191.208)" fill="none" stroke=""
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
+                            <span>Account Management</span>
+                        </a>
+                        <div id="drop" class="collapse">
+                            <ul class="drop-block">
+                                <li><a href="profile.html">Profile</a></li>
+                                <li><a href="#">Shipping charge</a></li>
+                                <li><a href="change-password.html">Change Password</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item logout-list">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#logout">
+                            <div class="nav-icon">
+                                <svg id="shutdown-icon" xmlns="http://www.w3.org/2000/svg" width="28.61" height="28.61"
+                                    viewBox="0 0 28.61 28.61">
+                                    <path id="Path_12" data-name="Path 12"
+                                        d="M14.3,0A14.3,14.3,0,1,1,0,14.3,14.306,14.306,0,0,1,14.3,0Z" fill="#7f57f1"
+                                        fill-rule="evenodd"></path>
+                                    <path id="Path_13" data-name="Path 13"
+                                        d="M37.763,38.1a1.494,1.494,0,0,1,2.258-1.956,8.441,8.441,0,1,1-12.836.081,1.492,1.492,0,1,1,2.284,1.921,5.454,5.454,0,1,0,8.293-.047Z"
+                                        transform="translate(-19.333 -27.329)" fill="#fff" fill-rule="evenodd"></path>
+                                    <path id="Path_14" data-name="Path 14"
+                                        d="M58,29.457a1.5,1.5,0,0,1-3,0V24.989a1.5,1.5,0,1,1,3,0v4.468Z"
+                                        transform="translate(-42.194 -18.021)" fill="#fff" fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <header>
+                <div class="left-block">
+                    <button class="btn" id="hamburger-menu-btn">
+                        <img src="img/hamburger-menu-icon.svg" alt="hamburger-menu">
+                    </button>
+                    <span class="main-title">Welcome to dashboard</span>
+                </div>
+                <div class="right-block">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Username">
+                        <span class="input-group-text">
+                            <img src="img/search-icon.svg" alt="search-icon">
+                        </span>
+                    </div>
+                    <div class="notification-block">
+                        <div class="dropdown">
+                            <button class="btn" type="button" id="notificationdropdown" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="img/notification-alert-icon.svg" alt="">
+                                <span class="badge">10</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="notificationdropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown Profile">
+                        <button class="btn dropdown-toggle" type="button" id="userBtn" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="img/Profile.svg" alt="Profile">
+                            <h6>William Benjamin <span>Accountant</span></h6>
+
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="userBtn">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </header>
+            <main class="content-block custom-scroll">
+                <div class="right-section-outer">
+                    <div class="top-title-section">
+                        <div class="title-text">
+                            <h3>Products Management</h3>
+                        </div>
+                        <div class="right-filter">
+                            <div class="tbl-filter-block">
+                                <div class="dropdown">
+                                    <button class="btn " type="button" id="tbl-filter" data-bs-toggle="dropdown"
+                                        aria-expanded="true">
+                                        <img src="img/filter-filled.svg" alt="filter">
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="tbl-filter">
+                                        <li><a class="dropdown-item" href="#">Request Date</a></li>
+                                        <li><a class="dropdown-item" href="#">Status</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tbl-add-btn">
+                                <button class="btn" data-bs-toggle="modal"
+                                    data-bs-target="#products-management-add"><img src="img/plus.svg" alt="plus">
+                                    <span>Add Brand </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-section custom-scroll sub-category-tbl">
+                        <table class="table">
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Sub Category</th>
+                                <th>Brand</th>
+                                <th>Number of Variants</th>
+                                <th class="action">Action</th>
+                            </tr>
+                            <tr>
+
+                                <td>iphone 14 pro max</td>
+                                <td>Electronics</td>
+                                <td>Mobile</td>
+                                <td>apple</td>
+                                <td>10</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal"
+                                            data-bs-target="#productsView">
+                                        <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
+                                            data-bs-target="#category-management-edit">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>iphone 14 pro max</td>
+                                <td>Electronics</td>
+                                <td>Mobile</td>
+                                <td>apple</td>
+                                <td>10</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal"
+                                            data-bs-target="#productsView">
+                                        <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
+                                            data-bs-target="#category-management-edit">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>iphone 14 pro max</td>
+                                <td>Electronics</td>
+                                <td>Mobile</td>
+                                <td>apple</td>
+                                <td>10</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal"
+                                            data-bs-target="#productsView">
+                                        <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
+                                            data-bs-target="#category-management-edit">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>iphone 14 pro max</td>
+                                <td>Electronics</td>
+                                <td>Mobile</td>
+                                <td>apple</td>
+                                <td>10</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal"
+                                            data-bs-target="#productsView">
+                                        <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
+                                            data-bs-target="#category-management-edit">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>iphone 14 pro max</td>
+                                <td>Electronics</td>
+                                <td>Mobile</td>
+                                <td>apple</td>
+                                <td>10</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal"
+                                            data-bs-target="#productsView">
+                                        <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
+                                            data-bs-target="#category-management-edit">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>iphone 14 pro max</td>
+                                <td>Electronics</td>
+                                <td>Mobile</td>
+                                <td>apple</td>
+                                <td>10</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal"
+                                            data-bs-target="#productsView">
+                                        <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
+                                            data-bs-target="#category-management-edit">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>iphone 14 pro max</td>
+                                <td>Electronics</td>
+                                <td>Mobile</td>
+                                <td>apple</td>
+                                <td>10</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal"
+                                            data-bs-target="#productsView">
+                                        <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
+                                            data-bs-target="#category-management-edit">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>iphone 14 pro max</td>
+                                <td>Electronics</td>
+                                <td>Mobile</td>
+                                <td>apple</td>
+                                <td>10</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal"
+                                            data-bs-target="#productsView">
+                                        <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
+                                            data-bs-target="#category-management-edit">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>iphone 14 pro max</td>
+                                <td>Electronics</td>
+                                <td>Mobile</td>
+                                <td>apple</td>
+                                <td>10</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal"
+                                            data-bs-target="#productsView">
+                                        <img src="img/edit-icon.svg" class="edit-icon" data-bs-toggle="modal"
+                                            data-bs-target="#category-management-edit">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <div class="footer-table col-md-12">
+                        <ul class="pagination pagination-lg">
+                            <li class="prev-arrow">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="next-arrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div class="modal fade sub-cat-edit mid products-management-add-modal" id="products-management-add"
+        data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sub-category-managementLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Product Add </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="outer-main">
+                        <div class=" row w-100">
+                            <div class="col-md-3 form-group frm-itm">
+                                <label class="form-label"> Category</label>
+                                <select class="form-control select">
+                                    <option>Select Category</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                                <span class="val-msg"><img src="img/warn-dngr.svg" alt=""> Email is Required</span>
+                            </div>
+                            <div class="col-md-3 form-group frm-itm">
+                                <label class="form-label">Subcategory</label>
+                                <select class="form-control select">
+                                    <option>Select Category</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 form-group frm-itm">
+                                <label class="form-label">Brand</label>
+                                <select class="form-control select">
+                                    <option>Select Category</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 form-group frm-itm">
+                                <label class="form-label">Product Name</label>
+                                <input type="text" class="form-control" placeholder="Subcategory">
+                            </div>
+                            <div class="col-md-8 form-group frm-itm address">
+                                <label class="form-label"> Description</label>
+                                <input type="text" class="form-control" placeholder="Subcategory">
+                            </div>
+                            <div class="col-md-4 form-group frm-itm address">
+                                <label class="form-label"> Unit</label>
+                                <input type="text" class="form-control" placeholder="Subcategory">
+                            </div>
+                        </div>
+                        <div class="row w-100">
+                            <div class="col-md-4 form-group frm-itm add">
+                                <label class="form-label"> Add variant category</label>
+                                <div class="add-sec">
+                                    <input type="text" class="form-control" placeholder="Red">
+                                    <button class="btn btn-add">
+                                        <img src="img/btn-view-colour.svg">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-4 form-group frm-itm add">
+                                <label class="form-label">Add variant category</label>
+                                <div class="add-sec">
+                                    <input type="text" class="form-control" placeholder="Red">
+                                    <button class="btn btn-min">
+                                        <img src="img/btn-min.svg">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row w-100">
+                            <div class="col-md-3 form-group frm-itm address">
+                                <label class="form-label"> Variant name</label>
+                                <input type="text" class="form-control" placeholder="Cool black">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="add-product-uploding-wrap">
+                                            <div class="title">
+                                                <label class="form-label">Product Name</label>
+                                                <button class="btn view-images-txt" data-bs-toggle="modal"
+                                                    data-bs-target="#variants-view">View Images</button>
+                                            </div>
+
+                                            <div class="add-product-uploding">
+                                                <input type="file" class="form-control" placeholder="Subcategory">
+                                                <div class="txt-block">
+                                                    <img src="img/upload-img-sm.svg" class="upload-img" alt="">
+                                                    <span>Drag And Drop Your Files Here</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="add-product-uploding-wrap">
+                                            <div class="title">
+                                                <label class="form-label">Product Name</label>
+                                                <span class="view-images-txt">View Images</span>
+                                            </div>
+
+                                            <div class="add-product-uploding">
+                                                <input type="file" class="form-control" placeholder="Subcategory">
+                                                <div class="txt-block">
+                                                    <img src="img/upload-img-sm.svg" class="upload-img" alt="">
+                                                    <span>Drag And Drop Your Files Here</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row w-100">
+                            <div class="col-md-3 form-group frm-itm">
+                                <label class="form-label">Selling Price</label>
+                                <input type="text" class="form-control" placeholder="12000">
+                            </div>
+                            <div class="col-md-3 form-group frm-itm">
+                                <label class="form-label">Actual Price</label>
+                                <input type="text" class="form-control" placeholder="18000">
+                            </div>
+                            <div class="col-md-3 form-group frm-itm">
+                                <label class="form-label">Discount price</label>
+                                <input type="text" class="form-control" placeholder="10%">
+                            </div>
+                            <div class="col-md-3 form-group frm-itm">
+                                <label class="form-label">Stock</label>
+                                <input type="text" class="form-control" placeholder="15">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-area">
+                        <button type="button" class="btn btn-cus btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-cus btn-save">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade product-view-modal mid" id="productsView" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="OrderViewLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="OrderViewLabel">Product View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="outer-main">
+                        <div class=" row payment-value">
+                            <div class="col-md-3 frm-itm">
+                                <label class="form-label">Category</label>
+                                <h3 class="frm-value">Electronics</h3>
+                            </div>
+
+                            <div class="col-md-3 frm-itm light-red">
+                                <label class="form-label">Subcategory</label>
+                                <h3 class="frm-value">Home Theatre</h3>
+                            </div>
+
+                            <div class="col-md-3 frm-itm">
+                                <label class="form-label">Brand</label>
+                                <h3 class="frm-value">Sony</h3>
+                            </div>
+
+                            <div class="col-md-3 frm-itm">
+                                <label class="form-label">Product Name</label>
+                                <h3 class="frm-value">Sony Home Theatre 5.1</h3>
+                            </div>
+
+                            <div class="col-md-9 frm-itm light-red">
+                                <label class="form-label">Description</label>
+                                <h3 class="frm-value">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been</h3>
+                            </div>
+
+                            <div class="col-md-3 frm-itm light-red">
+                                <label class="form-label">Unit</label>
+                                <h3 class="frm-value">KG</h3>
+                            </div>
+
+
+
+                        </div>
+                        <div class=" row payment-value variant-block-modal">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-md-4 frm-itm light-red">
+                                        <label class="form-label">Variant</label>
+                                        <h3 class="frm-value">Colour</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm">
+                                        <label class="form-label">Variant name</label>
+                                        <h3 class="frm-value">Cool black</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm">
+                                        <label class="form-label">Stock</label>
+                                        <h3 class="frm-value">1500</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm light-red">
+                                        <label class="form-label">Selling Price</label>
+                                        <h3 class="frm-value">12000</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm">
+                                        <label class="form-label">Actual Price</label>
+                                        <h3 class="frm-value">18000</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm">
+                                        <label class="form-label">Discount price</label>
+                                        <h3 class="frm-value">40%</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mainImage-wrap">
+                                    <div class="mainImage-block">
+                                        <label class="form-label">Main Image</label>
+                                        <img src="img/pro-1.png" class="mainImage" alt="">
+                                    </div>
+                                    <div class="secondary-images-block">
+                                        <label class="form-label">Main Image</label>
+                                        <div class="secondary-images-wrap">
+                                            <div class="secondary-images-list">
+                                                <img src="img/pro-1.png" class="secondary-images" alt="">
+                                            </div>
+                                            <div class="secondary-images-list">
+                                                <img src="img/pro-1.png" class="secondary-images" alt="">
+                                            </div>
+                                            <div class="secondary-images-list">
+                                                <img src="img/pro-1.png" class="secondary-images" alt="">
+                                            </div>
+                                            <div class="secondary-images-list">
+                                                <img src="img/pro-1.png" class="secondary-images" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class=" row payment-value variant-block-modal">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-md-4 frm-itm light-red">
+                                        <label class="form-label">Variant</label>
+                                        <h3 class="frm-value">Colour</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm">
+                                        <label class="form-label">Variant name</label>
+                                        <h3 class="frm-value">Cool black</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm">
+                                        <label class="form-label">Stock</label>
+                                        <h3 class="frm-value">1500</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm light-red">
+                                        <label class="form-label">Selling Price</label>
+                                        <h3 class="frm-value">12000</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm">
+                                        <label class="form-label">Actual Price</label>
+                                        <h3 class="frm-value">18000</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm">
+                                        <label class="form-label">Discount price</label>
+                                        <h3 class="frm-value">40%</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mainImage-wrap">
+                                    <div class="mainImage-block">
+                                        <label class="form-label">Main Image</label>
+                                        <img src="img/pro-1.png" class="mainImage" alt="">
+                                    </div>
+                                    <div class="secondary-images-block">
+                                        <label class="form-label">Main Image</label>
+                                        <div class="secondary-images-wrap">
+                                            <div class="secondary-images-list">
+                                                <img src="img/pro-1.png" class="secondary-images" alt="">
+                                            </div>
+                                            <div class="secondary-images-list">
+                                                <img src="img/pro-1.png" class="secondary-images" alt="">
+                                            </div>
+                                            <div class="secondary-images-list">
+                                                <img src="img/pro-1.png" class="secondary-images" alt="">
+                                            </div>
+                                            <div class="secondary-images-list">
+                                                <img src="img/pro-1.png" class="secondary-images" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade variants-view sml-modal secondary-img-block" id="variants-view" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="variants-viewLabel" aria-hidden="true"
+        data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="variants-viewLabel">Upload Secondary Images</h5>
+                    <button type="button" class="btn btn-clear-image">Clear all image</button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="outer-main">
+                        <div class="secondary-img-upload">
+                            <div class="secondary-img-section">
+                                <img src="img/sub-img.png" alt="">
+                            </div>
+                            <div class="secondary-upload-section">
+                                <div class="form-group">
+                                    <div class="add-sec">
+                                        <div class="cus-file-block">
+                                            <img src="img/upload-img-sm.svg" class="upload-icons" alt="">
+                                            <input type="file" class="form-control" placeholder="Red">
+                                        </div>
+                                        <button class="btn btn-add">
+                                            <img src="img/btn-view-colour.svg">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade pass-modal sml-modal" id="logout" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="logout-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="outer-main">
+                        <div class="icons">
+                            <img src="img/logoout.svg" />
+                        </div>
+
+                        <h3 class="heading">Are you sure want to Logout ?</h3>
+                        <P class="content">You Are Leaving Bitmarket. Please Confirm</P>
+
+                        <div class="btn-area">
+                            <button class="btn btn-cus btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                            <button class="btn btn-cus btn-save">Logout</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Js/vendor/bootstrap.min.js"></script>
+    <script src="Js/vendor/jquery.min.js"></script>
+    <script src="Js/vendor/script.js"></script>
+</body>
+
+</html>

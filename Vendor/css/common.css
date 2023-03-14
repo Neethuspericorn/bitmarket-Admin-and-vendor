@@ -254,25 +254,25 @@ body {
       .tbl-add-btn .btn span {
         display: none; } }
 
-.tbl-filter {
+.tbl-filter-block {
   margin-left: 18px; }
-  .tbl-filter .btn {
+  .tbl-filter-block .btn {
     width: 48px;
     height: 48px;
     background: #FFFFFF;
     border-radius: 34px; }
     @media (max-width: 1367px) {
-      .tbl-filter .btn {
+      .tbl-filter-block .btn {
         width: 44px;
         height: 44px; } }
-  .tbl-filter .dropdown-menu {
+  .tbl-filter-block .dropdown-menu {
     background: #FFFFFF;
     box-shadow: 0px 3px 20px #B1A5E126;
     border-radius: 18px;
     border: none;
     width: 230px;
     top: 15px !important; }
-    .tbl-filter .dropdown-menu::after {
+    .tbl-filter-block .dropdown-menu::after {
       content: '';
       display: block;
       position: absolute;
@@ -281,7 +281,7 @@ body {
       width: 15px;
       height: 10px;
       right: 20px; }
-    .tbl-filter .dropdown-menu li .dropdown-item {
+    .tbl-filter-block .dropdown-menu li .dropdown-item {
       text-align: left;
       font: 500 14px "Poppins", sans-serif;
       color: #8A90A8;
@@ -290,12 +290,12 @@ body {
       position: relative;
       padding-left: 39px;
       border-bottom: 1px solid #D4D8E9; }
-      .tbl-filter .dropdown-menu li .dropdown-item:hover {
+      .tbl-filter-block .dropdown-menu li .dropdown-item:hover {
         background: transparent !important;
         color: #7F57F1; }
-        .tbl-filter .dropdown-menu li .dropdown-item:hover::after {
+        .tbl-filter-block .dropdown-menu li .dropdown-item:hover::after {
           background: #7F57F1; }
-      .tbl-filter .dropdown-menu li .dropdown-item::after {
+      .tbl-filter-block .dropdown-menu li .dropdown-item::after {
         content: '';
         display: block;
         width: 8px;
@@ -307,7 +307,7 @@ body {
         top: 0;
         margin: auto;
         bottom: 0; }
-    .tbl-filter .dropdown-menu li:last-child .dropdown-item {
+    .tbl-filter-block .dropdown-menu li:last-child .dropdown-item {
       border: none; }
 
 .tbl-Order {

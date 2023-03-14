@@ -78,8 +78,16 @@
   <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#logout">Logot
   </button>
 
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#accountBlocked">You Are Account Has Been Blocked</button>
+    
+    <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#accountRejected">You Have Rejected</button>
+    
+    <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+    data-bs-target="#accountApproved">You Have Approved</button>
 
-
+    
 
 
 
@@ -1159,6 +1167,65 @@
   </div>
 
 
+  <div class="modal fade blocked-modal  pass-modal sml-modal " id="accountBlocked" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="accountBlockedLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="outer-main">
+            <div class="icons">
+              <img src="img/blocked-modal.svg" />
+            </div>
+            <h3 class="heading">You Are Account Has Been Blocked</h3>
+            <P class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
+            <div class="btn-area">
+              <button class="btn btn-cus btn-delete" data-bs-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade blocked-modal pass-modal sml-modal " id="accountRejected" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="accountRejectedLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="outer-main">
+            <div class="icons">
+              <img src="img/rejected-md.svg" />
+            </div>
+            <h3 class="heading">You Have Rejected</h3>
+            <P class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
+            <div class="btn-area">
+              <button class="btn btn-cus btn-delete" data-bs-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade blocked-modal pass-modal sml-modal " id="accountApproved" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="accountApprovedLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="outer-main">
+            <div class="icons">
+              <img src="img/approved-md.svg" />
+            </div>
+            <h3 class="heading">You Have Approved</h3>
+            <P class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
+            <div class="btn-area">
+              <button class="btn btn-cus btn-green" data-bs-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <script src="Js/vendor/jquery.min.js"></script>

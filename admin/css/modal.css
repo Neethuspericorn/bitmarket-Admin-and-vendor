@@ -509,6 +509,66 @@
   .modal.pass-modal .modal-dialog .modal-content .modal-body .outer-main .content {
     color: #858894; }
 
+.logout-modal .icons {
+  max-width: 120px; }
+
+.product-view-modal .frm-itm {
+  margin-bottom: 30px; }
+.product-view-modal .txt-description::before {
+  height: 100% !important; }
+.product-view-modal .head {
+  padding: 0;
+  position: relative;
+  margin-bottom: 30px !important; }
+  .product-view-modal .head::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #F7EEFF;
+    inset: 0;
+    margin: auto; }
+  .product-view-modal .head .title {
+    width: fit-content;
+    background: #fff;
+    position: relative;
+    z-index: 99;
+    padding-right: 15px;
+    text-align: left;
+    font: 600 18px "Poppins", sans-serif;
+    color: #7F57F1;
+    text-transform: capitalize; }
+.product-view-modal .variant {
+  padding-left: 0 !important; }
+  .product-view-modal .variant::before {
+    content: '';
+    border: none;
+    background: transparent !important; }
+.product-view-modal .oder-preview .title {
+  text-align: left;
+  font: normal 16px Poppins;
+  color: #1D1D39;
+  margin-bottom: 23px; }
+.product-view-modal .oder-preview .main-Image {
+  background: #FFFFFF;
+  border: 1px solid #EED5FC;
+  border-radius: 21px;
+  padding: 15px;
+  margin-bottom: 18px; }
+  .product-view-modal .oder-preview .main-Image .main-pro-img {
+    max-width: 220px; }
+.product-view-modal .oder-preview .secondary-Image-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px; }
+  .product-view-modal .oder-preview .secondary-Image-list .secondary-Image-item {
+    width: 119px;
+    height: 119px; }
+    .product-view-modal .oder-preview .secondary-Image-list .secondary-Image-item .secondary-pro-img {
+      background: #FFFFFF;
+      border: 1px solid #EED5FC;
+      border-radius: 18px; }
+
 @media (max-width: 1679px) {
   .modal .modal-dialog .modal-content {
     border-radius: 30px; }
@@ -690,5 +750,61 @@
   .mid .modal-dialog {
     max-width: 90%;
     margin: 15px auto; } }
+.modal.sml-modal.modal.sml-modal .modal-dialog .modal-content .modal-body .outer-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+@media (max-width: 1679px) {
+  .modal.sml-modal.blocked-modal .modal-dialog .modal-content .modal-body .outer-main .icons img {
+    max-height: 200px; }
+
+  .modal.sml-modal.blocked-modal .modal-dialog .modal-content .modal-body .outer-main .heading {
+    font-size: 22px; }
+
+  .modal.sml-modal.blocked-modal .modal-dialog {
+    max-width: 500px; } }
+@media (max-width: 1480px) {
+  .modal.sml-modal.blocked-modal .modal-dialog .modal-content .modal-body .outer-main .icons img {
+    max-height: 170px; }
+
+  .modal.sml-modal.blocked-modal .modal-dialog .modal-content .modal-body .outer-main .heading {
+    font-size: 20px;
+    line-height: normal; }
+
+  .modal.sml-modal.blocked-modal .modal-dialog .modal-content .modal-body .outer-main .content {
+    font-size: 15px;
+    margin-bottom: 35px; } }
+@media (max-width: 1199px) {
+  .modal.sml-modal.blocked-modal .modal-dialog .modal-content .modal-body .outer-main .icons img {
+    max-height: 150px; }
+
+  .modal.sml-modal.blocked-modal .modal-dialog .modal-content .modal-body .outer-main .heading {
+    font-size: 18px; }
+
+  .modal.sml-modal.blocked-modal .modal-dialog .modal-content .modal-body .outer-main .content {
+    font-size: 15px; } }
+@media (max-width: 991px) {
+  .modal.sml-modal.blocked-modal .modal-dialog .modal-content .modal-body .outer-main .icons img {
+    max-height: 120px; }
+
+  .modal.pass-modal .modal-dialog .modal-content .modal-body .outer-main .icons {
+    margin-bottom: 30px; }
+
+  .modal.sml-modal.blocked-modal .modal-dialog .modal-content .modal-body .outer-main .content {
+    padding: 0 15px; } }
+@media (max-width: 767px) {
+  .modal.sml-modal.blocked-modal .modal-dialog .modal-content .modal-body .outer-main .content {
+    font-size: 14px;
+    line-height: normal; } }
+@media (max-width: 579px) {
+  .modal.sml-modal.blocked-modal .modal-dialog .modal-content .modal-body .outer-main .icons img {
+    max-height: 100px; }
+
+  .modal.pass-modal .modal-dialog .modal-content .modal-body .outer-main .icons {
+    margin-bottom: 20px; }
+
+  .modal.sml-modal.blocked-modal .modal-dialog .modal-content .modal-body .outer-main .heading {
+    font-size: 16px; } }
 
 /*# sourceMappingURL=modal.css.map */

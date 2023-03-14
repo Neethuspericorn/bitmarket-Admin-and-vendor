@@ -491,11 +491,8 @@
                     <div class="table-section custom-scroll sub-category-tbl">
                         <table class="table">
                             <tr>
-                                <th class="checkbox-section">
-                                    <label class="container-checkbox">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
+                                <th>
+                                    <img src="img/four-square.svg" class="tbl-icon" alt="">
                                 </th>
                                 <th>Image</th>
                                 <th>Product Name</th>
@@ -506,10 +503,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <label class="container-checkbox">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
+                                    <img src="img/four-square.svg" class="tbl-icon" alt="">
                                 </td>
                                 <td>
                                     <img src="img/pro-1.png" class="product-img" alt="product">
@@ -520,17 +514,16 @@
                                 <td>James Robert</td>
                                 <td>
                                     <div class="action-icons">
-                                        <img src="img/view-icon.svg" data-bs-toggle="modal" data-bs-target="#category-management-view">
-                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal" data-bs-target="#delete-modal">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal"
+                                            data-bs-target="#ProductsViewModal">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <label class="container-checkbox">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
+                                    <img src="img/four-square.svg" class="tbl-icon" alt="">
                                 </td>
                                 <td>
                                     <img src="img/pro-1.png" class="product-img" alt="product">
@@ -541,17 +534,16 @@
                                 <td>James Robert</td>
                                 <td>
                                     <div class="action-icons">
-                                        <img src="img/view-icon.svg" data-bs-toggle="modal" data-bs-target="#category-management-view">
-                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal" data-bs-target="#delete-modal">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal"
+                                            data-bs-target="#ProductsViewModal">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <label class="container-checkbox">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
+                                    <img src="img/four-square.svg" class="tbl-icon" alt="">
                                 </td>
                                 <td>
                                     <img src="img/pro-1.png" class="product-img" alt="product">
@@ -562,8 +554,10 @@
                                 <td>James Robert</td>
                                 <td>
                                     <div class="action-icons">
-                                        <img src="img/view-icon.svg" data-bs-toggle="modal" data-bs-target="#category-management-view">
-                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal" data-bs-target="#delete-modal">
+                                        <img src="img/view-icon.svg" data-bs-toggle="modal"
+                                            data-bs-target="#ProductsViewModal">
+                                        <img src="img/delete-icon.svg" class="delete-icon" data-bs-toggle="modal"
+                                            data-bs-target="#delete-modal">
                                     </div>
                                 </td>
                             </tr>
@@ -591,28 +585,135 @@
             </main>
         </div>
     </div>
+    <div class="modal fade oder-view mid product-view-modal" id="ProductsViewModal" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="OrderViewLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
 
+                <div class="modal-header">
+                    <h5 class="modal-title" id="OrderViewLabel">Products View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
 
-    <div class="modal fade  delete-modal sml-modal" id="delete-modal" data-bs-backdrop="static" data-bs-keyboard="false"
-    tabindex="-1" aria-labelledby="delete-modalLabel" aria-hidden="true" data-backdrop="static">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="outer-main">
-                    <div class="icons">
-                        <img src="img/delete-icon-white.svg" />
-                    </div>
-                    <h3 class="heading">Are you sure you want to delete ?</h3>
-                    <P class="content">This will delete your product from category. Are you sure ?</P>
-                    <div class="btn-area">
-                        <button class="btn btn-cus" data-bs-dismiss="modal">Cancel</button>
-                        <button class="btn btn-cus btn-delete">Delete</button>
+                <div class="modal-body">
+                    <div class="outer-main">
+                        <div class=" row OrderView">
+                            <div class="col-md-9">
+                                <div class="row oder-spc">
+                                    <div class="col-md-4 frm-itm">
+                                        <label class="form-label">Vendor Name</label>
+                                        <h3 class="frm-value">James Robert</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm light-red">
+                                        <label class="form-label">Category</label>
+                                        <h3 class="frm-value">Electronics</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm">
+                                        <label class="form-label">Sub-Category</label>
+                                        <h3 class="frm-value">Mobile Phone</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm">
+                                        <label class="form-label">Product Name</label>
+                                        <h3 class="frm-value">iphone 14 pro max</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm light-red">
+                                        <label class="form-label">Brand</label>
+                                        <h3 class="frm-value">Apple</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm light-red  ">
+                                        <label class="form-label">Unit</label>
+                                        <h3 class="frm-value">1000 kg</h3>
+                                    </div>
+                                    <div class="col-md-12 frm-itm light-red txt-description ">
+                                        <label class="form-label">Description</label>
+                                        <h3 class="frm-value">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book.</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8 form-group frm-itm variant">
+                                            <label class="form-label"> Category</label>
+                                            <select class="form-control select">
+                                                <option>Deep Purple</option>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                                <option>Option 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 frm-itm">
+                                            <label class="form-label">Stock</label>
+                                            <h3 class="frm-value">3500</h3>
+                                        </div>
+                                    </div>
+                                    <div class="head">
+                                        <h3 class="title">Payment</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm">
+                                        <label class="form-label">Selling Price</label>
+                                        <h3 class="frm-value">1,50,990</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm light-red">
+                                        <label class="form-label">Actual Price</label>
+                                        <h3 class="frm-value">1,40,990</h3>
+                                    </div>
+                                    <div class="col-md-4 frm-itm light-red">
+                                        <label class="form-label">Discount Price</label>
+                                        <h3 class="frm-value">1,32,990</h3>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3 oder-img">
+                                <div class="oder-preview">
+                                    <h4 class="title">Main Image</h4>
+                                    <div class="main-Image">
+                                        <img src="img/product-img.png" class="main-pro-img" />
+                                    </div>
+                                    <h4 class="title">Secondary Images</h4>
+                                    <div class="secondary-Image-list">
+                                        <div class="secondary-Image-item">
+                                            <img src="img/product-img.png" class="secondary-pro-img" />
+                                        </div>
+                                        <div class="secondary-Image-item">
+                                            <img src="img/product-img.png" class="secondary-pro-img" />
+                                        </div>
+                                        <div class="secondary-Image-item">
+                                            <img src="img/product-img.png" class="secondary-pro-img" />
+                                        </div>
+                                        <div class="secondary-Image-item">
+                                            <img src="img/product-img.png" class="secondary-pro-img" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+    <div class="modal fade  delete-modal sml-modal" id="delete-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="delete-modalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="outer-main">
+                        <div class="icons">
+                            <img src="img/delete-icon-white.svg" />
+                        </div>
+                        <h3 class="heading">Are you sure you want to delete ?</h3>
+                        <P class="content">This will delete your product from category. Are you sure ?</P>
+                        <div class="btn-area">
+                            <button class="btn btn-cus" data-bs-dismiss="modal">Cancel</button>
+                            <button class="btn btn-cus btn-delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="Js/vendor/bootstrap.min.js"></script>

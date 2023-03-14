@@ -43,6 +43,10 @@
             &.tbl-description {
                 width: 400px;
             }
+
+            .tbl-icon {
+                width: 12px;
+            }
         }
 
         td {
@@ -60,7 +64,9 @@
             @media(max-width:1440px) {
                 font-size: 13px;
             }
-
+            .tbl-icon {
+                width: 12px;
+            }
             &.status-block {
                 .status-txt {
                     display: flex;
@@ -122,9 +128,12 @@
     }
 
     .action-icons {
+
         img {
             margin-left: 14px;
             cursor: pointer;
+
+
         }
 
         @media(max-width:1679px) {

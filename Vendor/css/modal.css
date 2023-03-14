@@ -509,6 +509,204 @@
   .modal.pass-modal .modal-dialog .modal-content .modal-body .outer-main .content {
     color: #858894; }
 
+.addbrand-modal .outer-main {
+  padding-bottom: 0 !important; }
+.addbrand-modal .upload-area {
+  background: transparent !important;
+  border: 1px dashed #dad1fc;
+  position: relative !important;
+  padding: 10px !important; }
+  .addbrand-modal .upload-area .upload {
+    background: #F7F5FF !important; }
+    .addbrand-modal .upload-area .upload .heading {
+      color: #333 !important; }
+  .addbrand-modal .upload-area .remove-brand {
+    position: absolute;
+    padding: 0 !important;
+    right: 60px;
+    top: 35px;
+    width: 28px;
+    height: 28px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .addbrand-modal .upload-area .remove-brand .remove-brand-img {
+      width: 10px;
+      height: 12px; }
+.addbrand-modal .brand-view-txt {
+  display: flex;
+  height: 60px;
+  align-items: center; }
+  .addbrand-modal .brand-view-txt .frm-value {
+    margin-left: 10px; }
+.addbrand-modal .brand-view-block {
+  width: 100%;
+  height: 182px;
+  background: #F7F5FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px; }
+  .addbrand-modal .brand-view-block .brand-view-img {
+    max-width: 200px;
+    object-fit: contain; }
+
+.products-management-add-modal .frm-itm {
+  margin-bottom: 30px;
+  position: relative; }
+  .products-management-add-modal .frm-itm .val-msg {
+    position: absolute;
+    left: 10px;
+    top: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ff4141;
+    align-items: self-start; }
+    .products-management-add-modal .frm-itm .val-msg img {
+      margin-right: 10px; }
+  .products-management-add-modal .frm-itm .btn-add {
+    width: 68px;
+    height: 68px;
+    background: #E5DCFF80 !important;
+    border: 1px solid #7F57F199 !important;
+    border-radius: 10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+.products-management-add-modal .add-product-uploding-wrap .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between; }
+  .products-management-add-modal .add-product-uploding-wrap .title .form-label {
+    margin: 0 !important; }
+  .products-management-add-modal .add-product-uploding-wrap .title .view-images-txt {
+    text-align: left;
+    text-decoration: underline;
+    font: normal 14px "Poppins", sans-serif;
+    color: #5C32D3;
+    padding: 0; }
+.products-management-add-modal .add-product-uploding-wrap .add-product-uploding {
+  position: relative;
+  border: 1px dashed #EED5FC;
+  border-radius: 14px;
+  height: 66px; }
+  .products-management-add-modal .add-product-uploding-wrap .add-product-uploding .form-control {
+    opacity: 0;
+    width: 100%;
+    height: 66px;
+    position: absolute;
+    z-index: 999; }
+  .products-management-add-modal .add-product-uploding-wrap .add-product-uploding .txt-block {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .products-management-add-modal .add-product-uploding-wrap .add-product-uploding .txt-block .upload-img {
+      margin-right: 6px;
+      width: 34px; }
+    .products-management-add-modal .add-product-uploding-wrap .add-product-uploding .txt-block span {
+      text-align: center;
+      font: 600 16px "Poppins", sans-serif;
+      color: #000000;
+      text-transform: capitalize; }
+      @media (max-width: 1367px) {
+        .products-management-add-modal .add-product-uploding-wrap .add-product-uploding .txt-block span {
+          font-size: 14px; } }
+
+.product-view-modal .outer-main {
+  padding-bottom: 20px !important; }
+.product-view-modal .variant-block-modal {
+  background: #F7F5FF;
+  padding: 30px;
+  border-radius: 19px;
+  margin-bottom: 30px; }
+  .product-view-modal .variant-block-modal .mainImage-wrap {
+    display: flex; }
+    .product-view-modal .variant-block-modal .mainImage-wrap .mainImage-block {
+      margin-right: 14px; }
+      .product-view-modal .variant-block-modal .mainImage-wrap .mainImage-block .form-label {
+        text-align: left;
+        font: normal 16px "Poppins", sans-serif;
+        letter-spacing: 0px;
+        color: #1D1D39;
+        display: block; }
+        @media (max-width: 1367px) {
+          .product-view-modal .variant-block-modal .mainImage-wrap .mainImage-block .form-label {
+            font-size: 14px; } }
+      .product-view-modal .variant-block-modal .mainImage-wrap .mainImage-block .mainImage {
+        width: 149px;
+        height: 132px;
+        border: 1px solid #DFD5FC;
+        border-radius: 14px;
+        background: #fff;
+        object-fit: contain; }
+    .product-view-modal .variant-block-modal .mainImage-wrap .secondary-images-block .secondary-images-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px 0; }
+      .product-view-modal .variant-block-modal .mainImage-wrap .secondary-images-block .secondary-images-wrap .secondary-images-list {
+        width: 50%; }
+        .product-view-modal .variant-block-modal .mainImage-wrap .secondary-images-block .secondary-images-wrap .secondary-images-list .secondary-images {
+          width: 69px;
+          height: 69px;
+          border: 1px solid #DFD5FC;
+          background: #fff;
+          border-radius: 8px;
+          object-fit: contain; }
+
+.secondary-img-block .btn-clear-image {
+  background: #E2D8FF69;
+  border-radius: 11px;
+  text-align: left;
+  font: normal 14px "Poppins", sans-serif;
+  color: #7F57F1;
+  margin-right: 20px; }
+.secondary-img-block .secondary-img-upload .secondary-img-section {
+  background: #FFFFFF;
+  border: 1px solid #DFD5FC;
+  border-radius: 27px;
+  padding: 50px 30px; }
+.secondary-img-block .secondary-upload-section {
+  margin-top: 30px; }
+  .secondary-img-block .secondary-upload-section .add-sec {
+    margin: 0; }
+    .secondary-img-block .secondary-upload-section .add-sec .cus-file-block {
+      width: 93px;
+      height: 82px;
+      border: 1px solid #DFD5FC;
+      border-radius: 8px;
+      position: relative;
+      margin-right: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .secondary-img-block .secondary-upload-section .add-sec .cus-file-block .form-control {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0; }
+      .secondary-img-block .secondary-upload-section .add-sec .cus-file-block .upload-icons {
+        width: 34px; }
+    .secondary-img-block .secondary-upload-section .add-sec .btn-add {
+      width: 68px;
+      height: 82px;
+      background: #E5DCFF80 !important;
+      border: 1px solid #7F57F199 !important;
+      border-radius: 10px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
 @media (max-width: 1679px) {
   .modal .modal-dialog .modal-content {
     border-radius: 30px; }

@@ -1,6 +1,13 @@
 @import "partials/variables";
 @import "partials/mixins";
+.Toastify__toast-body {
+    align-items: center;
+}
 
+button.Toastify__close-button.Toastify__close-button--dark{
+align-self: center;
+    inset: 0;
+}
 a {
     text-decoration: none;
     cursor: pointer;
@@ -34,10 +41,21 @@ body {
     min-height: 100vh;
 }
 
+.link-expired{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font: 500 16px "Poppins", sans-serif;
+    color: black;
+    text-transform: capitalize;
+}
 
 .page-wrapper {
     flex: 1 1 100%;
     max-width: calc(100% - 352px);
+    min-height: 100vh;
+    overflow: auto;
 
     @media ($sm-1679) {
         max-width: calc(100% - 300px);
@@ -324,7 +342,7 @@ body {
     }
 }
 
-.tbl-filter {
+.tbl-filter-block {
     margin-left: 18px;
     .btn {
         width: 48px;
