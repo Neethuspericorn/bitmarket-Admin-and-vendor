@@ -888,5 +888,187 @@
   .mid .modal-dialog {
     max-width: 90%;
     margin: 15px auto; } }
+.add-banner-modal .modal-dialog {
+  max-width: 900px; }
+.add-banner-modal .form-group {
+  margin-bottom: 50px;
+  position: relative; }
+  @media (max-width: 1367px) {
+    .add-banner-modal .form-group {
+      margin-bottom: 40px; } }
+  .add-banner-modal .form-group .form-label {
+    color: #1D1D39;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 10px; }
+    @media (max-width: 1367px) {
+      .add-banner-modal .form-group .form-label {
+        font-size: 14px; } }
+  .add-banner-modal .form-group .form-control {
+    background: #F7F5FF;
+    border-radius: 14px;
+    color: #7F57F1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 10px 20px;
+    height: 68px; }
+    @media (max-width: 1679px) {
+      .add-banner-modal .form-group .form-control {
+        height: 58px; } }
+    @media (max-width: 1367px) {
+      .add-banner-modal .form-group .form-control {
+        height: 50px;
+        font-size: 14px; } }
+  .add-banner-modal .form-group textarea.form-control {
+    min-height: 80px; }
+  .add-banner-modal .form-group .val-msg {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    align-items: center;
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #FF4141; }
+    .add-banner-modal .form-group .val-msg img {
+      margin-right: 10px; }
+.add-banner-modal .cutom-form-control {
+  font-family: "Poppins", sans-serif; }
+  .add-banner-modal .cutom-form-control .form-label {
+    color: #1D1D39;
+    font-size: 16px;
+    font-weight: normal; }
+  .add-banner-modal .cutom-form-control .cutom-input-group {
+    background-color: #F7F5FF;
+    border-radius: 14px;
+    padding: 0 10px;
+    height: 66px;
+    position: relative; }
+    .add-banner-modal .cutom-form-control .cutom-input-group .val-msg {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      display: none;
+      align-items: center;
+      padding-top: 4px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #FF4141; }
+      .add-banner-modal .cutom-form-control .cutom-input-group .val-msg img {
+        margin-right: 10px; }
+    .add-banner-modal .cutom-form-control .cutom-input-group .input-group-text,
+    .add-banner-modal .cutom-form-control .cutom-input-group .form-control {
+      background-color: transparent;
+      border: none; }
+    .add-banner-modal .cutom-form-control .cutom-input-group ::-webkit-input-placeholder {
+      color: #B1A5E1; }
+    .add-banner-modal .cutom-form-control .cutom-input-group :-moz-placeholder {
+      color: #B1A5E1; }
+    .add-banner-modal .cutom-form-control .cutom-input-group ::-moz-placeholder {
+      color: #B1A5E1; }
+    .add-banner-modal .cutom-form-control .cutom-input-group :-ms-input-placeholder {
+      color: #B1A5E1; }
+    .add-banner-modal .cutom-form-control .cutom-input-group .form-control {
+      box-shadow: none;
+      color: #7F57F1;
+      padding-left: 5px; }
+    .add-banner-modal .cutom-form-control .cutom-input-group .form-select {
+      box-shadow: none;
+      color: #7F57F1;
+      padding-left: 5px;
+      background-color: transparent !important;
+      border: none; }
+      .add-banner-modal .cutom-form-control .cutom-input-group .form-select ::-webkit-input-placeholder {
+        color: #B1A5E1; }
+      .add-banner-modal .cutom-form-control .cutom-input-group .form-select :-moz-placeholder {
+        color: #B1A5E1; }
+      .add-banner-modal .cutom-form-control .cutom-input-group .form-select ::-moz-placeholder {
+        color: #B1A5E1; }
+      .add-banner-modal .cutom-form-control .cutom-input-group .form-select :-ms-input-placeholder {
+        color: #B1A5E1; }
+  .add-banner-modal .cutom-form-control .file-input {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 0;
+    border: 1px dashed #EED5FC; }
+  .add-banner-modal .cutom-form-control .file-input__input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1; }
+  .add-banner-modal .cutom-form-control .file-input__label {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    font-size: 14px;
+    padding: 10px 12px;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25); }
+    .add-banner-modal .cutom-form-control .file-input__label img {
+      margin-right: 8px;
+      max-width: 38px;
+      max-height: 100%; }
+  .add-banner-modal .cutom-form-control .file-input__label svg {
+    height: 16px;
+    margin-right: 4px; }
+
+.order-summary-view-modal .modal-dialog {
+  max-width: 568px;
+  border-radius: 60px; }
+  .order-summary-view-modal .modal-dialog .modal-body {
+    padding: 25px 50px 25px 40px !important; }
+    @media (max-width: 1679px) {
+      .order-summary-view-modal .modal-dialog .modal-body {
+        padding: 25px 50px 25px 40px !important; } }
+    @media (max-width: 1367px) {
+      .order-summary-view-modal .modal-dialog .modal-body {
+        padding: 20px 50px 20px 30px !important; } }
+    @media (max-width: 1281px) {
+      .order-summary-view-modal .modal-dialog .modal-body {
+        padding: 20px 50px 20px 20px !important; } }
+    @media (max-width: 991px) {
+      .order-summary-view-modal .modal-dialog .modal-body {
+        padding: 15px 50px 15px 15px !important; } }
+    .order-summary-view-modal .modal-dialog .modal-body .list-items {
+      padding-left: 25px;
+      margin-bottom: 60px;
+      border-left: 5px solid #DFD5FC; }
+      @media (max-width: 1679px) {
+        .order-summary-view-modal .modal-dialog .modal-body .list-items {
+          margin-bottom: 40px; } }
+      @media (max-width: 1367px) {
+        .order-summary-view-modal .modal-dialog .modal-body .list-items {
+          margin-bottom: 30px; } }
+      @media (max-width: 1281px) {
+        .order-summary-view-modal .modal-dialog .modal-body .list-items {
+          margin-bottom: 20px; } }
+      .order-summary-view-modal .modal-dialog .modal-body .list-items span {
+        text-align: left;
+        font: normal 16px "Poppins", sans-serif;
+        color: #1D1D39;
+        margin-bottom: 12px; }
+      .order-summary-view-modal .modal-dialog .modal-body .list-items p {
+        text-align: left;
+        font: 600 16px "Poppins", sans-serif;
+        color: #00245E;
+        text-transform: capitalize;
+        margin: 0; }
 
 /*# sourceMappingURL=modal.css.map */

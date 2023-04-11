@@ -168,4 +168,46 @@
   .footer-table .next-arrow {
     margin-left: 15px; }
 
+.banner-category-tbl table .action {
+  width: 120px !important; }
+.banner-category-tbl table tbody tr td .product-img {
+  width: 250px; }
+
+.order-management-tbl .order-summary {
+  color: #2C00AA;
+  text-transform: capitalize; }
+.order-management-tbl .order-status {
+  position: relative; }
+  .order-management-tbl .order-status .status-txt::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 7px;
+    height: 7px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 100px; }
+  .order-management-tbl .order-status .status-txt.pending-txt {
+    color: #FF7900;
+    text-transform: capitalize; }
+    .order-management-tbl .order-status .status-txt.pending-txt::after {
+      background: #FF7900; }
+  .order-management-tbl .order-status .status-txt.approved-txt {
+    color: #00AE29;
+    text-transform: capitalize; }
+    .order-management-tbl .order-status .status-txt.approved-txt::after {
+      background: #00AE29; }
+  .order-management-tbl .order-status .status-txt.danger-txt {
+    color: #AE0000;
+    text-transform: capitalize; }
+    .order-management-tbl .order-status .status-txt.danger-txt::after {
+      background: #AE0000; }
+  .order-management-tbl .order-status .status-txt.blue-txt {
+    color: #2C00AA;
+    text-transform: capitalize; }
+    .order-management-tbl .order-status .status-txt.blue-txt::after {
+      background: #2C00AA; }
+
 /*# sourceMappingURL=table.css.map */

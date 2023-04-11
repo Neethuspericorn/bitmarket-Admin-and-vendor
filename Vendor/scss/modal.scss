@@ -1078,8 +1078,9 @@ $dark-back-color: #000000;
                 .upload-icons {
                     width: 34px;
                 }
-                
+
             }
+
             .btn-add {
                 width: 68px;
                 height: 82px;
@@ -1666,4 +1667,245 @@ $dark-back-color: #000000;
         }
     }
 
+}
+
+.add-banner-modal {
+    .modal-dialog {
+        max-width: 900px;
+    }
+
+    .form-group {
+        margin-bottom: 50px;
+        position: relative;
+
+        @media ($sm-1367) {
+            margin-bottom: 40px;
+        }
+
+        .form-label {
+            color: #1D1D39;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            font-family: "Poppins", sans-serif;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+
+            @media ($sm-1367) {
+                font-size: 14px;
+            }
+        }
+
+        .form-control {
+            background: #F7F5FF;
+            border-radius: 14px;
+            color: #7F57F1;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 17px;
+            font-family: "Poppins", sans-serif;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            padding: 10px 20px;
+            height: 68px;
+
+            @media ($sm-1679) {
+                height: 58px;
+            }
+
+            @media ($sm-1367) {
+                height: 50px;
+                font-size: 14px;
+            }
+        }
+
+        textarea.form-control {
+            min-height: 80px;
+        }
+
+        .val-msg {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            align-items: center;
+            padding-top: 8px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #FF4141;
+
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .cutom-form-control {
+        font-family: $primary-font;
+
+        .form-label {
+            color: #1D1D39;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+
+        .cutom-input-group {
+            background-color: #F7F5FF;
+            border-radius: 14px;
+            padding: 0 10px;
+            height: 66px;
+            position: relative;
+
+            .val-msg {
+                position: absolute;
+                left: 0;
+                top: 100%;
+                display: none;
+                // display: inline-flex;
+                align-items: center;
+                padding-top: 4px;
+                font-size: 12px;
+                font-weight: 500;
+                color: #FF4141;
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+
+            .input-group-text,
+            .form-control {
+                background-color: transparent;
+                border: none;
+            }
+
+            @include placeholder {
+                color: #B1A5E1;
+            }
+
+            .form-control {
+                box-shadow: none;
+                color: $secondary-color;
+                padding-left: 5px;
+            }
+
+            .form-select {
+                box-shadow: none;
+                color: $secondary-color;
+                padding-left: 5px;
+                background-color: transparent !important;
+                border: none;
+
+                @include placeholder {
+                    color: #B1A5E1;
+                }
+            }
+        }
+
+        .file-input {
+            position: relative;
+            overflow: hidden;
+            background-color: transparent;
+            padding: 0;
+            border: 1px dashed #EED5FC;
+        }
+
+        .file-input__input {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .file-input__label {
+            cursor: pointer;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            font-size: 14px;
+            font-weight: 500;
+            color: #000;
+            font-size: 14px;
+            padding: 10px 12px;
+            background-color: #fff;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+
+            img {
+                margin-right: 8px;
+                max-width: 38px;
+                max-height: 100%;
+            }
+        }
+
+        .file-input__label svg {
+            height: 16px;
+            margin-right: 4px;
+        }
+
+    }
+}
+
+.order-summary-view-modal {
+    .modal-dialog {
+        max-width: 568px;
+        border-radius: 60px;
+
+        .modal-body {
+            padding: 25px 50px 25px 40px !important;
+
+            @media ($sm-1679) {
+                padding: 25px 50px 25px 40px !important;
+            }
+
+            @media ($sm-1367) {
+                padding: 20px 50px 20px 30px !important;
+            }
+
+            @media ($sm-1281) {
+                padding: 20px 50px 20px 20px !important;
+            }
+
+            @media ($sm-991) {
+                padding: 15px 50px 15px 15px !important;
+            }
+
+            .list-items {
+                padding-left: 25px;
+                margin-bottom: 60px;
+                border-left: 5px solid #DFD5FC;
+
+                @media ($sm-1679) {
+                    margin-bottom: 40px;
+                }
+
+                @media ($sm-1367) {
+                    margin-bottom: 30px;
+                }
+
+                @media ($sm-1281) {
+                    margin-bottom: 20px;
+                }
+
+                span {
+                    text-align: left;
+                    font: normal 16px $primary-font;
+                    color: #1D1D39;
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    text-align: left;
+                    font: 600 16px $primary-font;
+                    color: #00245E;
+                    text-transform: capitalize;
+                    margin: 0;
+                }
+            }
+        }
+    }
 }

@@ -222,6 +222,7 @@
                     color: #fff;
                 }
             }
+
             .page-link {
                 background: transparent;
                 border: none;
@@ -263,5 +264,81 @@
 
     .next-arrow {
         margin-left: 15px;
+    }
+}
+
+.banner-category-tbl {
+    table {
+        .action {
+            width: 120px !important;
+        }
+
+        tbody {
+            tr {
+                td {
+                    .product-img {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.order-management-tbl {
+    .order-summary {
+        color: #2C00AA;
+        text-transform: capitalize;
+    }
+
+    .order-status {
+        position: relative;
+        .status-txt {
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 7px;
+                height: 7px;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                border-radius: 100px;
+            }
+
+            &.pending-txt {
+                color: #FF7900;
+                text-transform: capitalize;
+                &::after{
+                    background:  #FF7900;
+                }
+            }
+
+            &.approved-txt {
+                color: #00AE29;
+                text-transform: capitalize;
+                &::after{
+                    background:  #00AE29;
+                }
+            }
+
+            &.danger-txt {
+                color: #AE0000;
+                text-transform: capitalize;
+                &::after{
+                    background:  #AE0000;
+                }
+            }
+
+            &.blue-txt {
+                color: #2C00AA;
+                text-transform: capitalize;
+                &::after{
+                    background:  #2C00AA;
+                }
+            }
+        }
+
     }
 }
