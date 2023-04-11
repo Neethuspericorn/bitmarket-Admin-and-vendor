@@ -327,4 +327,70 @@
         min-width: 80px;
         border-radius: 0px 29px 29px 0px;
     }
+    .side-nav-wrapper {
+        min-width: 80px;
+        border-radius: 0px 29px 29px 0px;
+
+        .web-logo {
+            display: none !important;
+        }
+
+        .mob-logo {
+            display: block !important;
+        }
+
+        .side-nav .nav-list .nav-item .nav-link span {
+            display: none;
+        }
+
+        .side-nav .nav-list .nav-item {
+            margin-top: 10px;
+        }
+
+        .side-nav .nav-list .logout-list {
+            margin-top: 10px !important;
+        }
+
+        .side-nav {
+            overflow: unset;
+
+            .drop-block {
+                position: absolute;
+                padding: 10px !important;
+                width: 184px;
+                bottom: -30px;
+
+                li {
+                    padding-left: 0px !important;
+                    margin-left: 0 !important;
+                    position: relative;
+
+                    &::after {
+                        display: none !important;
+                    }
+
+                    a {
+                        margin: 4px 0 !important;
+
+                    }
+
+                    &:last-child a {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .side-nav-wrapper .side-nav .nav-list::before {
+        content: '';
+        border-radius: 0px 16px 16px 0px;
+    }
+
+    .side-nav .nav-list {
+        padding: 10px 0 !important;
+        position: relative;
+    }
 }

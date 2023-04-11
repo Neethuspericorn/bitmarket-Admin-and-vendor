@@ -63,11 +63,15 @@
   .notification-block .dropdown-menu .notification-body {
     max-height: calc(100vh - 230px);
     overflow: auto; }
+    .notification-block .dropdown-menu .notification-body .isactive .dropdown-item {
+      background: rgba(239, 242, 251, 0.83); }
+    .notification-block .dropdown-menu .notification-body .isactive .userIcon::after {
+      background: #7F57F1; }
     .notification-block .dropdown-menu .notification-body .dropdown-item {
       padding-left: 30px;
       padding-right: 50px; }
       .notification-block .dropdown-menu .notification-body .dropdown-item:hover {
-        background: rgba(239, 242, 251, 0.63); }
+        background: rgba(239, 242, 251, 0.445); }
       .notification-block .dropdown-menu .notification-body .dropdown-item:active {
         background: rgba(239, 242, 251, 0.83); }
       .notification-block .dropdown-menu .notification-body .dropdown-item .list {
@@ -90,8 +94,6 @@
             border-radius: 100px;
             right: 2px;
             bottom: 3px; }
-          .notification-block .dropdown-menu .notification-body .dropdown-item .list .userIcon.isactive::after {
-            background: #7F57F1; }
           .notification-block .dropdown-menu .notification-body .dropdown-item .list .userIcon.isinactive::after {
             background: #AFB6CF; }
           .notification-block .dropdown-menu .notification-body .dropdown-item .list .userIcon .user-img {

@@ -78,16 +78,19 @@
   <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#logout">Logot
   </button>
 
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#accountBlocked">You
+    Are Account Has Been Blocked</button>
+
   <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
-    data-bs-target="#accountBlocked">You Are Account Has Been Blocked</button>
-    
-    <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
     data-bs-target="#accountRejected">You Have Rejected</button>
-    
-    <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
+
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal"
     data-bs-target="#accountApproved">You Have Approved</button>
 
-    
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#addProduct">Add
+    Product</button>
+  <button type="button" class="btn btn-cus btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#addProductView">Add
+    Product View</button>
 
 
 
@@ -1167,8 +1170,9 @@
   </div>
 
 
-  <div class="modal fade blocked-modal  pass-modal sml-modal " id="accountBlocked" data-bs-backdrop="static" data-bs-keyboard="false"
-    tabindex="-1" aria-labelledby="accountBlockedLabel" aria-hidden="true" data-backdrop="static">
+  <div class="modal fade blocked-modal  pass-modal sml-modal " id="accountBlocked" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1" aria-labelledby="accountBlockedLabel" aria-hidden="true"
+    data-backdrop="static">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
@@ -1187,8 +1191,9 @@
     </div>
   </div>
 
-  <div class="modal fade blocked-modal pass-modal sml-modal " id="accountRejected" data-bs-backdrop="static" data-bs-keyboard="false"
-    tabindex="-1" aria-labelledby="accountRejectedLabel" aria-hidden="true" data-backdrop="static">
+  <div class="modal fade blocked-modal pass-modal sml-modal " id="accountRejected" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1" aria-labelledby="accountRejectedLabel" aria-hidden="true"
+    data-backdrop="static">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
@@ -1207,8 +1212,9 @@
     </div>
   </div>
 
-  <div class="modal fade blocked-modal pass-modal sml-modal " id="accountApproved" data-bs-backdrop="static" data-bs-keyboard="false"
-    tabindex="-1" aria-labelledby="accountApprovedLabel" aria-hidden="true" data-backdrop="static">
+  <div class="modal fade blocked-modal pass-modal sml-modal " id="accountApproved" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1" aria-labelledby="accountApprovedLabel" aria-hidden="true"
+    data-backdrop="static">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
@@ -1226,7 +1232,788 @@
       </div>
     </div>
   </div>
+  <div class="modal fade add-product-modal sub-cat-edit" id="addProduct" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1" aria-labelledby="addProductLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
 
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="">
+            <div class="add-product-body">
+              <div class="tab-title">
+                <h4>Add Product</h4>
+              </div>
+
+              <!-- ** -->
+              <div class="product-tab-cover">
+                <nav>
+                  <div class="nav-btn-wrapper">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="product-info-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-product-info" type="button" role="tab" aria-controls="nav-product-info"
+                        aria-selected="true">Product info</button>
+                      <button class="nav-link" id="product-variants-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                        aria-selected="false">Variants</button>
+                    </div>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-product-info" role="tabpanel"
+                    aria-labelledby="product-info-tab">
+                    <div class="product-tab-body">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="form-group frm-itm">
+                            <label class="form-label">Category</label>
+                            <select class="form-control select">
+                              <option disabled selected>Select</option>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group frm-itm">
+                            <label class="form-label">Sub Category</label>
+                            <select class="form-control select">
+                              <option disabled selected>Select</option>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group frm-itm">
+                            <label class="form-label">Brand</label>
+                            <select class="form-control select">
+                              <option disabled selected>Select</option>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-12">
+                          <div class="form-group frm-itm">
+                            <label class="form-label">Product Name</label>
+                            <input type="text" class="form-control" placeholder="">
+                          </div>
+                        </div>
+
+                        <div class="col-12">
+                          <div class="form-group frm-itm">
+                            <label class="form-label">Description</label>
+                            <textarea name="" id="" rows="4" class="form-control" placeholder="Type Here"></textarea>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="form-group frm-itm">
+                            <label class="form-label">Unit</label>
+                            <select class="form-control select">
+                              <option disabled selected>Count</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group frm-itm">
+                            <label class="form-label">Stock Available</label>
+                            <input type="text" class="form-control" placeholder="">
+                          </div>
+                        </div>
+                        <div class="clear-fix"></div>
+                        <div class="col-md-4">
+                          <div class="form-group frm-itm">
+                            <label class="form-label">Selling Price</label>
+                            <input type="text" class="form-control" placeholder="">
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="form-group frm-itm">
+                            <label class="form-label">Actual Price</label>
+                            <input type="text" class="form-control" placeholder="">
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="form-group frm-itm">
+                            <label class="form-label">Discount price</label>
+                            <input type="text" class="form-control" placeholder="">
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="add-img-cover">
+                        <div class="form-group mb-0 frm-itm">
+                          <label class="form-label">Product Image <span class="info-tooltip">i</span></label>
+                        </div>
+                        <div class="add-img-wrapper d-flex">
+                          <div class="add-img-col">
+                            <div class="add-img-card active">
+                              <div class="img-block block-h">
+                                <span class="item-in selected"></span>
+                                <img src="img/order-view.png" alt="">
+                                <button class="remove-btn">
+                                  <img src="img/delete-icon-red.svg" alt="">
+                                </button>
+                              </div>
+                              <div class="img-btn-block">
+                                <button class="img-active-btn">Primary image <img src="img/check-sm.svg"
+                                    alt=""></button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="add-img-col">
+                            <div class="add-img-card">
+                              <div class="img-block block-h">
+                                <span class="item-in selected"></span>
+                                <img src="img/order-view.png" alt="">
+                                <button class="remove-btn">
+                                  <img src="img/delete-icon-red.svg" alt="">
+                                </button>
+                              </div>
+                              <div class="img-btn-block">
+                                <button class="img-active-btn">Make Primary</button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="add-img-col">
+                            <div class="add-img-card">
+                              <div class="img-block block-h">
+                                <span class="item-in selected"></span>
+                                <img src="img/order-view.png" alt="">
+                                <button class="remove-btn">
+                                  <img src="img/delete-icon-red.svg" alt="">
+                                </button>
+                              </div>
+                              <div class="img-btn-block">
+                                <button class="img-active-btn">Make Primary</button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="add-img-col">
+                            <div class="add-img-card">
+                              <div class="img-block block-h">
+                                <span class="item-in selected"></span>
+                                <img src="img/order-view.png" alt="">
+                                <button class="remove-btn">
+                                  <img src="img/delete-icon-red.svg" alt="">
+                                </button>
+                              </div>
+                              <div class="img-btn-block">
+                                <button class="img-active-btn">Make Primary</button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="add-img-col add-img-btn-col">
+                            <div class="img-block block-h">
+                              <button class="add-img-btn-lg">
+                                <img src="img/add-round.svg" alt="">
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="product-variants-tab">
+                    <div class="product-tab-body">
+                      <div class="acc-cover">
+                        <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Variant 01
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                              data-bs-parent="#accordionExample">
+                              <div class="accordion-body acc-body">
+                                <div class="action-btn-block">
+                                  <button class="btn edit-btn">
+                                    <img src="img/edit-icon.svg" class="edit-btn-icon btn-icon" alt="">
+                                  </button>
+                                  <button class="btn del-btn">
+                                    <img src="img/delete-icon-red.svg" class="del-btn-icon btn-icon" alt="">
+                                  </button>
+                                </div>
+                                <div class="row gx-md-4 gx-lg-5">
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Variant category</label>
+                                      <select class="form-control select">
+                                        <option disabled selected>Color</option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Variant Name</label>
+                                      <input type="text" class="form-control" placeholder="Product">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Stock Available</label>
+                                      <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="add-img-cover">
+                                  <div class="form-group mb-0 frm-itm">
+                                    <label class="form-label">Product Image <span class="info-tooltip">i</span></label>
+                                  </div>
+                                  <div class="add-img-wrapper d-flex">
+                                    <div class="add-img-col">
+                                      <div class="add-img-card active">
+                                        <div class="img-block block-h">
+                                          <span class="item-in selected"></span>
+                                          <img src="img/order-view.png" alt="">
+                                          <button class="remove-btn">
+                                            <img src="img/delete-icon-red.svg" alt="">
+                                          </button>
+                                        </div>
+                                        <div class="img-btn-block">
+                                          <button class="img-active-btn">Primary image <img src="img/check-sm.svg"
+                                              alt=""></button>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="add-img-col">
+                                      <div class="add-img-card">
+                                        <div class="img-block block-h">
+                                          <span class="item-in selected"></span>
+                                          <img src="img/order-view.png" alt="">
+                                          <button class="remove-btn">
+                                            <img src="img/delete-icon-red.svg" alt="">
+                                          </button>
+                                        </div>
+                                        <div class="img-btn-block">
+                                          <button class="img-active-btn">Make Primary</button>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="add-img-col">
+                                      <div class="add-img-card">
+                                        <div class="img-block block-h">
+                                          <span class="item-in selected"></span>
+                                          <img src="img/order-view.png" alt="">
+                                          <button class="remove-btn">
+                                            <img src="img/delete-icon-red.svg" alt="">
+                                          </button>
+                                        </div>
+                                        <div class="img-btn-block">
+                                          <button class="img-active-btn">Make Primary</button>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="add-img-col">
+                                      <div class="add-img-card">
+                                        <div class="img-block block-h">
+                                          <span class="item-in selected"></span>
+                                          <img src="img/order-view.png" alt="">
+                                          <button class="remove-btn">
+                                            <img src="img/delete-icon-red.svg" alt="">
+                                          </button>
+                                        </div>
+                                        <div class="img-btn-block">
+                                          <button class="img-active-btn">Make Primary</button>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="add-img-col add-img-btn-col">
+                                      <div class="img-block block-h">
+                                        <button class="add-img-btn-lg">
+                                          <img src="img/add-round.svg" alt="">
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                                <div class="sub-title-xs">
+                                  <h5>Price</h5>
+                                </div>
+
+                                <div class="row gx-md-5 gx-lg-5">
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Selling Price</label>
+                                      <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Actual Price</label>
+                                      <input type="text" class="form-control" placeholder="Product">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Discount price</label>
+                                      <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="acc-btn-wrapper text-end">
+                                  <button class="btn btn-cus btn-save acc-save-btn btn-bg-primary">Save</button>
+                                </div>
+
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Variant 02
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                              data-bs-parent="#accordionExample">
+                              <div class="accordion-body acc-body">
+                                <div class="row gx-md-4 gx-lg-5">
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Variant category</label>
+                                      <select class="form-control select">
+                                        <option disabled selected>Color</option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Variant Name</label>
+                                      <input type="text" class="form-control" placeholder="Product">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Stock Available</label>
+                                      <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="add-img-cover">
+                                  <div class="form-group mb-0 frm-itm">
+                                    <label class="form-label">Product Image <span class="info-tooltip">i</span></label>
+                                  </div>
+                                  <div class="add-img-wrapper d-flex">
+                                    <div class="add-img-col">
+                                      <div class="add-img-card active">
+                                        <div class="img-block block-h">
+                                          <span class="item-in selected"></span>
+                                          <img src="img/order-view.png" alt="">
+                                          <button class="remove-btn">
+                                            <img src="img/delete-icon-red.svg" alt="">
+                                          </button>
+                                        </div>
+                                        <div class="img-btn-block">
+                                          <button class="img-active-btn">Primary image <img src="img/check-sm.svg"
+                                              alt=""></button>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="add-img-col">
+                                      <div class="add-img-card">
+                                        <div class="img-block block-h">
+                                          <span class="item-in selected"></span>
+                                          <img src="img/order-view.png" alt="">
+                                          <button class="remove-btn">
+                                            <img src="img/delete-icon-red.svg" alt="">
+                                          </button>
+                                        </div>
+                                        <div class="img-btn-block">
+                                          <button class="img-active-btn">Make Primary</button>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="add-img-col">
+                                      <div class="add-img-card">
+                                        <div class="img-block block-h">
+                                          <span class="item-in selected"></span>
+                                          <img src="img/order-view.png" alt="">
+                                          <button class="remove-btn">
+                                            <img src="img/delete-icon-red.svg" alt="">
+                                          </button>
+                                        </div>
+                                        <div class="img-btn-block">
+                                          <button class="img-active-btn">Make Primary</button>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="add-img-col">
+                                      <div class="add-img-card">
+                                        <div class="img-block block-h">
+                                          <span class="item-in selected"></span>
+                                          <img src="img/order-view.png" alt="">
+                                          <button class="remove-btn">
+                                            <img src="img/delete-icon-red.svg" alt="">
+                                          </button>
+                                        </div>
+                                        <div class="img-btn-block">
+                                          <button class="img-active-btn">Make Primary</button>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="add-img-col add-img-btn-col">
+                                      <div class="img-block block-h">
+                                        <button class="add-img-btn-lg">
+                                          <img src="img/add-round.svg" alt="">
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                                <div class="sub-title-xs">
+                                  <h5>Price</h5>
+                                </div>
+
+                                <div class="row gx-md-5 gx-lg-5">
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Selling Price</label>
+                                      <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Actual Price</label>
+                                      <input type="text" class="form-control" placeholder="Product">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Discount price</label>
+                                      <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="acc-btn-wrapper text-end">
+                                  <button class="btn btn-cus btn-save acc-save-btn btn-bg-primary">Save</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Variant 03
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                              data-bs-parent="#accordionExample">
+                              <div class="accordion-body acc-body">
+                                <div class="row gx-md-4 gx-lg-5">
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Variant category</label>
+                                      <select class="form-control select">
+                                        <option disabled selected>Color</option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Variant Name</label>
+                                      <input type="text" class="form-control" placeholder="Product">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Stock Available</label>
+                                      <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="add-img-cover">
+                                  <div class="form-group mb-0 frm-itm">
+                                    <label class="form-label">Product Image <span class="info-tooltip">i</span></label>
+                                  </div>
+                                  <div class="add-img-wrapper d-flex">
+                                    <div class="add-img-col">
+                                      <div class="add-img-card active">
+                                        <div class="img-block block-h">
+                                          <span class="item-in selected"></span>
+                                          <img src="img/order-view.png" alt="">
+                                          <button class="remove-btn">
+                                            <img src="img/delete-icon-red.svg" alt="">
+                                          </button>
+                                        </div>
+                                        <div class="img-btn-block">
+                                          <button class="img-active-btn">Primary image <img src="img/check-sm.svg"
+                                              alt=""></button>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="add-img-col">
+                                      <div class="add-img-card">
+                                        <div class="img-block block-h">
+                                          <span class="item-in selected"></span>
+                                          <img src="img/order-view.png" alt="">
+                                          <button class="remove-btn">
+                                            <img src="img/delete-icon-red.svg" alt="">
+                                          </button>
+                                        </div>
+                                        <div class="img-btn-block">
+                                          <button class="img-active-btn">Make Primary</button>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="add-img-col">
+                                      <div class="add-img-card">
+                                        <div class="img-block block-h">
+                                          <span class="item-in selected"></span>
+                                          <img src="img/order-view.png" alt="">
+                                          <button class="remove-btn">
+                                            <img src="img/delete-icon-red.svg" alt="">
+                                          </button>
+                                        </div>
+                                        <div class="img-btn-block">
+                                          <button class="img-active-btn">Make Primary</button>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="add-img-col">
+                                      <div class="add-img-card">
+                                        <div class="img-block block-h">
+                                          <span class="item-in selected"></span>
+                                          <img src="img/order-view.png" alt="">
+                                          <button class="remove-btn">
+                                            <img src="img/delete-icon-red.svg" alt="">
+                                          </button>
+                                        </div>
+                                        <div class="img-btn-block">
+                                          <button class="img-active-btn">Make Primary</button>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="add-img-col add-img-btn-col">
+                                      <div class="img-block block-h">
+                                        <button class="add-img-btn-lg">
+                                          <img src="img/add-round.svg" alt="">
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                                <div class="sub-title-xs">
+                                  <h5>Price</h5>
+                                </div>
+
+                                <div class="row gx-md-5 gx-lg-5">
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Selling Price</label>
+                                      <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Actual Price</label>
+                                      <input type="text" class="form-control" placeholder="Product">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="form-group frm-itm">
+                                      <label class="form-label">Discount price</label>
+                                      <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="acc-btn-wrapper text-end">
+                                  <button class="btn btn-cus btn-save acc-save-btn btn-bg-primary">Save</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="variant-btn-wrapper">
+                        <button type="button" class="btn btn-cus btn-bg-primary btn-save"><img
+                            src="img/add-round-wht.svg" alt=""> Add Variant</button>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- ** -->
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="btn-area">
+              <button type="button" class="btn btn-cus btn-cancel" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-cus btn-save">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade vedr-man mid addProductView-modal-block" id="addProductView" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1" aria-labelledby="vedr-mng-viewLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="vedr-mng-viewLabel">Product View</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="outer-main">
+            <div class="col-lg-3 profile-img-view">
+              <div class="gallery-img-block">
+                <div class="profile-img ">
+                  <img src="img/profileimg.png" />
+                </div>
+                <div class="sub-img-list">
+                  <div class="sub-img-item">
+                    <img src="img/profileimg.png" class="sub-imgs" />
+                  </div>
+                  <div class="sub-img-item">
+                    <img src="img/profileimg.png" class="sub-imgs" />
+                  </div>
+                  <div class="sub-img-item overlay-block">
+                    <img src="img/profileimg.png" class="sub-imgs" />
+                    <span class="txt">+3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-9 profile-data-main">
+              <div class="action-btn-block">
+                <button class="btn edit-btn">
+                  <img src="img/edit-icon.svg" class="edit-btn-icon btn-icon" alt="">
+                </button>
+                <button class="btn del-btn">
+                  <img src="img/delete-icon-red.svg" class="del-btn-icon btn-icon" alt="">
+                </button>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group frm-itm variant-select">
+                  <label class="form-label"> Variant</label>
+                  <select class="form-control select">
+                    <option>Deep Purple</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class=" row profile-data">
+                <div class="col-md-4 form-group frm-itm">
+                  <label class="form-label">Category</label>
+                  <h3 class="frm-value">Electronics</h3>
+                </div>
+                <div class="col-md-4 form-group frm-itm light-red">
+                  <label class="form-label">Subcategory</label>
+                  <h3 class="frm-value">Smart Phone</h3>
+                </div>
+                <div class="col-md-4 form-group frm-itm">
+                  <label class="form-label"> Brand</label>
+                  <h3 class="frm-value">Apple Inc</h3>
+                </div>
+                <div class="col-md-4 form-group frm-itm ">
+                  <label class="form-label">Product Name</label>
+                  <h3 class="frm-value">iPhone 14 Pro Max</h3>
+                </div>
+                <div class="col-md-4 form-group frm-itm light-red">
+                  <label class="form-label">Stock Available</label>
+                  <h3 class="frm-value">345</h3>
+                </div>
+                <div class="col-md-12 form-group frm-itm light-red">
+                  <label class="form-label">Description</label>
+                  <h3 class="frm-value">Fingerprint Resistant Oleophobic Coating, Support for Display of Multiple
+                    Languages and Characters SimultaneouslyRated IP68 (Maximum Depth of 6 Metres Upto 30 Minutes) Under
+                    IEC Standard 60529, Enabled by TrueDepth Camera forFacial Recognition, Emergency SOS, Detection,
+                    Digital Compass, Cellular, iBeacon Micro Location, FaceTime Video Calling Over Cellular or Wi-Fi,
+                    FaceTime HD (1080p) Video Calling Over 5G or Wi?Fi, Share Experiences like Movies, TV, Music and
+                    Other Apps in a FaceTime Call with SharePlay, Screen Sharing, Portrait Mode in FaceTime Video,
+                    Spatial Audio, Voice Isolation and Wide Spectrum Microphone Modes, Optical Zoom with Rear-Facing
+                    Camera, FaceTime Audio,</h3>
+                </div>
+                <div class="col-md-4 form-group frm-itm light-red">
+                  <label class="form-label">Selling Price</label>
+                  <h3 class="frm-value">1,50,990</h3>
+                </div>
+                <div class="col-md-4 form-group frm-itm light-red">
+                  <label class="form-label">Actual Price</label>
+                  <h3 class="frm-value">1,60,990</h3>
+                </div>
+                <div class="col-md-4 form-group frm-itm light-red">
+                  <label class="form-label">Discount Price</label>
+                  <h3 class="frm-value">1,32,990</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="Js/vendor/jquery.min.js"></script>
   <script src="Js/vendor/bootstrap.min.js"></script>

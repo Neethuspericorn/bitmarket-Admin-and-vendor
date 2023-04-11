@@ -61,12 +61,23 @@
             max-height: calc(100vh - 230px);
             overflow: auto;
 
+            .isactive {
+                .dropdown-item {
+                    background: rgba(239, 242, 251, 0.83);
+                }
+                .userIcon {
+                    &::after {
+                        background: #7F57F1;
+                    }
+                }
+            }
+
             .dropdown-item {
                 padding-left: 30px;
                 padding-right: 50px;
 
                 &:hover {
-                    background: rgba(239, 242, 251, 0.63);
+                    background: rgba(239, 242, 251, 0.445);
                 }
 
                 &:active {
@@ -98,11 +109,7 @@
                             bottom: 3px;
                         }
 
-                        &.isactive {
-                            &::after {
-                                background: #7F57F1;
-                            }
-                        }
+
 
                         &.isinactive {
                             &::after {

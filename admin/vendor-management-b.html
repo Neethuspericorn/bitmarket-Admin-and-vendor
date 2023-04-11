@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/filter.css">
 </head>
 
 <body>
@@ -468,46 +467,22 @@
                                     <img src="img/search-icon.svg" alt="search-icon">
                                 </span>
                             </div>
-                            <div class="tbl-filter-block  filter-area">
-                                <button class="btn btn-filter" type="button"  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    <img src="img/filter-filled.svg" alt="filter">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="collapse show" id="collapseExample">
-                        <div class="card card-body filter-block">
-                            <div class="filter-main">
-                                <div class="row filter-form">
-                                    <div class="form-group frm-itm col-md-4">
-                                        <select class="form-control select">
-                                            <option>Vendor</option>
-                                            <option>Option 1</option>
-                                            <option>Option 2</option>
-                                            <option>Option 3</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group frm-itm col-md-4">
-                                        <select class="form-control select">
-                                            <option>Status</option>
-                                            <option>Option 1</option>
-                                            <option>Option 2</option>
-                                            <option>Option 3</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group frm-itm col-md-4">
-                                        <input id="datepicker" placeholder="13 January 2023" autocomplete="off" class="form-control date-input hasDatepicker">
-                                    </div>
-                                </div>
-                                <div class="filter-btn">
-                                    <button class="btn btn-clse">Close</button>
-                                    <button class="btn btn-reset">Reset</button>
-                                    <button class="btn btn-apply">Apply</button>
+                            <div class="tbl-filter-block">
+                                <div class="dropdown">
+                                    <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                        aria-expanded="true">
+                                        <img src="img/filter-filled.svg" alt="filter">
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"
+                                        data-popper-placement="bottom-end">
+                                        <li><a class="dropdown-item" href="#">Request Date</a></li>
+                                        <li><a class="dropdown-item" href="#">Status</a></li>
+                                    </ul>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
-
                     <div class="table-section custom-scroll table-section-lg">
                         <table class="table">
                             <tr>

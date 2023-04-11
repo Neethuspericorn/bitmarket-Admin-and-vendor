@@ -249,6 +249,45 @@
 
   .side-nav-wrapper {
     min-width: 80px;
-    border-radius: 0px 29px 29px 0px; } }
+    border-radius: 0px 29px 29px 0px; }
+
+  .side-nav-wrapper {
+    min-width: 80px;
+    border-radius: 0px 29px 29px 0px; }
+    .side-nav-wrapper .web-logo {
+      display: none !important; }
+    .side-nav-wrapper .mob-logo {
+      display: block !important; }
+    .side-nav-wrapper .side-nav .nav-list .nav-item .nav-link span {
+      display: none; }
+    .side-nav-wrapper .side-nav .nav-list .nav-item {
+      margin-top: 10px; }
+    .side-nav-wrapper .side-nav .nav-list .logout-list {
+      margin-top: 10px !important; }
+    .side-nav-wrapper .side-nav {
+      overflow: unset; }
+      .side-nav-wrapper .side-nav .drop-block {
+        position: absolute;
+        padding: 10px !important;
+        width: 184px;
+        bottom: -30px; }
+        .side-nav-wrapper .side-nav .drop-block li {
+          padding-left: 0px !important;
+          margin-left: 0 !important;
+          position: relative; }
+          .side-nav-wrapper .side-nav .drop-block li::after {
+            display: none !important; }
+          .side-nav-wrapper .side-nav .drop-block li a {
+            margin: 4px 0 !important; }
+          .side-nav-wrapper .side-nav .drop-block li:last-child a {
+            margin: 0; }
+
+  .side-nav-wrapper .side-nav .nav-list::before {
+    content: '';
+    border-radius: 0px 16px 16px 0px; }
+
+  .side-nav .nav-list {
+    padding: 10px 0 !important;
+    position: relative; } }
 
 /*# sourceMappingURL=side-nav.css.map */

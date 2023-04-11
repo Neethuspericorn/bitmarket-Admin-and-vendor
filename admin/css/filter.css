@@ -1,0 +1,129 @@
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.filter-area .btn-filter {
+  background: #FFFFFF;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #2C00AA;
+  border-radius: 34px; }
+  .filter-area .btn-filter:hover {
+    opacity: .8; }
+
+.filter-block {
+  background: #FFFFFF;
+  border: 1px solid #D4D8E9;
+  border-radius: 11px;
+  margin-top: 10px;
+  padding: 30px; }
+  .filter-block .filter-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    .filter-block .filter-main .filter-form {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1; }
+      .filter-block .filter-main .filter-form .form-group .form-control.date-input {
+        background-image: url(../img/date.svg); }
+      .filter-block .filter-main .filter-form .form-group .form-control.select {
+        background-image: url(../img/Shape.svg) !important; }
+    .filter-block .filter-main .filter-btn {
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-end; }
+      .filter-block .filter-main .filter-btn .btn {
+        padding: 10px 35px;
+        margin-left: 15px;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        border-radius: 9px; }
+        .filter-block .filter-main .filter-btn .btn:first-child {
+          margin-left: 0px; }
+        .filter-block .filter-main .filter-btn .btn.btn-clse {
+          border: 1px solid #8669D8;
+          color: #8669D8; }
+        .filter-block .filter-main .filter-btn .btn.btn-reset {
+          background: #DFD5FC;
+          color: #2C00AA; }
+        .filter-block .filter-main .filter-btn .btn.btn-apply {
+          background: transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%);
+          color: #FFFFFF; }
+
+@media (max-width: 1679px) {
+  .filter-area .btn-filter {
+    width: 40px;
+    height: 40px; }
+
+  .filter-block {
+    padding: 25px; }
+
+  .filter-block .form-group .form-control.form-control {
+    padding: 15px;
+    font-size: 15px; }
+    .filter-block .form-group .form-control.form-control.select {
+      background-position: 90% 19px; } }
+@media (max-width: 1440px) {
+  .filter-block {
+    padding: 20px; }
+
+  .filter-block .form-group .form-control.form-control {
+    padding: 10px;
+    font-size: 14px; }
+    .filter-block .form-group .form-control.form-control.select {
+      background-position: 90% 15px; } }
+@media (max-width: 1280px) {
+  .filter-block {
+    padding: 15px; }
+
+  .filter-block .filter-main {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+
+  .filter-block .filter-main .filter-form {
+    width: 100%; }
+
+  .filter-block .filter-main .filter-btn {
+    width: 100%;
+    justify-content: flex-end; }
+
+  .filter-block .filter-main .filter-form .frm-itm {
+    margin-bottom: 15px; }
+
+  .filter-block .filter-main .filter-btn {
+    flex-wrap: wrap; } }
+@media (max-width: 991px) {
+  .filter-block .filter-main .filter-btn .btn {
+    margin-bottom: 15px; } }
+@media (max-width: 767px) {
+  .filter-block .filter-main .filter-form {
+    --bs-gutter-x:0 ; }
+
+  .filter-block .filter-main .filter-btn .btn {
+    width: 100%;
+    margin-left: 0px; }
+    .filter-block .filter-main .filter-btn .btn:last-child {
+      margin-bottom: 0px; }
+
+  .filter-block .form-group .form-control.form-control.select {
+    background-position: 95% 12px; } }
+
+/*# sourceMappingURL=filter.css.map */
